@@ -1,0 +1,494 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Cultivar S.A. | Tecnología Agronómica · Bella Vista, Itapúa">
+  <!-- 1. NAVBAR -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
+      <a href="/" class="flex items-center gap-3">
+        <img src="/images/cultivar-logo.jpeg" alt="Cultivar S.A." class="h-12 w-auto object-contain" />
+      </a>
+      <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold text-slate-700">
+        <a href="#quienes-somos" class="hover:text-[#1B4332] transition-colors">Quiénes Somos</a>
+        <a href="#sercrop" class="hover:text-[#1B4332] transition-colors">Línea Sercrop</a>
+        <a href="#hardware" class="hover:text-[#1B4332] transition-colors">Hardware & RTK</a>
+        <a href="#inteligencia" class="hover:text-[#1B4332] transition-colors">Telemetría & IA</a>
+      </nav>
+      <a 
+        href="https://wa.me/595975679274" 
+        target="_blank" 
+        rel="noopener noreferrer" 
+        class="rounded-full px-6 py-2.5 font-bold text-sm text-white bg-[#EA580C] hover:bg-[#C2410C] shadow-sm transition-all inline-flex items-center gap-2"
+      >
+        <span>Contactar Asesor</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="flex-grow">
+    <!-- 2. QUIÉNES SOMOS (APERTURA PRINCIPAL DE LA WEB) -->
+    <section id="quienes-somos" class="py-16 sm:py-24 bg-[#F8FAFC] border-b border-slate-200 relative overflow-hidden bg-[radial-gradient(#cbd5e1_1px,transparent_1px)] [background-size:24px_24px]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="max-w-3xl mx-auto text-center mb-14">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#1B4332]/10 border border-[#1B4332]/20 text-[#1B4332] text-xs font-bold uppercase tracking-wider mb-4">
+            <span class="w-2 h-2 rounded-full bg-[#EA580C]"></span>
+            ORIGEN & ALIANZA ESTRATÉGICA · BELLA VISTA, ITAPÚA
+          </div>
+          <h1 class="text-3xl sm:text-5xl font-extrabold text-[#1E293B] tracking-tight mb-4">
+            Quiénes Somos
+          </h1>
+          <div class="w-16 h-1 bg-[#1B4332] mx-auto rounded-full mb-6"></div>
+          <p class="text-base sm:text-lg text-slate-700 leading-relaxed font-normal">
+            En <strong>Cultivar S.A.</strong>, entendemos que el éxito de cada cosecha comienza mucho antes de sembrar la primera semilla. Establecidos en <strong>Bella Vista</strong>, nacimos con el firme propósito de ser el aliado estratégico del productor agropecuario, transformando los desafíos del campo en resultados óptimos y sostenibles. Bajo el lema <span class="text-[#1B4332] font-semibold italic">"Tu campo, nuestro compromiso"</span>, acompañamos y optimizamos cada etapa de tus cultivos.
+          </p>
+        </div>
+
+        <!-- Bento Grid: Los 3 Pilares -->
+        <div class="grid md:grid-cols-3 gap-6 mb-12">
+          <div class="bg-white/90 backdrop-blur-sm rounded-2xl p-8 border border-slate-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all border-t-4 border-[#1B4332]">
+            <div class="flex justify-between items-start mb-5">
+              <div class="w-12 h-12 rounded-xl bg-emerald-50 text-[#1B4332] flex items-center justify-center font-bold text-2xl shadow-inner">
+                🌱
+              </div>
+              <span class="text-xs font-mono font-bold text-slate-400">01</span>
+            </div>
+            <h3 class="text-xl font-bold text-[#1E293B] mb-2">Innovación</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Buscamos constantemente las mejores prácticas y respuestas a las demandas cambiantes del entorno agrícola.
+            </p>
+          </div>
+
+          <div class="bg-white/90 backdrop-blur-sm rounded-2xl p-8 border border-slate-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all border-t-4 border-[#1B4332]">
+            <div class="flex justify-between items-start mb-5">
+              <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-700 flex items-center justify-center font-bold text-2xl shadow-inner">
+                🚜
+              </div>
+              <span class="text-xs font-mono font-bold text-slate-400">02</span>
+            </div>
+            <h3 class="text-xl font-bold text-[#1E293B] mb-2">Tecnología</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Incorporamos herramientas y productos avanzados que maximizan el rendimiento de la tierra de forma inteligente.
+            </p>
+          </div>
+
+          <div class="bg-white/90 backdrop-blur-sm rounded-2xl p-8 border border-slate-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all border-t-4 border-[#1B4332]">
+            <div class="flex justify-between items-start mb-5">
+              <div class="w-12 h-12 rounded-xl bg-amber-50 text-amber-800 flex items-center justify-center font-bold text-2xl shadow-inner">
+                🌍
+              </div>
+              <span class="text-xs font-mono font-bold text-slate-400">03</span>
+            </div>
+            <h3 class="text-xl font-bold text-[#1E293B] mb-2">Sustentabilidad</h3>
+            <p class="text-sm text-slate-600 leading-relaxed">
+              Nos comprometemos con el cuidado del suelo y los recursos, asegurando que el progreso de hoy no comprometa el campo del mañana.
+            </p>
+          </div>
+        </div>
+
+        <!-- Banner Cita de Cierre -->
+        <div class="bg-gradient-to-r from-[#1B4332] via-[#245741] to-[#2D6A4F] text-white rounded-2xl p-8 sm:p-10 shadow-lg text-center max-w-4xl mx-auto">
+          <p class="text-base sm:text-lg italic font-normal mb-3">
+            "No solo proveemos insumos o asesoramiento técnico; compartimos la pasión por la tierra y nos involucramos directamente en el crecimiento de tu negocio. En Cultivar S.A., caminamos junto a vos en cada surco, porque sabemos que cuando tu campo rinde, crecemos todos."
+          </p>
+          <span class="text-xs tracking-widest uppercase text-emerald-200 font-bold">Equipo Técnico Cultivar S.A. · Bella Vista, Itapúa</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. LÍNEA SERCROP: FISIOLOGÍA Y NUTRICIÓN VEGETAL -->
+    <section id="sercrop" class="py-20 bg-white border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <span class="text-[#EA580C] font-bold text-xs uppercase tracking-widest">Nutrición de Alta Expresión Genética</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-[#1E293B] mt-2 mb-3">Línea Sercrop Fisiología</h2>
+          <div class="w-16 h-1 bg-[#1B4332] mx-auto rounded-full mb-6"></div>
+          
+          <!-- Botones de Acción de Sercrop -->
+          <div class="flex flex-wrap items-center justify-center gap-4">
+            <a 
+              href="https://wa.me/595975679274?text=Hola,%20solicito%20informacion%20completa%20sobre%20la%20gama%20de%20productos%20Sercrop" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="rounded-full px-7 py-3 font-bold text-xs uppercase tracking-wider text-white bg-[#EA580C] hover:bg-[#C2410C] shadow-sm hover:shadow transition-all inline-flex items-center gap-2"
+            >
+              <span>Conozca toda nuestra gama de productos</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+              </svg>
+            </a>
+
+            <a 
+              href="/docs/linea-sercrop.pdf" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="rounded-full px-6 py-3 font-bold text-xs uppercase tracking-wider text-[#1B4332] bg-slate-50 hover:bg-slate-100 border border-[#1B4332]/30 transition-all inline-flex items-center gap-2"
+            >
+              <svg class="w-4 h-4 text-[#1B4332]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+              </svg>
+              <span>Descargar Ficha Técnica Sercrop (PDF)</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Catálogo de 5 Productos -->
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- 1. Crop-Cobre-Ni -->
+          <div class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all overflow-hidden flex flex-col justify-between border-t-4 border-[#1B4332]">
+            <div>
+              <div class="h-60 bg-slate-50 flex items-center justify-center p-4 border-b border-slate-100">
+                <img src="/images/crop-cobre-ni.jpeg" alt="Crop-Cobre-Ni" class="max-h-full max-w-full object-contain" />
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-bold text-[#1E293B] mb-2">Crop-Cobre-Ni</h3>
+                <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                  Bioestimulación sistémica, sanidad y balance mineral. Formulado para etapas críticas, superación de estrés y llenado uniforme de granos.
+                </p>
+              </div>
+            </div>
+            <div class="p-6 pt-0">
+              <a href="https://wa.me/595975679274?text=Hola,%20solicito%20cotizacion%20de%20Crop-Cobre-Ni" target="_blank" rel="noopener noreferrer" class="w-full rounded-full py-2.5 px-4 font-bold text-sm text-white bg-[#EA580C] hover:bg-[#C2410C] text-center inline-block">
+                Consultar Producto
+              </a>
+            </div>
+          </div>
+
+          <!-- 2. Crop-Force -->
+          <div class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all overflow-hidden flex flex-col justify-between border-t-4 border-[#1B4332]">
+            <div>
+              <div class="h-60 bg-slate-50 flex items-center justify-center p-4 border-b border-slate-100">
+                <img src="/images/sercrop-crop-force.jpeg" alt="Crop-Force" class="max-h-full max-w-full object-contain" />
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-bold text-[#1E293B] mb-2">Crop-Force</h3>
+                <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                  Bioestimulante concentrado para desarrollo radicular vigoroso, brotación homogénea y respuesta rápida tras heladas o sequía.
+                </p>
+              </div>
+            </div>
+            <div class="p-6 pt-0">
+              <a href="https://wa.me/595975679274?text=Hola,%20solicito%20cotizacion%20de%20Crop-Force" target="_blank" rel="noopener noreferrer" class="w-full rounded-full py-2.5 px-4 font-bold text-sm text-white bg-[#EA580C] hover:bg-[#C2410C] text-center inline-block">
+                Consultar Producto
+              </a>
+            </div>
+          </div>
+
+          <!-- 3. Crop-Fix -->
+          <div class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all overflow-hidden flex flex-col justify-between border-t-4 border-[#1B4332]">
+            <div>
+              <div class="h-60 bg-slate-50 flex items-center justify-center p-4 border-b border-slate-100">
+                <img src="/images/crop-fix.jpeg" alt="Crop-Fix" class="max-h-full max-w-full object-contain" />
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-bold text-[#1E293B] mb-2">Crop-Fix</h3>
+                <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                  Coadyuvante tensioactivo y fijador premium antideriva. Reduce pérdidas por evaporación y garantiza adherencia frente a lluvias imprevistas.
+                </p>
+              </div>
+            </div>
+            <div class="p-6 pt-0">
+              <a href="https://wa.me/595975679274?text=Hola,%20solicito%20cotizacion%20de%20Crop-Fix" target="_blank" rel="noopener noreferrer" class="w-full rounded-full py-2.5 px-4 font-bold text-sm text-white bg-[#EA580C] hover:bg-[#C2410C] text-center inline-block">
+                Consultar Producto
+              </a>
+            </div>
+          </div>
+
+          <!-- 4. Crop-Citrus -->
+          <div class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all overflow-hidden flex flex-col justify-between border-t-4 border-[#1B4332]">
+            <div>
+              <div class="h-60 bg-slate-50 flex items-center justify-center p-4 border-b border-slate-100">
+                <img src="/images/crop-citrus.jpeg" alt="Crop-Citrus" class="max-h-full max-w-full object-contain" />
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-bold text-[#1E293B] mb-2">Crop-Citrus</h3>
+                <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                  Corrector foliar específico con micronutrientes quelatados para frutales, cítricos y cultivos de alta demanda nutricional.
+                </p>
+              </div>
+            </div>
+            <div class="p-6 pt-0">
+              <a href="https://wa.me/595975679274?text=Hola,%20solicito%20cotizacion%20de%20Crop-Citrus" target="_blank" rel="noopener noreferrer" class="w-full rounded-full py-2.5 px-4 font-bold text-sm text-white bg-[#EA580C] hover:bg-[#C2410C] text-center inline-block">
+                Consultar Producto
+              </a>
+            </div>
+          </div>
+
+          <!-- 5. Aero-Tech -->
+          <div class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all overflow-hidden flex flex-col justify-between border-t-4 border-[#1B4332]">
+            <div>
+              <div class="h-60 bg-slate-50 flex items-center justify-center p-4 border-b border-slate-100">
+                <img src="/images/sercrop-aerotech.jpeg" alt="Aero-Tech" class="max-h-full max-w-full object-contain" />
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-bold text-[#1E293B] mb-2">Aero-Tech</h3>
+                <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                  Formulador específico para aplicaciones aéreas y de ultra bajo volumen (ULV). Máxima homogeneidad en caldos complejos.
+                </p>
+              </div>
+            </div>
+            <div class="p-6 pt-0">
+              <a href="https://wa.me/595975679274?text=Hola,%20solicito%20cotizacion%20de%20Aero-Tech" target="_blank" rel="noopener noreferrer" class="w-full rounded-full py-2.5 px-4 font-bold text-sm text-white bg-[#EA580C] hover:bg-[#C2410C] text-center inline-block">
+                Consultar Producto
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. HARDWARE AGRONÓMICO & PRECISIÓN SATELITAL (GUIADO & CONTROL DE IMPLEMENTOS) -->
+    <section id="hardware" class="py-20 bg-[#F8FAFC] border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <span class="text-[#EA580C] font-bold text-xs uppercase tracking-widest">Guiado Satelital & Control de Implementos</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-[#1E293B] mt-2 mb-3">Hardware Agronómico & Precisión Centimétrica</h2>
+          <div class="w-16 h-1 bg-[#1B4332] mx-auto rounded-full"></div>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+          <!-- 1. Consola G12 Panorama -->
+          <div class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all overflow-hidden flex flex-col justify-between border-t-4 border-[#1B4332]">
+            <div>
+              <div class="h-52 bg-slate-50 flex items-center justify-center p-4 border-b border-slate-100">
+                <img 
+                  src="/images/FARMNAVIGATOR_G12PANORAMA_orizzontale_verticale.png" 
+                  alt="Farmnavigator G12 Panorama" 
+                  class="max-h-full max-w-full object-contain" 
+                />
+              </div>
+              <div class="p-5">
+                <span class="inline-block text-xs font-bold px-2 py-0.5 bg-blue-50 text-blue-800 rounded-full mb-2">Terminal Virtual ISOBUS</span>
+                <h3 class="text-lg font-bold text-[#1E293B] mb-2">Consola G12 Panorama</h3>
+                <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                  Terminal Virtual ISOBUS (VT) y Task Controller en pantalla de 12 pulgadas. Guiado paralelo y control de dosis variable.
+                </p>
+              </div>
+            </div>
+            <div class="p-5 pt-0">
+              <a href="https://wa.me/595975679274?text=Hola,%20deseo%20cotizar%20la%20pantalla%20Farmnavigator%20G12%20Panorama" target="_blank" rel="noopener noreferrer" class="w-full rounded-full py-2.5 px-4 font-bold text-xs uppercase tracking-wider text-white bg-[#EA580C] hover:bg-[#C2410C] text-center inline-block shadow-sm">
+                Cotizar G12
+              </a>
+            </div>
+          </div>
+
+          <!-- 2. Solución ISOBUS: Control de Implementos -->
+          <div class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all overflow-hidden flex flex-col justify-between border-t-4 border-[#1B4332]">
+            <div>
+              <div class="h-52 bg-slate-50 flex items-center justify-center p-4 border-b border-slate-100">
+                <img 
+                  src="/images/isobus_farmnavigator.jpg" 
+                  alt="Control ISOBUS de Implementos Farmnavigator" 
+                  class="max-h-full max-w-full object-contain" 
+                />
+              </div>
+              <div class="p-5">
+                <span class="inline-block text-xs font-bold px-2 py-0.5 bg-purple-50 text-purple-800 rounded-full mb-2">Control de Implemento</span>
+                <h3 class="text-lg font-bold text-[#1E293B] mb-2">Control ISOBUS Activo</h3>
+                <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                  Automatización del apero: control de secciones automático (TC-SC), monitoreo de profundidad y eliminación de solapamientos.
+                </p>
+              </div>
+            </div>
+            <div class="p-5 pt-0">
+              <a href="https://wa.me/595975679274?text=Hola,%20deseo%20cotizar%20la%20solucion%20ISOBUS%20para%20control%20de%20implementos" target="_blank" rel="noopener noreferrer" class="w-full rounded-full py-2.5 px-4 font-bold text-xs uppercase tracking-wider text-white bg-[#EA580C] hover:bg-[#C2410C] text-center inline-block shadow-sm">
+                Cotizar ISOBUS
+              </a>
+            </div>
+          </div>
+
+          <!-- 3. Antena All in One RTK -->
+          <div class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all overflow-hidden flex flex-col justify-between border-t-4 border-[#1B4332]">
+            <div>
+              <div class="h-52 bg-slate-50 flex items-center justify-center p-4 border-b border-slate-100">
+                <img 
+                  src="/images/Allinone4GRTK.png" 
+                  alt="Antena Inteligente All in One RTK" 
+                  class="max-h-full max-w-full object-contain" 
+                />
+              </div>
+              <div class="p-5">
+                <span class="inline-block text-xs font-bold px-2 py-0.5 bg-teal-50 text-teal-800 rounded-full mb-2">Receptor GNSS + 4G</span>
+                <h3 class="text-lg font-bold text-[#1E293B] mb-2">Antena All in One RTK</h3>
+                <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                  Receptor GNSS multi-constelación con módem 4G integrado, compensación de inclinación y precisión de +/- 2 cm con correcciones RTK.
+                </p>
+              </div>
+            </div>
+            <div class="p-5 pt-0">
+              <a href="https://wa.me/595975679274?text=Hola,%20deseo%20cotizar%20la%20antena%20All%20in%20One%20RTK" target="_blank" rel="noopener noreferrer" class="w-full rounded-full py-2.5 px-4 font-bold text-xs uppercase tracking-wider text-white bg-[#EA580C] hover:bg-[#C2410C] text-center inline-block shadow-sm">
+                Cotizar Antena RTK
+              </a>
+            </div>
+          </div>
+
+          <!-- 4. Módulo RTKPro y Suscripciones NTRIP -->
+          <div class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all overflow-hidden flex flex-col justify-between border-t-4 border-[#1B4332]">
+            <div>
+              <div class="h-52 bg-slate-50 flex items-center justify-center p-4 border-b border-slate-100">
+                <img 
+                  src="/images/pluged-rthpro.jpeg" 
+                  alt="Módulo RTKPro y Suscripciones NTRIP" 
+                  class="max-h-full max-w-full object-contain" 
+                />
+              </div>
+              <div class="p-5">
+                <span class="inline-block text-xs font-bold px-2 py-0.5 bg-emerald-50 text-emerald-800 rounded-full mb-2">Suscripción NTRIP</span>
+                <h3 class="text-lg font-bold text-[#1E293B] mb-2">Módulo RTKPro & Señal</h3>
+                <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                  Corrección centimétrica sin necesidad de instalar bases fijas en el lote. Suscripciones anuales a la red NTRIP multimarca con cobertura regional.
+                </p>
+              </div>
+            </div>
+            <div class="p-5 pt-0">
+              <a href="https://wa.me/595975679274?text=Hola,%20deseo%20consultar%20por%20la%20suscripcion%20anual%20de%20senal%20RTKPro%20NTRIP" target="_blank" rel="noopener noreferrer" class="w-full rounded-full py-2.5 px-4 font-bold text-xs uppercase tracking-wider text-white bg-[#EA580C] hover:bg-[#C2410C] text-center inline-block shadow-sm">
+                Suscripción NTRIP
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. ECOSISTEMA DE CAMPO, TELEMETRÍA Y PLATAFORMA DE INTELIGENCIA -->
+    <section id="inteligencia" class="py-20 bg-white border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <span class="text-[#EA580C] font-bold text-xs uppercase tracking-widest">Ecosistema Conectado en Lote</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-[#1E293B] mt-2 mb-3">Siembra de Ultra Precisión, Telemetría & Analítica IA</h2>
+          <div class="w-16 h-1 bg-[#1B4332] mx-auto rounded-full"></div>
+        </div>
+
+        <!-- Banner Central: Tractor en Siembra -->
+        <div class="rounded-3xl overflow-hidden shadow-xl border border-slate-200 mb-14 relative group">
+          <img 
+            src="/images/imagen-tractor-siembra.jpeg" 
+            alt="Siembra de Ultra Precisión y Telemetría en Campo - Cultivar S.A." 
+            class="w-full h-80 sm:h-96 lg:h-[460px] object-cover" 
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent flex flex-col justify-end p-6 sm:p-10">
+            <div class="max-w-2xl text-white">
+              <span class="px-3 py-1 rounded-full bg-[#EA580C] text-xs font-bold uppercase tracking-wider mb-2 inline-block">Integración Total en el Tractor</span>
+              <h3 class="text-2xl sm:text-3xl font-extrabold mb-2">Conectividad directa entre cabina, implemento y nube</h3>
+              <p class="text-sm sm:text-base text-slate-200 font-normal">
+                Sincronización remota de labores de siembra milimétrica, control de profundidad ISOBUS y telemetría de motor en tiempo real.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2 Tarjetas: Remote Sensing (Drones + Satélites) y FMIS Cloud Explicado -->
+        <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <!-- Tarjeta 1: Remote Sensing Satelital, Drones e IA -->
+          <div class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all overflow-hidden flex flex-col justify-between border-t-4 border-[#1B4332]">
+            <div>
+              <div class="h-60 bg-slate-50 overflow-hidden border-b border-slate-100">
+                <img 
+                  src="/images/hero-campo.jpeg" 
+                  alt="Remote Sensing Satelital y Drones con Inteligencia Artificial" 
+                  class="w-full h-full object-cover" 
+                />
+              </div>
+              <div class="p-7">
+                <span class="inline-block text-xs font-bold px-2.5 py-1 bg-purple-50 text-purple-800 rounded-full mb-3">Teledetección Satelital, Drones & IoT</span>
+                <h3 class="text-2xl font-bold text-[#1E293B] mb-3">Remote Sensing Satelital & Diagnóstico Aéreo con IA</h3>
+                <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-4">
+                  Monitoreo integral y continuo que combina <strong>teledetección satelital multitemporal (Remote Sensing)</strong> con vuelos de drones de alta resolución e inteligencia artificial.
+                </p>
+                <ul class="text-xs sm:text-sm text-slate-600 space-y-2 mb-2">
+                  <li class="flex items-start gap-2">
+                    <span class="text-[#1B4332] font-bold">✔</span>
+                    <span><strong>Satélites (Remote Sensing):</strong> Seguimiento agronómico periódico de todas las parcelas para evaluar evolución de biomasa y vigor vegetal.</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-[#1B4332] font-bold">✔</span>
+                    <span><strong>Drones multiespectrales (NDVI/NDRE):</strong> Detección milimétrica de estrés hídrico, compactación y focos de malezas antes de ser visibles en el campo.</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-[#1B4332] font-bold">✔</span>
+                    <span><strong>Prescripción Variable (VRT):</strong> Mapas de aplicación listos para cargar en consola y dosificar fertilizantes o agroquímicos solo donde hace falta.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="p-7 pt-0">
+              <a href="https://wa.me/595975679274?text=Hola,%20deseo%20agendar%20un%20diagnostico%20satelital%20y%20con%20drones%20e%20IA" target="_blank" rel="noopener noreferrer" class="w-full rounded-full py-3 px-6 font-bold text-white bg-[#EA580C] hover:bg-[#C2410C] text-center inline-block shadow-sm">
+                Solicitar Diagnóstico Multiespectral
+              </a>
+            </div>
+          </div>
+
+          <!-- Tarjeta 2: Ecosistema FMIS Cloud Explicado al Productor -->
+          <div class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all overflow-hidden flex flex-col justify-between border-t-4 border-[#1B4332]">
+            <div>
+              <div class="h-60 bg-slate-50 flex items-center justify-center p-8 border-b border-slate-100">
+                <img 
+                  src="/images/logo_myfarmnavigator_cloud.png" 
+                  alt="MyFarmnavigator FMIS Cloud y Telemetría Zero-Touch" 
+                  class="max-h-24 w-auto object-contain" 
+                />
+              </div>
+              <div class="p-7">
+                <span class="inline-block text-xs font-bold px-2.5 py-1 bg-sky-50 text-sky-800 rounded-full mb-3">Gestión Agronómica & Telemetría CANBus</span>
+                <h3 class="text-2xl font-bold text-[#1E293B] mb-2">Plataforma FMIS Cloud & Telemetría Zero-Touch</h3>
+                <p class="text-xs font-semibold text-[#1B4332] mb-3 uppercase tracking-wider">
+                  ¿Qué es un FMIS Cloud y cómo impacta en la rentabilidad de su campo?
+                </p>
+                <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-4">
+                  Un <strong>FMIS</strong> (<em>Farm Management Information System</em> o Sistema de Gestión de Fincas en la nube) es el centro operativo donde se unifica toda la información agronómica y económica del establecimiento en un solo lugar.
+                </p>
+                <ul class="text-xs sm:text-sm text-slate-600 space-y-2 mb-2">
+                  <li class="flex items-start gap-2">
+                    <span class="text-[#1B4332] font-bold">✔</span>
+                    <span><strong>Fin de las libretas y pendrives:</strong> Historial digital completo de cada lote, registros de siembra, dosis aplicadas y costos operativos reales por hectárea.</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-[#1B4332] font-bold">✔</span>
+                    <span><strong>Telemetría CANBus en vivo:</strong> Control directo del consumo de combustible (l/ha), revoluciones de motor, horas de trabajo y sensor de vuelco para seguridad.</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-[#1B4332] font-bold">✔</span>
+                    <span><strong>Conexión Zero-Touch:</strong> El asesor o encargado envía las líneas A-B y las órdenes de trabajo desde el celular u oficina directamente a la cabina del tractor vía 4G, sin intervención manual del operario.</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="p-7 pt-0">
+              <a href="https://wa.me/595975679274?text=Hola,%20deseo%20conocer%20mas%20sobre%20la%20plataforma%20FMIS%20Cloud%20y%20telemetria" target="_blank" rel="noopener noreferrer" class="w-full rounded-full py-3 px-6 font-bold text-white bg-[#EA580C] hover:bg-[#C2410C] text-center inline-block shadow-sm">
+                Conocer la Plataforma FMIS Cloud
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 6. FOOTER INSTITUCIONAL -->
+  <footer class="bg-slate-900 text-slate-300 py-12 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-8 pb-8 border-b border-slate-800">
+        <div>
+          <span class="text-2xl font-extrabold text-white tracking-tight">Cultivar S.A.</span>
+          <p class="text-sm text-slate-400 mt-2 max-w-md">
+            Ruta VI Juan León Mallorquín Km 45, Bella Vista, Itapúa - Paraguay.
+          </p>
+        </div>
+        <div>
+          <a 
+            href="https://wa.me/595975679274" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="rounded-full px-6 py-3 font-semibold text-white bg-[#1B4332] hover:bg-[#2D6A4F] border border-emerald-700/50 shadow-sm transition-all inline-flex items-center gap-3 text-sm"
+          >
+            <span>WhatsApp: +595 975 679274</span>
+          </a>
+        </div>
+      </div>
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+        <p>2026 Cultivar S.A. Todos los derechos reservados.</p>
+        <p class="italic text-emerald-400 font-medium">Tu campo, nuestro compromiso.</p>
+      </div>
+    </div>
+  </footer>
+</Layout>
