@@ -1,13 +1,25 @@
 ---
-import Layout from '../layouts/Layout.astro';
+// Cultivar S.A. - Landing Page Oficial
 ---
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <title>Cultivar S.A. | Tecnología Agronómica · Bella Vista, Itapúa</title>
+  <meta name="description" content="Maximizamos el rendimiento por hectárea a través de nutrición vegetal avanzada, hardware de guiado satelital y diagnóstico con drones e IA.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="bg-[#F8FAFC] text-slate-800 antialiased min-h-screen flex flex-col selection:bg-[#1B4332] selection:text-white">
 
-<Layout title="Cultivar S.A. | Tecnología Agronómica · Bella Vista, Itapúa">
-  <!-- 1. NAVBAR -->
+  <!-- NAVBAR -->
   <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
       <a href="/" class="flex items-center gap-3">
-        <img src="/images/cultivar-logo.jpeg" alt="Cultivar S.A." class="h-12 w-auto object-contain" />
+        <img src="/images/cultivar-logo.jpeg" alt="Cultivar S.A." class="h-12 w-auto object-contain">
       </a>
       <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold text-slate-700">
         <a href="#quienes-somos" class="hover:text-[#1B4332] transition-colors">Quiénes Somos</a>
@@ -15,472 +27,679 @@ import Layout from '../layouts/Layout.astro';
         <a href="#hardware" class="hover:text-[#1B4332] transition-colors">Hardware & RTK</a>
         <a href="#inteligencia" class="hover:text-[#1B4332] transition-colors">Telemetría & IA</a>
       </nav>
-      <a 
-        href="https://wa.me/595975679274" 
-        target="_blank" 
-        rel="noopener noreferrer" 
-        class="rounded-full px-6 py-2.5 font-bold text-sm text-white bg-[#EA580C] hover:bg-[#C2410C] shadow-sm transition-all inline-flex items-center gap-2"
-      >
+      <a href="https://wa.me/595975679274" target="_blank" rel="noopener noreferrer" class="rounded-full px-6 py-2.5 font-bold text-sm text-white bg-[#EA580C] hover:bg-[#C2410C] shadow-sm transition-all inline-flex items-center gap-2">
         <span>Contactar Asesor</span>
       </a>
     </div>
   </header>
 
   <main class="flex-grow">
-    <!-- 2. QUIÉNES SOMOS (APERTURA PRINCIPAL DE LA WEB) -->
-    <section id="quienes-somos" class="py-16 sm:py-24 bg-[#F8FAFC] border-b border-slate-200 relative overflow-hidden bg-[radial-gradient(#cbd5e1_1px,transparent_1px)] [background-size:24px_24px]">
+    
+    <!-- QUIÉNES SOMOS -->
+    <section id="quienes-somos" class="py-16 sm:py-20 bg-[#F8FAFC] border-b border-slate-200 relative overflow-hidden bg-[radial-gradient(#cbd5e1_1px,transparent_1px)] [background-size:24px_24px]">
+      <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-full max-w-4xl h-80 bg-[#1B4332]/5 blur-3xl rounded-full pointer-events-none"></div>
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div class="max-w-3xl mx-auto text-center mb-14">
+        <div class="max-w-4xl mx-auto bg-white/90 backdrop-blur-md rounded-3xl p-8 sm:p-12 border border-slate-200 shadow-sm mb-12 relative text-center">
           <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#1B4332]/10 border border-[#1B4332]/20 text-[#1B4332] text-xs font-bold uppercase tracking-wider mb-4">
             <span class="w-2 h-2 rounded-full bg-[#EA580C]"></span>
-            ORIGEN & ALIANZA ESTRATÉGICA · BELLA VISTA, ITAPÚA
+            INTEGRACIÓN AGRONÓMICA & AGRICULTURA DE PRECISIÓN
           </div>
-          <h1 class="text-3xl sm:text-5xl font-extrabold text-[#1E293B] tracking-tight mb-4">
-            Quiénes Somos
-          </h1>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-[#1E293B] tracking-tight mb-3">Aliados estratégicos en cada etapa de su ciclo productivo</h2>
           <div class="w-16 h-1 bg-[#1B4332] mx-auto rounded-full mb-6"></div>
-          <p class="text-base sm:text-lg text-slate-700 leading-relaxed font-normal">
-            En <strong>Cultivar S.A.</strong>, entendemos que el éxito de cada cosecha comienza mucho antes de sembrar la primera semilla. Establecidos en <strong>Bella Vista</strong>, nacimos con el firme propósito de ser el aliado estratégico del productor agropecuario, transformando los desafíos del campo en resultados óptimos y sostenibles. Bajo el lema <span class="text-[#1B4332] font-semibold italic">"Tu campo, nuestro compromiso"</span>, acompañamos y optimizamos cada etapa de tus cultivos.
+          <p class="text-base sm:text-lg text-slate-700 leading-relaxed font-normal max-w-3xl mx-auto mb-8">
+            En <strong>Cultivar S.A.</strong> transformamos los desafíos del lote en resultados medibles y sostenibles. Integramos fisiología vegetal de alta gama, automatización de maquinaria ISOBUS y conectividad satelital, respaldados por servicio técnico permanente en Itapúa.
           </p>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-6 border-t border-slate-100 text-left">
+            <div class="flex items-center gap-3 p-2">
+              <div class="w-10 h-10 rounded-xl bg-emerald-50 text-[#1B4332] flex items-center justify-center font-bold text-lg">🌾</div>
+              <div><h4 class="text-xs font-bold text-[#1E293B] uppercase">Nutrición Sercrop</h4><p class="text-[11px] text-slate-500">Manejo fisiológico avanzado</p></div>
+            </div>
+            <div class="flex items-center gap-3 p-2">
+              <div class="w-10 h-10 rounded-xl bg-blue-50 text-blue-700 flex items-center justify-center font-bold text-lg">🛰️</div>
+              <div><h4 class="text-xs font-bold text-[#1E293B] uppercase">Farmnavigator & RTK</h4><p class="text-[11px] text-slate-500">Distribuidores y Soporte Oficial</p></div>
+            </div>
+            <div class="flex items-center gap-3 p-2">
+              <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-700 flex items-center justify-center font-bold text-lg">📊</div>
+              <div><h4 class="text-xs font-bold text-[#1E293B] uppercase">Telemetría IoT</h4><p class="text-[11px] text-slate-500">Datos y monitoreo Cloud</p></div>
+            </div>
+          </div>
         </div>
 
-        <!-- Bento Grid: Los 3 Pilares -->
         <div class="grid md:grid-cols-3 gap-6 mb-12">
-          <div class="bg-white/90 backdrop-blur-sm rounded-2xl p-8 border border-slate-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all border-t-4 border-[#1B4332]">
+          <div class="bg-white/90 backdrop-blur-sm rounded-2xl p-8 border border-slate-200 shadow-sm border-t-4 border-[#1B4332]">
             <div class="flex justify-between items-start mb-5">
-              <div class="w-12 h-12 rounded-xl bg-emerald-50 text-[#1B4332] flex items-center justify-center font-bold text-2xl shadow-inner">
-                🌱
-              </div>
+              <div class="w-12 h-12 rounded-xl bg-emerald-50 text-[#1B4332] flex items-center justify-center font-bold text-2xl shadow-inner">🌱</div>
               <span class="text-xs font-mono font-bold text-slate-400">01</span>
             </div>
             <h3 class="text-xl font-bold text-[#1E293B] mb-2">Innovación</h3>
-            <p class="text-sm text-slate-600 leading-relaxed">
-              Buscamos constantemente las mejores prácticas y respuestas a las demandas cambiantes del entorno agrícola.
-            </p>
+            <p class="text-sm text-slate-600 leading-relaxed">Prácticas y formulaciones para responder a las exigencias agronómicas del clima regional.</p>
           </div>
-
-          <div class="bg-white/90 backdrop-blur-sm rounded-2xl p-8 border border-slate-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all border-t-4 border-[#1B4332]">
+          <div class="bg-white/90 backdrop-blur-sm rounded-2xl p-8 border border-slate-200 shadow-sm border-t-4 border-[#1B4332]">
             <div class="flex justify-between items-start mb-5">
-              <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-700 flex items-center justify-center font-bold text-2xl shadow-inner">
-                🚜
-              </div>
+              <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-700 flex items-center justify-center font-bold text-2xl shadow-inner">🚜</div>
               <span class="text-xs font-mono font-bold text-slate-400">02</span>
             </div>
             <h3 class="text-xl font-bold text-[#1E293B] mb-2">Tecnología</h3>
-            <p class="text-sm text-slate-600 leading-relaxed">
-              Incorporamos herramientas y productos avanzados que maximizan el rendimiento de la tierra de forma inteligente.
-            </p>
+            <p class="text-sm text-slate-600 leading-relaxed">Incorporamos herramientas digitales y hardware RTK que maximizan el rendimiento operativo de su maquinaria.</p>
           </div>
-
-          <div class="bg-white/90 backdrop-blur-sm rounded-2xl p-8 border border-slate-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all border-t-4 border-[#1B4332]">
+          <div class="bg-white/90 backdrop-blur-sm rounded-2xl p-8 border border-slate-200 shadow-sm border-t-4 border-[#1B4332]">
             <div class="flex justify-between items-start mb-5">
-              <div class="w-12 h-12 rounded-xl bg-amber-50 text-amber-800 flex items-center justify-center font-bold text-2xl shadow-inner">
-                🌍
-              </div>
+              <div class="w-12 h-12 rounded-xl bg-amber-50 text-amber-800 flex items-center justify-center font-bold text-2xl shadow-inner">🌍</div>
               <span class="text-xs font-mono font-bold text-slate-400">03</span>
             </div>
             <h3 class="text-xl font-bold text-[#1E293B] mb-2">Sustentabilidad</h3>
-            <p class="text-sm text-slate-600 leading-relaxed">
-              Nos comprometemos con el cuidado del suelo y los recursos, asegurando que el progreso de hoy no comprometa el campo del mañana.
-            </p>
+            <p class="text-sm text-slate-600 leading-relaxed">Cuidado del suelo y eficiencia en insumos para que la productividad actual perdure en las próximas campañas.</p>
           </div>
-        </div>
-
-        <!-- Banner Cita de Cierre -->
-        <div class="bg-gradient-to-r from-[#1B4332] via-[#245741] to-[#2D6A4F] text-white rounded-2xl p-8 sm:p-10 shadow-lg text-center max-w-4xl mx-auto">
-          <p class="text-base sm:text-lg italic font-normal mb-3">
-            "No solo proveemos insumos o asesoramiento técnico; compartimos la pasión por la tierra y nos involucramos directamente en el crecimiento de tu negocio. En Cultivar S.A., caminamos junto a vos en cada surco, porque sabemos que cuando tu campo rinde, crecemos todos."
-          </p>
-          <span class="text-xs tracking-widest uppercase text-emerald-200 font-bold">Equipo Técnico Cultivar S.A. · Bella Vista, Itapúa</span>
         </div>
       </div>
     </section>
 
-    <!-- 3. LÍNEA SERCROP: FISIOLOGÍA Y NUTRICIÓN VEGETAL -->
-    <section id="sercrop" class="py-20 bg-white border-b border-slate-200">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center max-w-3xl mx-auto mb-14">
-          <span class="text-[#EA580C] font-bold text-xs uppercase tracking-widest">Nutrición de Alta Expresión Genética</span>
-          <h2 class="text-3xl sm:text-4xl font-extrabold text-[#1E293B] mt-2 mb-3">Línea Sercrop Fisiología</h2>
-          <div class="w-16 h-1 bg-[#1B4332] mx-auto rounded-full mb-6"></div>
+    <!-- LÍNEA SERCROP: TEATRO 4K DE ROTACIÓN AUTOMÁTICA (6s) + NAVEGACIÓN LATERAL -->
+    <section id="sercrop" class="py-16 lg:py-20 bg-[#050B07] text-white relative overflow-hidden select-none">
+      
+      <div id="sercrop-theater" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        
+        <!-- Encabezado con selector directo de producto -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-white/10 pb-6 mb-10">
+          <div>
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[#EA580C] text-xs font-bold uppercase tracking-widest mb-2">
+              <span class="w-2 h-2 rounded-full bg-[#EA580C] animate-pulse"></span>
+              Rotación Automática · 6 Segundos
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Línea Sercrop Fisiología</h2>
+            <p class="text-xs text-slate-400 mt-1">Deslice lateralmente o seleccione un producto para pausar la vista</p>
+          </div>
+
+          <!-- Selector de Pestañas Rápidas (Desktop / Tablet) -->
+          <div class="flex items-center gap-2 overflow-x-auto pb-2 md:pb-0 scrollbar-none">
+            <button class="sercrop-tab px-3 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all bg-[#00D2D3]/20 text-[#00D2D3] border border-[#00D2D3]/40" data-target="0">Cobre-Ni</button>
+            <button class="sercrop-tab px-3 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all text-slate-400 hover:text-white hover:bg-white/5" data-target="1">Force</button>
+            <button class="sercrop-tab px-3 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all text-slate-400 hover:text-white hover:bg-white/5" data-target="2">Fix</button>
+            <button class="sercrop-tab px-3 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all text-slate-400 hover:text-white hover:bg-white/5" data-target="3">Citrus</button>
+            <button class="sercrop-tab px-3 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all text-slate-400 hover:text-white hover:bg-white/5" data-target="4">Aero-Tech</button>
+            <button class="sercrop-tab px-3 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all text-slate-400 hover:text-white hover:bg-white/5" data-target="5">Fixer Oil</button>
+          </div>
+        </div>
+
+        <!-- Escenario Principal: Grid 50/50 -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center min-h-[520px]">
           
-          <!-- Botones de Acción de Sercrop -->
-          <div class="flex flex-wrap items-center justify-center gap-4">
-            <a 
-              href="https://wa.me/595975679274?text=Hola,%20solicito%20informacion%20completa%20sobre%20la%20gama%20de%20productos%20Sercrop" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              class="rounded-full px-7 py-3 font-bold text-xs uppercase tracking-wider text-white bg-[#EA580C] hover:bg-[#C2410C] shadow-sm hover:shadow transition-all inline-flex items-center gap-2"
-            >
-              <span>Conozca toda nuestra gama de productos</span>
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-              </svg>
-            </a>
+          <!-- Columna Izquierda: Ficha Técnica Activa -->
+          <div class="lg:col-span-7 relative h-[440px] sm:h-[460px] flex items-center z-20">
+            
+            <!-- 1. Cobre-Ni -->
+            <div class="sercrop-panel absolute inset-0 flex flex-col justify-center transition-all duration-700 opacity-100 translate-x-0" data-index="0" data-color="#00D2D3">
+              <span class="text-xs font-extrabold uppercase tracking-widest text-[#00D2D3] mb-2">Escudo Sistémico Multisitio</span>
+              <h3 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white mb-4">CROP COBRE-NI</h3>
+              <p class="text-slate-300 text-sm sm:text-base leading-relaxed max-w-xl mb-6">
+                Fungicida/bactericida multisitio. Ataca a la célula fúngica en diferentes regiones, evitando que la enfermedad cree resistencia a productos sistémicos.
+              </p>
+              <div class="grid grid-cols-2 gap-4 mb-8 max-w-xl">
+                <div class="bg-white/5 border border-white/10 rounded-xl p-4 backdrop-blur-md">
+                  <span class="block text-[#00D2D3] text-xs font-bold uppercase mb-1">Composición Química</span>
+                  <ul class="text-xs text-slate-300 space-y-1 font-mono">
+                    <li>• P2O5: 10% | Cu: 5%</li>
+                    <li>• Ni: 2% | Boro: 0.5%</li>
+                    <li>• Citoquinina: 0.1%</li>
+                  </ul>
+                </div>
+                <div class="bg-white/5 border border-white/10 rounded-xl p-4 backdrop-blur-md">
+                  <span class="block text-[#00D2D3] text-xs font-bold uppercase mb-1">Recomendación Dosis</span>
+                  <div class="text-2xl font-black text-white">300 - 350 <span class="text-xs font-normal text-slate-400">ml/ha</span></div>
+                  <span class="text-xs text-slate-400">Soja (Vn-R3), Canola, Trigo</span>
+                </div>
+              </div>
+              <div class="flex items-center gap-4">
+                <a href="https://wa.me/595975679274?text=Hola,%20solicito%20cotizacion%20de%20CROP%20COBRE-NI" target="_blank" class="btn-whatsapp-glow">
+                  <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.867-2.03-.967-.272-.099-.47-.148-.669.15-.198.297-.768.966-.941 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
+                  <span>Cotizar Cobre-Ni</span>
+                </a>
+              </div>
+            </div>
 
-            <a 
-              href="/docs/linea-sercrop.pdf" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              class="rounded-full px-6 py-3 font-bold text-xs uppercase tracking-wider text-[#1B4332] bg-slate-50 hover:bg-slate-100 border border-[#1B4332]/30 transition-all inline-flex items-center gap-2"
-            >
-              <svg class="w-4 h-4 text-[#1B4332]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-              </svg>
-              <span>Descargar Ficha Técnica Sercrop (PDF)</span>
-            </a>
+            <!-- 2. Force -->
+            <div class="sercrop-panel absolute inset-0 flex flex-col justify-center transition-all duration-700 opacity-0 translate-x-8 pointer-events-none" data-index="1" data-color="#18D253">
+              <span class="text-xs font-extrabold uppercase tracking-widest text-[#18D253] mb-2">Desarrollo Radicular & F.B.N.</span>
+              <h3 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white mb-4">CROP FORCE</h3>
+              <p class="text-slate-300 text-sm sm:text-base leading-relaxed max-w-xl mb-6">
+                Enraizante con minerales (Co, Mo) y hormonas. Promueve una acción única sobre la fisiología de la planta, aumentando la Fijación Biológica de Nitrógeno.
+              </p>
+              <div class="grid grid-cols-2 gap-4 mb-8 max-w-xl">
+                <div class="bg-white/5 border border-white/10 rounded-xl p-4 backdrop-blur-md">
+                  <span class="block text-[#18D253] text-xs font-bold uppercase mb-1">Balance Hormonal</span>
+                  <ul class="text-xs text-slate-300 space-y-1 font-mono">
+                    <li>• Cobalto (1.0%) | Mo (10.7%)</li>
+                    <li>• Auxinas (AIA) | Citoquinina</li>
+                    <li>• Giberelina (GA3)</li>
+                  </ul>
+                </div>
+                <div class="bg-white/5 border border-white/10 rounded-xl p-4 backdrop-blur-md">
+                  <span class="block text-[#18D253] text-xs font-bold uppercase mb-1">Tratamiento Semilla</span>
+                  <div class="text-2xl font-black text-white">150 - 300 <span class="text-xs font-normal text-slate-400">ml/100Kg</span></div>
+                  <span class="text-xs text-slate-400">Soja, Trigo (Maíz: 250-500ml)</span>
+                </div>
+              </div>
+              <div class="flex items-center gap-4">
+                <a href="https://wa.me/595975679274?text=Hola,%20solicito%20cotizacion%20de%20CROP%20FORCE" target="_blank" class="btn-whatsapp-glow">
+                  <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.867-2.03-.967-.272-.099-.47-.148-.669.15-.198.297-.768.966-.941 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
+                  <span>Cotizar Crop-Force</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- 3. Fix -->
+            <div class="sercrop-panel absolute inset-0 flex flex-col justify-center transition-all duration-700 opacity-0 translate-x-8 pointer-events-none" data-index="2" data-color="#00A8FF">
+              <span class="text-xs font-extrabold uppercase tracking-widest text-[#00A8FF] mb-2">Adyuvante Siliconado Premium</span>
+              <h3 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white mb-4">CROP FIX</h3>
+              <p class="text-slate-300 text-sm sm:text-base leading-relaxed max-w-xl mb-6">
+                Reductor de alto rendimiento. Estabiliza el pH del agua, evita la formación de espuma y reduce la deriva en aplicaciones exigentes.
+              </p>
+              <div class="grid grid-cols-2 gap-4 mb-8 max-w-xl">
+                <div class="bg-white/5 border border-white/10 rounded-xl p-4 backdrop-blur-md">
+                  <span class="block text-[#00A8FF] text-xs font-bold uppercase mb-1">Acción Físico-Química</span>
+                  <ul class="text-xs text-slate-300 space-y-1">
+                    <li>• Anti deriva y Anti espuma</li>
+                    <li>• Reductor de pH activo</li>
+                    <li>• Secuestrante de Cationes</li>
+                  </ul>
+                </div>
+                <div class="bg-white/5 border border-white/10 rounded-xl p-4 backdrop-blur-md">
+                  <span class="block text-[#00A8FF] text-xs font-bold uppercase mb-1">Dosis Agroquímicos</span>
+                  <div class="text-2xl font-black text-white">50 - 100 <span class="text-xs font-normal text-slate-400">ml/ha</span></div>
+                  <span class="text-xs text-slate-400">Herbicida, Insecticida, Fungicida</span>
+                </div>
+              </div>
+              <div class="flex items-center gap-4">
+                <a href="https://wa.me/595975679274?text=Hola,%20solicito%20cotizacion%20de%20CROP%20FIX" target="_blank" class="btn-whatsapp-glow">
+                  <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.867-2.03-.967-.272-.099-.47-.148-.669.15-.198.297-.768.966-.941 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
+                  <span>Cotizar Crop-Fix</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- 4. Citrus -->
+            <div class="sercrop-panel absolute inset-0 flex flex-col justify-center transition-all duration-700 opacity-0 translate-x-8 pointer-events-none" data-index="3" data-color="#FFA000">
+              <span class="text-xs font-extrabold uppercase tracking-widest text-[#FFA000] mb-2">Potenciador con Extractos</span>
+              <h3 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white mb-4">CROP-CITRUS</h3>
+              <p class="text-slate-300 text-sm sm:text-base leading-relaxed max-w-xl mb-6">
+                Coadyuvante con aceite de naranja. Diseñado para mejorar la eficiencia del pulverizado con efecto homogeneizante y acción translaminar rápida.
+              </p>
+              <div class="grid grid-cols-2 gap-4 mb-8 max-w-xl">
+                <div class="bg-white/5 border border-white/10 rounded-xl p-4 backdrop-blur-md">
+                  <span class="block text-[#FFA000] text-xs font-bold uppercase mb-1">Propiedades de Mezcla</span>
+                  <ul class="text-xs text-slate-300 space-y-1">
+                    <li>• Acción Translaminar total</li>
+                    <li>• Homogeneizante de caldo</li>
+                    <li>• Anti deriva y Anti espuma</li>
+                  </ul>
+                </div>
+                <div class="bg-white/5 border border-white/10 rounded-xl p-4 backdrop-blur-md">
+                  <span class="block text-[#FFA000] text-xs font-bold uppercase mb-1">Dosis Fumigación</span>
+                  <div class="text-2xl font-black text-white">50 - 100 <span class="text-xs font-normal text-slate-400">ml/ha</span></div>
+                  <span class="text-xs text-slate-400">Excelente con fungicidas</span>
+                </div>
+              </div>
+              <div class="flex items-center gap-4">
+                <a href="https://wa.me/595975679274?text=Hola,%20solicito%20cotizacion%20de%20CROP-CITRUS" target="_blank" class="btn-whatsapp-glow">
+                  <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.867-2.03-.967-.272-.099-.47-.148-.669.15-.198.297-.768.966-.941 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
+                  <span>Cotizar Crop-Citrus</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- 5. Aero-Tech -->
+            <div class="sercrop-panel absolute inset-0 flex flex-col justify-center transition-all duration-700 opacity-0 translate-x-8 pointer-events-none" data-index="4" data-color="#FF9100">
+              <span class="text-xs font-extrabold uppercase tracking-widest text-[#FF9100] mb-2">Aplicación ULV</span>
+              <h3 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white mb-4">AERO-TECH</h3>
+              <p class="text-slate-300 text-sm sm:text-base leading-relaxed max-w-xl mb-6">
+                Formulación de Ultra Bajo Volumen para pulverizaciones aéreas y drones. Cero evaporación de gotas y máxima protección ante deriva por viento.
+              </p>
+              <div class="grid grid-cols-2 gap-4 mb-8 max-w-xl">
+                <div class="bg-white/5 border border-white/10 rounded-xl p-4 backdrop-blur-md">
+                  <span class="block text-[#FF9100] text-xs font-bold uppercase mb-1">Ingeniería de Pulverizado</span>
+                  <ul class="text-xs text-slate-300 space-y-1">
+                    <li>• Cero evaporación en vuelo</li>
+                    <li>• Antideriva estandarizada</li>
+                    <li>• Densidad balanceada</li>
+                  </ul>
+                </div>
+                <div class="bg-white/5 border border-white/10 rounded-xl p-4 backdrop-blur-md">
+                  <span class="block text-[#FF9100] text-xs font-bold uppercase mb-1">Equipos Homologados</span>
+                  <div class="text-base font-black text-white mt-1 leading-tight">
+                    Drones DJI Agras<br><span class="text-xs font-normal text-slate-400">y Aviones Agrícolas</span>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center gap-4">
+                <a href="https://wa.me/595975679274?text=Hola,%20solicito%20cotizacion%20de%20AERO-TECH" target="_blank" class="btn-whatsapp-glow">
+                  <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.867-2.03-.967-.272-.099-.47-.148-.669.15-.198.297-.768.966-.941 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
+                  <span>Cotizar Aero-Tech</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- 6. Fixer Oil -->
+            <div class="sercrop-panel absolute inset-0 flex flex-col justify-center transition-all duration-700 opacity-0 translate-x-8 pointer-events-none" data-index="5" data-color="#10AC84">
+              <span class="text-xs font-extrabold uppercase tracking-widest text-[#10AC84] mb-2">Fertilizante Mineral Mixto</span>
+              <h3 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white mb-4">CROP-FIXER OIL</h3>
+              <p class="text-slate-300 text-sm sm:text-base leading-relaxed max-w-xl mb-6">
+                Disuelve las ceras cuticulares de la hoja eliminando las barreras de absorción. Neutraliza los cationes de aguas duras.
+              </p>
+              <div class="grid grid-cols-2 gap-4 mb-8 max-w-xl">
+                <div class="bg-white/5 border border-white/10 rounded-xl p-4 backdrop-blur-md">
+                  <span class="block text-[#10AC84] text-xs font-bold uppercase mb-1">Impacto Biológico</span>
+                  <ul class="text-xs text-slate-300 space-y-1">
+                    <li>• Rompe la tensión superficial</li>
+                    <li>• Uniformidad desecación ++</li>
+                    <li>• Extravasación celular</li>
+                  </ul>
+                </div>
+                <div class="bg-white/5 border border-white/10 rounded-xl p-4 backdrop-blur-md">
+                  <span class="block text-[#10AC84] text-xs font-bold uppercase mb-1">Potenciador Herbicidas</span>
+                  <div class="text-2xl font-black text-white">0.5 - 1.0 <span class="text-xs font-normal text-slate-400">Lt/ha</span></div>
+                  <span class="text-xs text-slate-400">Glifosato, Paraquat (0.5 a 1% calda)</span>
+                </div>
+              </div>
+              <div class="flex items-center gap-4">
+                <a href="https://wa.me/595975679274?text=Hola,%20solicito%20cotizacion%20de%20CROP-FIXER%20OIL" target="_blank" class="btn-whatsapp-glow">
+                  <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.867-2.03-.967-.272-.099-.47-.148-.669.15-.198.297-.768.966-.941 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
+                  <span>Cotizar Fixer Oil</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Columna Derecha: Botella Monumental + Aura + Flechas de Control -->
+          <div class="lg:col-span-5 relative h-[420px] sm:h-[500px] flex items-center justify-center">
+            
+            <div id="sercrop-aura" class="absolute w-72 sm:w-96 h-72 sm:h-96 rounded-full blur-[140px] opacity-40 transition-all duration-1000 pointer-events-none" style="background-color: #00D2D3;"></div>
+
+            <!-- Botellas -->
+            <div class="relative w-full h-full flex items-center justify-center">
+              <img id="bottle-0" src="/images/sercrop/crop_cobre_ni_clean.png" alt="Crop Cobre-Ni" class="sercrop-bottle absolute max-h-[380px] sm:max-h-[480px] object-contain transition-all duration-700 opacity-100 scale-100 drop-shadow-2xl">
+              <img id="bottle-1" src="/images/sercrop/crop_force_clean.png" alt="Crop Force" class="sercrop-bottle absolute max-h-[380px] sm:max-h-[480px] object-contain transition-all duration-700 opacity-0 scale-75 pointer-events-none drop-shadow-2xl">
+              <img id="bottle-2" src="/images/sercrop/crop_fix_oficial.png" alt="Crop Fix" class="sercrop-bottle absolute max-h-[380px] sm:max-h-[480px] object-contain transition-all duration-700 opacity-0 scale-75 pointer-events-none drop-shadow-2xl">
+              <img id="bottle-3" src="/images/sercrop/crop_citrus_oficial.png" alt="Crop Citrus" class="sercrop-bottle absolute max-h-[380px] sm:max-h-[480px] object-contain transition-all duration-700 opacity-0 scale-75 pointer-events-none drop-shadow-2xl">
+              <img id="bottle-4" src="/images/sercrop/aero_tech_drone.webp" alt="Aero Tech" class="sercrop-bottle absolute max-h-[380px] sm:max-h-[480px] object-contain transition-all duration-700 opacity-0 scale-75 pointer-events-none drop-shadow-2xl">
+              <img id="bottle-5" src="/images/sercrop/crop_fixer_oil_clean.png" alt="Crop Fixer Oil" class="sercrop-bottle absolute max-h-[380px] sm:max-h-[480px] object-contain transition-all duration-700 opacity-0 scale-75 pointer-events-none drop-shadow-2xl">
+            </div>
+
+            <!-- Botones Laterales Flotantes (< y >) -->
+            <button id="btn-prev" aria-label="Anterior" class="absolute left-0 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white/10 hover:bg-white/20 text-white backdrop-blur-md flex items-center justify-center transition border border-white/20 z-30">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7"/></svg>
+            </button>
+            <button id="btn-next" aria-label="Siguiente" class="absolute right-0 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white/10 hover:bg-white/20 text-white backdrop-blur-md flex items-center justify-center transition border border-white/20 z-30">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg>
+            </button>
+
+          </div>
+
+        </div>
+
+        <!-- Barra Inferior: 6 Barras de Progreso Dinámicas -->
+        <div class="mt-8 pt-4 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+          <div class="flex items-center gap-3">
+            <span class="font-mono text-white font-bold" id="counter-display">01 / 06</span>
+            <span class="text-[11px] text-slate-500">Pase el cursor por encima para pausar</span>
+          </div>
+
+          <div class="flex gap-2 w-full sm:w-auto">
+            <div class="sercrop-progress-track flex-1 sm:w-16 h-1.5 rounded-full bg-white/10 overflow-hidden cursor-pointer" data-target="0">
+              <div class="sercrop-progress-bar h-full w-0 bg-[#00D2D3] transition-all"></div>
+            </div>
+            <div class="sercrop-progress-track flex-1 sm:w-16 h-1.5 rounded-full bg-white/10 overflow-hidden cursor-pointer" data-target="1">
+              <div class="sercrop-progress-bar h-full w-0 bg-[#18D253] transition-all"></div>
+            </div>
+            <div class="sercrop-progress-track flex-1 sm:w-16 h-1.5 rounded-full bg-white/10 overflow-hidden cursor-pointer" data-target="2">
+              <div class="sercrop-progress-bar h-full w-0 bg-[#00A8FF] transition-all"></div>
+            </div>
+            <div class="sercrop-progress-track flex-1 sm:w-16 h-1.5 rounded-full bg-white/10 overflow-hidden cursor-pointer" data-target="3">
+              <div class="sercrop-progress-bar h-full w-0 bg-[#FFA000] transition-all"></div>
+            </div>
+            <div class="sercrop-progress-track flex-1 sm:w-16 h-1.5 rounded-full bg-white/10 overflow-hidden cursor-pointer" data-target="4">
+              <div class="sercrop-progress-bar h-full w-0 bg-[#FF9100] transition-all"></div>
+            </div>
+            <div class="sercrop-progress-track flex-1 sm:w-16 h-1.5 rounded-full bg-white/10 overflow-hidden cursor-pointer" data-target="5">
+              <div class="sercrop-progress-bar h-full w-0 bg-[#10AC84] transition-all"></div>
+            </div>
           </div>
         </div>
 
-        <!-- Catálogo de 5 Productos -->
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- 1. Crop-Cobre-Ni -->
-          <div class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all overflow-hidden flex flex-col justify-between border-t-4 border-[#1B4332]">
-            <div>
-              <div class="h-60 bg-slate-50 flex items-center justify-center p-4 border-b border-slate-100">
-                <img src="/images/crop-cobre-ni.jpeg" alt="Crop-Cobre-Ni" class="max-h-full max-w-full object-contain" />
-              </div>
-              <div class="p-6">
-                <h3 class="text-xl font-bold text-[#1E293B] mb-2">Crop-Cobre-Ni</h3>
-                <p class="text-sm text-slate-600 leading-relaxed mb-4">
-                  Bioestimulación sistémica, sanidad y balance mineral. Formulado para etapas críticas, superación de estrés y llenado uniforme de granos.
-                </p>
-              </div>
-            </div>
-            <div class="p-6 pt-0">
-              <a href="https://wa.me/595975679274?text=Hola,%20solicito%20cotizacion%20de%20Crop-Cobre-Ni" target="_blank" rel="noopener noreferrer" class="w-full rounded-full py-2.5 px-4 font-bold text-sm text-white bg-[#EA580C] hover:bg-[#C2410C] text-center inline-block">
-                Consultar Producto
-              </a>
-            </div>
-          </div>
-
-          <!-- 2. Crop-Force -->
-          <div class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all overflow-hidden flex flex-col justify-between border-t-4 border-[#1B4332]">
-            <div>
-              <div class="h-60 bg-slate-50 flex items-center justify-center p-4 border-b border-slate-100">
-                <img src="/images/sercrop-crop-force.jpeg" alt="Crop-Force" class="max-h-full max-w-full object-contain" />
-              </div>
-              <div class="p-6">
-                <h3 class="text-xl font-bold text-[#1E293B] mb-2">Crop-Force</h3>
-                <p class="text-sm text-slate-600 leading-relaxed mb-4">
-                  Bioestimulante concentrado para desarrollo radicular vigoroso, brotación homogénea y respuesta rápida tras heladas o sequía.
-                </p>
-              </div>
-            </div>
-            <div class="p-6 pt-0">
-              <a href="https://wa.me/595975679274?text=Hola,%20solicito%20cotizacion%20de%20Crop-Force" target="_blank" rel="noopener noreferrer" class="w-full rounded-full py-2.5 px-4 font-bold text-sm text-white bg-[#EA580C] hover:bg-[#C2410C] text-center inline-block">
-                Consultar Producto
-              </a>
-            </div>
-          </div>
-
-          <!-- 3. Crop-Fix -->
-          <div class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all overflow-hidden flex flex-col justify-between border-t-4 border-[#1B4332]">
-            <div>
-              <div class="h-60 bg-slate-50 flex items-center justify-center p-4 border-b border-slate-100">
-                <img src="/images/crop-fix.jpeg" alt="Crop-Fix" class="max-h-full max-w-full object-contain" />
-              </div>
-              <div class="p-6">
-                <h3 class="text-xl font-bold text-[#1E293B] mb-2">Crop-Fix</h3>
-                <p class="text-sm text-slate-600 leading-relaxed mb-4">
-                  Coadyuvante tensioactivo y fijador premium antideriva. Reduce pérdidas por evaporación y garantiza adherencia frente a lluvias imprevistas.
-                </p>
-              </div>
-            </div>
-            <div class="p-6 pt-0">
-              <a href="https://wa.me/595975679274?text=Hola,%20solicito%20cotizacion%20de%20Crop-Fix" target="_blank" rel="noopener noreferrer" class="w-full rounded-full py-2.5 px-4 font-bold text-sm text-white bg-[#EA580C] hover:bg-[#C2410C] text-center inline-block">
-                Consultar Producto
-              </a>
-            </div>
-          </div>
-
-          <!-- 4. Crop-Citrus -->
-          <div class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all overflow-hidden flex flex-col justify-between border-t-4 border-[#1B4332]">
-            <div>
-              <div class="h-60 bg-slate-50 flex items-center justify-center p-4 border-b border-slate-100">
-                <img src="/images/crop-citrus.jpeg" alt="Crop-Citrus" class="max-h-full max-w-full object-contain" />
-              </div>
-              <div class="p-6">
-                <h3 class="text-xl font-bold text-[#1E293B] mb-2">Crop-Citrus</h3>
-                <p class="text-sm text-slate-600 leading-relaxed mb-4">
-                  Corrector foliar específico con micronutrientes quelatados para frutales, cítricos y cultivos de alta demanda nutricional.
-                </p>
-              </div>
-            </div>
-            <div class="p-6 pt-0">
-              <a href="https://wa.me/595975679274?text=Hola,%20solicito%20cotizacion%20de%20Crop-Citrus" target="_blank" rel="noopener noreferrer" class="w-full rounded-full py-2.5 px-4 font-bold text-sm text-white bg-[#EA580C] hover:bg-[#C2410C] text-center inline-block">
-                Consultar Producto
-              </a>
-            </div>
-          </div>
-
-          <!-- 5. Aero-Tech -->
-          <div class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all overflow-hidden flex flex-col justify-between border-t-4 border-[#1B4332]">
-            <div>
-              <div class="h-60 bg-slate-50 flex items-center justify-center p-4 border-b border-slate-100">
-                <img src="/images/sercrop-aerotech.jpeg" alt="Aero-Tech" class="max-h-full max-w-full object-contain" />
-              </div>
-              <div class="p-6">
-                <h3 class="text-xl font-bold text-[#1E293B] mb-2">Aero-Tech</h3>
-                <p class="text-sm text-slate-600 leading-relaxed mb-4">
-                  Formulador específico para aplicaciones aéreas y de ultra bajo volumen (ULV). Máxima homogeneidad en caldos complejos.
-                </p>
-              </div>
-            </div>
-            <div class="p-6 pt-0">
-              <a href="https://wa.me/595975679274?text=Hola,%20solicito%20cotizacion%20de%20Aero-Tech" target="_blank" rel="noopener noreferrer" class="w-full rounded-full py-2.5 px-4 font-bold text-sm text-white bg-[#EA580C] hover:bg-[#C2410C] text-center inline-block">
-                Consultar Producto
-              </a>
-            </div>
-          </div>
-        </div>
       </div>
+
+      <style is:global>
+        .btn-whatsapp-glow {
+          position: relative;
+          overflow: hidden;
+          display: inline-flex;
+          align-items: center;
+          gap: 0.75rem;
+          border-radius: 9999px;
+          padding: 0.875rem 2rem;
+          font-weight: 800;
+          font-size: 0.8rem;
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+          color: white;
+          background: linear-gradient(135deg, #EA580C 0%, #F97316 50%, #EA580C 100%);
+          box-shadow: 0 0 25px rgba(234, 88, 12, 0.6), 0 4px 12px rgba(0, 0, 0, 0.3);
+          transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .btn-whatsapp-glow:hover {
+          transform: translateY(-2px) scale(1.03);
+          box-shadow: 0 0 40px rgba(234, 88, 12, 0.9), 0 6px 20px rgba(0, 0, 0, 0.4);
+        }
+        .btn-whatsapp-glow::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: -100%;
+          width: 60%;
+          height: 100%;
+          background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+          transform: skewX(-20deg);
+          animation: btn-shine 2.5s infinite;
+        }
+        @keyframes btn-shine {
+          0% { left: -100%; }
+          35% { left: 200%; }
+          100% { left: 200%; }
+        }
+      </style>
+
+      <script is:inline>
+        const panels = document.querySelectorAll('.sercrop-panel');
+        const bottles = document.querySelectorAll('.sercrop-bottle');
+        const tabs = document.querySelectorAll('.sercrop-tab');
+        const tracks = document.querySelectorAll('.sercrop-progress-track');
+        const bars = document.querySelectorAll('.sercrop-progress-bar');
+        const aura = document.getElementById('sercrop-aura');
+        const counter = document.getElementById('counter-display');
+        const theater = document.getElementById('sercrop-theater');
+        const prevBtn = document.getElementById('btn-prev');
+        const nextBtn = document.getElementById('btn-next');
+
+        let current = 0;
+        const TOTAL = 6;
+        const INTERVAL_TIME = 6000;
+        let progress = 0;
+        let timer = null;
+        let isPaused = false;
+
+        function updateSlide(index) {
+          current = (index + TOTAL) % TOTAL;
+          progress = 0;
+
+          // 1. Paneles de texto
+          panels.forEach((p, idx) => {
+            if (idx === current) {
+              p.classList.remove('opacity-0', 'translate-x-8', 'pointer-events-none');
+              p.classList.add('opacity-100', 'translate-x-0');
+              const color = p.getAttribute('data-color');
+              if (aura && color) aura.style.backgroundColor = color;
+            } else {
+              p.classList.add('opacity-0', 'translate-x-8', 'pointer-events-none');
+              p.classList.remove('opacity-100', 'translate-x-0');
+            }
+          });
+
+          // 2. Botellas
+          bottles.forEach((b, idx) => {
+            if (idx === current) {
+              b.classList.remove('opacity-0', 'scale-75', 'pointer-events-none');
+              b.classList.add('opacity-100', 'scale-100');
+            } else {
+              b.classList.add('opacity-0', 'scale-75', 'pointer-events-none');
+              b.classList.remove('opacity-100', 'scale-100');
+            }
+          });
+
+          // 3. Pestañas
+          tabs.forEach((tab, idx) => {
+            const color = panels[current].getAttribute('data-color') || '#00D2D3';
+            if (idx === current) {
+              tab.className = `sercrop-tab px-3 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all border`;
+              tab.style.backgroundColor = `${color}25`;
+              tab.style.color = color;
+              tab.style.borderColor = `${color}60`;
+            } else {
+              tab.className = 'sercrop-tab px-3 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all text-slate-400 hover:text-white hover:bg-white/5';
+              tab.style.backgroundColor = '';
+              tab.style.color = '';
+              tab.style.borderColor = '';
+            }
+          });
+
+          // 4. Barras de progreso
+          bars.forEach((bar, idx) => {
+            if (idx < current) {
+              bar.style.width = '100%';
+            } else if (idx === current) {
+              bar.style.width = '0%';
+            } else {
+              bar.style.width = '0%';
+            }
+          });
+
+          // 5. Contador
+          if (counter) {
+            counter.textContent = `0${current + 1} / 0${TOTAL}`;
+          }
+        }
+
+        // Bucle de animación suave (cada 50ms)
+        function startLoop() {
+          clearInterval(timer);
+          timer = setInterval(() => {
+            if (!isPaused) {
+              progress += 50;
+              const pct = Math.min((progress / INTERVAL_TIME) * 100, 100);
+              if (bars[current]) bars[current].style.width = `${pct}%`;
+
+              if (progress >= INTERVAL_TIME) {
+                updateSlide(current + 1);
+              }
+            }
+          }, 50);
+        }
+
+        // Controles de Pestañas y Barras
+        tabs.forEach(t => {
+          t.addEventListener('click', () => {
+            const target = parseInt(t.getAttribute('data-target'));
+            updateSlide(target);
+          });
+        });
+
+        tracks.forEach(tr => {
+          tr.addEventListener('click', () => {
+            const target = parseInt(tr.getAttribute('data-target'));
+            updateSlide(target);
+          });
+        });
+
+        // Flechas Prev / Next
+        if (prevBtn) prevBtn.addEventListener('click', () => updateSlide(current - 1));
+        if (nextBtn) nextBtn.addEventListener('click', () => updateSlide(current + 1));
+
+        // Pausa al pasar el mouse por encima
+        if (theater) {
+          theater.addEventListener('mouseenter', () => { isPaused = true; });
+          theater.addEventListener('mouseleave', () => { isPaused = false; });
+        }
+
+        // Soporte Swipe Táctil (Móvil / Tablet)
+        let touchStartX = 0;
+        let touchEndX = 0;
+
+        if (theater) {
+          theater.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+          }, { passive: true });
+
+          theater.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            if (touchStartX - touchEndX > 50) {
+              // Swipe izquierda -> siguiente
+              updateSlide(current + 1);
+            } else if (touchEndX - touchStartX > 50) {
+              // Swipe derecha -> anterior
+              updateSlide(current - 1);
+            }
+          }, { passive: true });
+        }
+
+        // Inicializar
+        updateSlide(0);
+        startLoop();
+      </script>
     </section>
 
-    <!-- 4. HARDWARE AGRONÓMICO & PRECISIÓN SATELITAL (GUIADO & CONTROL DE IMPLEMENTOS) -->
+    <!-- HARDWARE -->
     <section id="hardware" class="py-20 bg-[#F8FAFC] border-b border-slate-200">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center max-w-3xl mx-auto mb-14">
-          <span class="text-[#EA580C] font-bold text-xs uppercase tracking-widest">Guiado Satelital & Control de Implementos</span>
-          <h2 class="text-3xl sm:text-4xl font-extrabold text-[#1E293B] mt-2 mb-3">Hardware Agronómico & Precisión Centimétrica</h2>
-          <div class="w-16 h-1 bg-[#1B4332] mx-auto rounded-full"></div>
+        <div class="text-center max-w-4xl mx-auto mb-14">
+          <span class="text-[#EA580C] font-bold text-xs uppercase tracking-widest">Proveedores y Soporte Técnico Oficial</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-[#1E293B] mt-2 mb-3">Soluciones ISOBUS y Equipamiento RTK en Paraguay</h2>
+          <div class="w-16 h-1 bg-[#1B4332] mx-auto rounded-full mb-6"></div>
+          <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+            En Cultivar S.A. somos su nexo directo con la tecnología de <strong>Farmnavigator</strong> y <strong>RTKPro</strong>. Proveemos, instalamos y damos soporte local a terminales ISOBUS universales y antenas RTK de precisión centimétrica que se adaptan al tractor y los implementos que usted ya tiene.
+          </p>
         </div>
-
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
-          <!-- 1. Consola G12 Panorama -->
-          <div class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all overflow-hidden flex flex-col justify-between border-t-4 border-[#1B4332]">
-            <div>
-              <div class="h-52 bg-slate-50 flex items-center justify-center p-4 border-b border-slate-100">
-                <img 
-                  src="/images/FARMNAVIGATOR_G12PANORAMA_orizzontale_verticale.png" 
-                  alt="Farmnavigator G12 Panorama" 
-                  class="max-h-full max-w-full object-contain" 
-                />
-              </div>
-              <div class="p-5">
-                <span class="inline-block text-xs font-bold px-2 py-0.5 bg-blue-50 text-blue-800 rounded-full mb-2">Terminal Virtual ISOBUS</span>
-                <h3 class="text-lg font-bold text-[#1E293B] mb-2">Consola G12 Panorama</h3>
-                <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
-                  Terminal Virtual ISOBUS (VT) y Task Controller en pantalla de 12 pulgadas. Guiado paralelo y control de dosis variable.
-                </p>
-              </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="bg-white rounded-2xl border border-slate-200 shadow-sm border-t-4 border-[#1B4332]">
+            <div class="h-52 bg-slate-50 flex items-center justify-center p-4"><img src="/images/FARMNAVIGATOR_G12PANORAMA_orizzontale_verticale.png" class="max-h-full max-w-full" alt="Consola G12 Farmnavigator Cultivar"></div>
+            <div class="p-5">
+              <span class="text-xs font-bold text-blue-800 bg-blue-50 px-2 rounded-full mb-2 inline-block">Distribución Farmnavigator</span>
+              <h3 class="text-lg font-bold text-[#1E293B] mb-2">Consola G12 Panorama</h3>
+              <p class="text-slate-600 text-xs">Terminal Virtual ISOBUS (VT) universal de 12". Control de dosis y guiado en pantalla de alto brillo. Instalación garantizada.</p>
             </div>
-            <div class="p-5 pt-0">
-              <a href="https://wa.me/595975679274?text=Hola,%20deseo%20cotizar%20la%20pantalla%20Farmnavigator%20G12%20Panorama" target="_blank" rel="noopener noreferrer" class="w-full rounded-full py-2.5 px-4 font-bold text-xs uppercase tracking-wider text-white bg-[#EA580C] hover:bg-[#C2410C] text-center inline-block shadow-sm">
-                Cotizar G12
-              </a>
-            </div>
+            <div class="p-5 pt-0"><a href="https://wa.me/595975679274?text=Cotizar%20Consola%20Farmnavigator" target="_blank" class="w-full rounded-full py-2 px-4 font-bold text-xs text-white bg-[#EA580C] text-center inline-block">Cotizar su Equipo</a></div>
           </div>
-
-          <!-- 2. Solución ISOBUS: Control de Implementos -->
-          <div class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all overflow-hidden flex flex-col justify-between border-t-4 border-[#1B4332]">
-            <div>
-              <div class="h-52 bg-slate-50 flex items-center justify-center p-4 border-b border-slate-100">
-                <img 
-                  src="/images/isobus_farmnavigator.jpg" 
-                  alt="Control ISOBUS de Implementos Farmnavigator" 
-                  class="max-h-full max-w-full object-contain" 
-                />
-              </div>
-              <div class="p-5">
-                <span class="inline-block text-xs font-bold px-2 py-0.5 bg-purple-50 text-purple-800 rounded-full mb-2">Control de Implemento</span>
-                <h3 class="text-lg font-bold text-[#1E293B] mb-2">Control ISOBUS Activo</h3>
-                <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
-                  Automatización del apero: control de secciones automático (TC-SC), monitoreo de profundidad y eliminación de solapamientos.
-                </p>
-              </div>
+          <div class="bg-white rounded-2xl border border-slate-200 shadow-sm border-t-4 border-[#1B4332]">
+            <div class="h-52 bg-slate-50 flex items-center justify-center p-4"><img src="/images/isobus_farmnavigator.jpg" class="max-h-full max-w-full" alt="Control ISOBUS Cultivar"></div>
+            <div class="p-5">
+              <span class="text-xs font-bold text-purple-800 bg-purple-50 px-2 rounded-full mb-2 inline-block">Actualización de Maquinaria</span>
+              <h3 class="text-lg font-bold text-[#1E293B] mb-2">Módulos ISOBUS (Retrofit)</h3>
+              <p class="text-slate-600 text-xs">Modernizamos su pulverizadora o sembradora actual. Corte por secciones automático (TC-SC) y ahorro inmediato en insumos.</p>
             </div>
-            <div class="p-5 pt-0">
-              <a href="https://wa.me/595975679274?text=Hola,%20deseo%20cotizar%20la%20solucion%20ISOBUS%20para%20control%20de%20implementos" target="_blank" rel="noopener noreferrer" class="w-full rounded-full py-2.5 px-4 font-bold text-xs uppercase tracking-wider text-white bg-[#EA580C] hover:bg-[#C2410C] text-center inline-block shadow-sm">
-                Cotizar ISOBUS
-              </a>
-            </div>
+            <div class="p-5 pt-0"><a href="https://wa.me/595975679274?text=Consulta%20sobre%20modulos%20ISOBUS" target="_blank" class="w-full rounded-full py-2 px-4 font-bold text-xs text-white bg-[#EA580C] text-center inline-block">Consultar Instalación</a></div>
           </div>
-
-          <!-- 3. Antena All in One RTK -->
-          <div class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all overflow-hidden flex flex-col justify-between border-t-4 border-[#1B4332]">
-            <div>
-              <div class="h-52 bg-slate-50 flex items-center justify-center p-4 border-b border-slate-100">
-                <img 
-                  src="/images/Allinone4GRTK.png" 
-                  alt="Antena Inteligente All in One RTK" 
-                  class="max-h-full max-w-full object-contain" 
-                />
-              </div>
-              <div class="p-5">
-                <span class="inline-block text-xs font-bold px-2 py-0.5 bg-teal-50 text-teal-800 rounded-full mb-2">Receptor GNSS + 4G</span>
-                <h3 class="text-lg font-bold text-[#1E293B] mb-2">Antena All in One RTK</h3>
-                <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
-                  Receptor GNSS multi-constelación con módem 4G integrado, compensación de inclinación y precisión de +/- 2 cm con correcciones RTK.
-                </p>
-              </div>
+          <div class="bg-white rounded-2xl border border-slate-200 shadow-sm border-t-4 border-[#1B4332]">
+            <div class="h-52 bg-slate-50 flex items-center justify-center p-4"><img src="/images/Allinone4GRTK.png" class="max-h-full max-w-full" alt="Antena All in One RTK Cultivar"></div>
+            <div class="p-5">
+              <span class="text-xs font-bold text-teal-800 bg-teal-50 px-2 rounded-full mb-2 inline-block">Antena Inteligente</span>
+              <h3 class="text-lg font-bold text-[#1E293B] mb-2">Receptor All-in-One RTK</h3>
+              <p class="text-slate-600 text-xs">GNSS multifrecuencia (AvMap) con módem 4G integrado y compensación de terreno. Conecte y logre ±2 cm de precisión al instante.</p>
             </div>
-            <div class="p-5 pt-0">
-              <a href="https://wa.me/595975679274?text=Hola,%20deseo%20cotizar%20la%20antena%20All%20in%20One%20RTK" target="_blank" rel="noopener noreferrer" class="w-full rounded-full py-2.5 px-4 font-bold text-xs uppercase tracking-wider text-white bg-[#EA580C] hover:bg-[#C2410C] text-center inline-block shadow-sm">
-                Cotizar Antena RTK
-              </a>
-            </div>
+            <div class="p-5 pt-0"><a href="https://wa.me/595975679274?text=Cotizar%20Antena%20RTK" target="_blank" class="w-full rounded-full py-2 px-4 font-bold text-xs text-white bg-[#EA580C] text-center inline-block">Cotizar Antena 4G</a></div>
           </div>
-
-          <!-- 4. Módulo RTKPro y Suscripciones NTRIP -->
-          <div class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all overflow-hidden flex flex-col justify-between border-t-4 border-[#1B4332]">
-            <div>
-              <div class="h-52 bg-slate-50 flex items-center justify-center p-4 border-b border-slate-100">
-                <img 
-                  src="/images/pluged-rthpro.jpeg" 
-                  alt="Módulo RTKPro y Suscripciones NTRIP" 
-                  class="max-h-full max-w-full object-contain" 
-                />
-              </div>
-              <div class="p-5">
-                <span class="inline-block text-xs font-bold px-2 py-0.5 bg-emerald-50 text-emerald-800 rounded-full mb-2">Suscripción NTRIP</span>
-                <h3 class="text-lg font-bold text-[#1E293B] mb-2">Módulo RTKPro & Señal</h3>
-                <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
-                  Corrección centimétrica sin necesidad de instalar bases fijas en el lote. Suscripciones anuales a la red NTRIP multimarca con cobertura regional.
-                </p>
-              </div>
+          <div class="bg-white rounded-2xl border border-slate-200 shadow-sm border-t-4 border-[#1B4332]">
+            <div class="h-52 bg-slate-50 flex items-center justify-center p-4"><img src="/images/pluged-rthpro.jpeg" class="max-h-full max-w-full" alt="Modulo RTK Pro Cultivar"></div>
+            <div class="p-5">
+              <span class="text-xs font-bold text-emerald-800 bg-emerald-50 px-2 rounded-full mb-2 inline-block">Servicio Activo Cultivar</span>
+              <h3 class="text-lg font-bold text-[#1E293B] mb-2">Módulos & Señal RTKPro</h3>
+              <p class="text-slate-600 text-xs">Adiós a las bases físicas. Habilitamos su piloto (John Deere, Trimble, etc.) a nuestra red de corrección NTRIP por suscripción.</p>
             </div>
-            <div class="p-5 pt-0">
-              <a href="https://wa.me/595975679274?text=Hola,%20deseo%20consultar%20por%20la%20suscripcion%20anual%20de%20senal%20RTKPro%20NTRIP" target="_blank" rel="noopener noreferrer" class="w-full rounded-full py-2.5 px-4 font-bold text-xs uppercase tracking-wider text-white bg-[#EA580C] hover:bg-[#C2410C] text-center inline-block shadow-sm">
-                Suscripción NTRIP
-              </a>
-            </div>
+            <div class="p-5 pt-0"><a href="https://wa.me/595975679274?text=Consulta%20suscripcion%20senal%20RTKPro" target="_blank" class="w-full rounded-full py-2 px-4 font-bold text-xs text-white bg-[#EA580C] text-center inline-block">Ver Planes NTRIP</a></div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- 5. ECOSISTEMA DE CAMPO, TELEMETRÍA Y PLATAFORMA DE INTELIGENCIA -->
+    <!-- INTELIGENCIA & TELEMETRÍA -->
     <section id="inteligencia" class="py-20 bg-white border-b border-slate-200">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-3xl mx-auto mb-14">
-          <span class="text-[#EA580C] font-bold text-xs uppercase tracking-widest">Ecosistema Conectado en Lote</span>
-          <h2 class="text-3xl sm:text-4xl font-extrabold text-[#1E293B] mt-2 mb-3">Siembra de Ultra Precisión, Telemetría & Analítica IA</h2>
+          <span class="text-[#EA580C] font-bold text-xs uppercase tracking-widest">Digitalización Completa del Lote</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-[#1E293B] mt-2 mb-3">Analítica Avanzada y Telemetría Integrada</h2>
           <div class="w-16 h-1 bg-[#1B4332] mx-auto rounded-full"></div>
         </div>
 
-        <!-- Banner Central: Tractor en Siembra -->
-        <div class="rounded-3xl overflow-hidden shadow-xl border border-slate-200 mb-14 relative group">
-          <img 
-            src="/images/imagen-tractor-siembra.jpeg" 
-            alt="Siembra de Ultra Precisión y Telemetría en Campo - Cultivar S.A." 
-            class="w-full h-80 sm:h-96 lg:h-[460px] object-cover" 
-          />
-          <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent flex flex-col justify-end p-6 sm:p-10">
+        <div class="rounded-3xl overflow-hidden shadow-2xl border border-slate-200 mb-14 relative group">
+          <img src="/images/imagen-tractor-siembra.jpeg" alt="Siembra conectada" class="w-full h-80 sm:h-96 lg:h-[500px] object-cover">
+          <div class="absolute bottom-0 left-0 w-full h-1/2 pointer-events-none opacity-80" style="transform: perspective(600px) rotateX(60deg); transform-origin: bottom;">
+            <div class="absolute inset-0 flex justify-center">
+              <div class="w-48 h-[200%] border-l-4 border-r-4 border-emerald-400 shadow-[0_0_20px_rgba(52,211,153,0.8)] opacity-70"></div>
+              <div class="absolute inset-0 bg-[linear-gradient(transparent_48%,rgba(52,211,153,0.3)_50%,transparent_52%)] [background-size:100%_40px] animate-pulse"></div>
+            </div>
+          </div>
+          <div class="absolute top-10 right-10 flex-col items-center pointer-events-none drop-shadow-xl hidden sm:flex">
+            <svg class="w-16 h-16 text-white drop-shadow-[0_0_15px_rgba(255,255,255,1)] mb-2 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path>
+            </svg>
+            <div class="flex gap-3">
+              <div class="w-1 h-32 bg-gradient-to-t from-transparent via-cyan-400 to-white animate-pulse"></div>
+              <div class="w-1 h-24 bg-gradient-to-t from-transparent via-emerald-400 to-white animate-pulse delay-75 mt-8"></div>
+              <div class="w-1 h-40 bg-gradient-to-t from-transparent via-cyan-400 to-white animate-pulse delay-150"></div>
+            </div>
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-6 sm:p-10">
             <div class="max-w-2xl text-white">
-              <span class="px-3 py-1 rounded-full bg-[#EA580C] text-xs font-bold uppercase tracking-wider mb-2 inline-block">Integración Total en el Tractor</span>
+              <span class="px-3 py-1 rounded-full bg-[#EA580C] text-xs font-bold uppercase tracking-wider mb-2 inline-block">El Ecosistema Cultivar S.A. en Acción</span>
               <h3 class="text-2xl sm:text-3xl font-extrabold mb-2">Conectividad directa entre cabina, implemento y nube</h3>
               <p class="text-sm sm:text-base text-slate-200 font-normal">
-                Sincronización remota de labores de siembra milimétrica, control de profundidad ISOBUS y telemetría de motor en tiempo real.
+                Sincronización remota de labores de siembra guiadas por nuestras antenas RTK, con telemetría operativa que se transmite en vivo desde la consola Farmnavigator directo a su panel en la nube.
               </p>
             </div>
           </div>
         </div>
 
-        <!-- 2 Tarjetas: Remote Sensing (Drones + Satélites) y FMIS Cloud Explicado -->
         <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          <!-- Tarjeta 1: Remote Sensing Satelital, Drones e IA -->
           <div class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all overflow-hidden flex flex-col justify-between border-t-4 border-[#1B4332]">
             <div>
               <div class="h-60 bg-slate-50 overflow-hidden border-b border-slate-100">
-                <img 
-                  src="/images/hero-campo.jpeg" 
-                  alt="Remote Sensing Satelital y Drones con Inteligencia Artificial" 
-                  class="w-full h-full object-cover" 
-                />
+                <img src="/images/hero-campo.jpeg" alt="Diagnóstico Agronómico" class="w-full h-full object-cover">
               </div>
               <div class="p-7">
-                <span class="inline-block text-xs font-bold px-2.5 py-1 bg-purple-50 text-purple-800 rounded-full mb-3">Teledetección Satelital, Drones & IoT</span>
-                <h3 class="text-2xl font-bold text-[#1E293B] mb-3">Remote Sensing Satelital & Diagnóstico Aéreo con IA</h3>
-                <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-4">
-                  Monitoreo integral y continuo que combina <strong>teledetección satelital multitemporal (Remote Sensing)</strong> con vuelos de drones de alta resolución e inteligencia artificial.
+                <span class="inline-block text-xs font-bold px-2.5 py-1 bg-purple-50 text-purple-800 rounded-full mb-3">Diagnóstico y Prescripción</span>
+                <h3 class="text-2xl font-bold text-[#1E293B] mb-3">Remote Sensing y Vuelos Multiespectrales</h3>
+                <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                  El hardware es solo el principio. Nuestro servicio técnico complementa su equipamiento con cruce de datos satelitales (Remote Sensing) y vuelos de drones multiespectrales locales. Generamos los mapas NDVI de estrés hídrico para que su consola ISOBUS sepa exactamente dónde aplicar cada dosis.
                 </p>
-                <ul class="text-xs sm:text-sm text-slate-600 space-y-2 mb-2">
-                  <li class="flex items-start gap-2">
-                    <span class="text-[#1B4332] font-bold">✔</span>
-                    <span><strong>Satélites (Remote Sensing):</strong> Seguimiento agronómico periódico de todas las parcelas para evaluar evolución de biomasa y vigor vegetal.</span>
-                  </li>
-                  <li class="flex items-start gap-2">
-                    <span class="text-[#1B4332] font-bold">✔</span>
-                    <span><strong>Drones multiespectrales (NDVI/NDRE):</strong> Detección milimétrica de estrés hídrico, compactación y focos de malezas antes de ser visibles en el campo.</span>
-                  </li>
-                  <li class="flex items-start gap-2">
-                    <span class="text-[#1B4332] font-bold">✔</span>
-                    <span><strong>Prescripción Variable (VRT):</strong> Mapas de aplicación listos para cargar en consola y dosificar fertilizantes o agroquímicos solo donde hace falta.</span>
-                  </li>
-                </ul>
               </div>
             </div>
             <div class="p-7 pt-0">
-              <a href="https://wa.me/595975679274?text=Hola,%20deseo%20agendar%20un%20diagnostico%20satelital%20y%20con%20drones%20e%20IA" target="_blank" rel="noopener noreferrer" class="w-full rounded-full py-3 px-6 font-bold text-white bg-[#EA580C] hover:bg-[#C2410C] text-center inline-block shadow-sm">
-                Solicitar Diagnóstico Multiespectral
-              </a>
+              <a href="https://wa.me/595975679274?text=Info%20Diagnostico%20Satelital%20y%20Drones" target="_blank" class="w-full rounded-full py-3 px-6 font-bold text-white bg-[#EA580C] hover:bg-[#C2410C] text-center inline-block">Consultar Mapas de Prescripción</a>
             </div>
           </div>
 
-          <!-- Tarjeta 2: Ecosistema FMIS Cloud Explicado al Productor -->
           <div class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all overflow-hidden flex flex-col justify-between border-t-4 border-[#1B4332]">
             <div>
               <div class="h-60 bg-slate-50 flex items-center justify-center p-8 border-b border-slate-100">
-                <img 
-                  src="/images/logo_myfarmnavigator_cloud.png" 
-                  alt="MyFarmnavigator FMIS Cloud y Telemetría Zero-Touch" 
-                  class="max-h-24 w-auto object-contain" 
-                />
+                <img src="/images/logo_myfarmnavigator_cloud.png" alt="MyFarmnavigator Cloud Cultivar S.A." class="max-h-24 w-auto object-contain">
               </div>
               <div class="p-7">
-                <span class="inline-block text-xs font-bold px-2.5 py-1 bg-sky-50 text-sky-800 rounded-full mb-3">Gestión Agronómica & Telemetría CANBus</span>
-                <h3 class="text-2xl font-bold text-[#1E293B] mb-2">Plataforma FMIS Cloud & Telemetría Zero-Touch</h3>
-                <p class="text-xs font-semibold text-[#1B4332] mb-3 uppercase tracking-wider">
-                  ¿Qué es un FMIS Cloud y cómo impacta en la rentabilidad de su campo?
+                <span class="inline-block text-xs font-bold px-2.5 py-1 bg-sky-50 text-sky-800 rounded-full mb-3">Portal del Productor (FMIS)</span>
+                <h3 class="text-2xl font-bold text-[#1E293B] mb-2">MyFarmnavigator Cloud & Telemetría CANBus</h3>
+                <p class="text-xs font-semibold text-[#1B4332] mb-3 uppercase tracking-wider">Tome el control remoto de su flota</p>
+                <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                  El software central (FMIS) donde convergen todos los datos de sus consolas. Supervise en tiempo real el consumo de gasoil (L/ha) desde su celular. Envíe líneas A-B y prescripciones directo al tractor de forma inalámbrica (Zero-Touch), eliminando pendrives y errores del operador.
                 </p>
-                <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-4">
-                  Un <strong>FMIS</strong> (<em>Farm Management Information System</em> o Sistema de Gestión de Fincas en la nube) es el centro operativo donde se unifica toda la información agronómica y económica del establecimiento en un solo lugar.
-                </p>
-                <ul class="text-xs sm:text-sm text-slate-600 space-y-2 mb-2">
-                  <li class="flex items-start gap-2">
-                    <span class="text-[#1B4332] font-bold">✔</span>
-                    <span><strong>Fin de las libretas y pendrives:</strong> Historial digital completo de cada lote, registros de siembra, dosis aplicadas y costos operativos reales por hectárea.</span>
-                  </li>
-                  <li class="flex items-start gap-2">
-                    <span class="text-[#1B4332] font-bold">✔</span>
-                    <span><strong>Telemetría CANBus en vivo:</strong> Control directo del consumo de combustible (l/ha), revoluciones de motor, horas de trabajo y sensor de vuelco para seguridad.</span>
-                  </li>
-                  <li class="flex items-start gap-2">
-                    <span class="text-[#1B4332] font-bold">✔</span>
-                    <span><strong>Conexión Zero-Touch:</strong> El asesor o encargado envía las líneas A-B y las órdenes de trabajo desde el celular u oficina directamente a la cabina del tractor vía 4G, sin intervención manual del operario.</span>
-                  </li>
-                </ul>
               </div>
             </div>
             <div class="p-7 pt-0">
-              <a href="https://wa.me/595975679274?text=Hola,%20deseo%20conocer%20mas%20sobre%20la%20plataforma%20FMIS%20Cloud%20y%20telemetria" target="_blank" rel="noopener noreferrer" class="w-full rounded-full py-3 px-6 font-bold text-white bg-[#EA580C] hover:bg-[#C2410C] text-center inline-block shadow-sm">
-                Conocer la Plataforma FMIS Cloud
-              </a>
+              <a href="https://wa.me/595975679274?text=Deseo%20conocer%20la%20plataforma%20MyFarmnavigator" target="_blank" class="w-full rounded-full py-3 px-6 font-bold text-white bg-[#EA580C] hover:bg-[#C2410C] text-center inline-block">Implementar Plataforma Cloud</a>
             </div>
           </div>
         </div>
+
       </div>
     </section>
+
   </main>
 
-  <!-- 6. FOOTER INSTITUCIONAL -->
+  <!-- FOOTER -->
   <footer class="bg-slate-900 text-slate-300 py-12 border-t border-slate-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-8 pb-8 border-b border-slate-800">
         <div>
           <span class="text-2xl font-extrabold text-white tracking-tight">Cultivar S.A.</span>
-          <p class="text-sm text-slate-400 mt-2 max-w-md">
-            Ruta VI Juan León Mallorquín Km 45, Bella Vista, Itapúa - Paraguay.
-          </p>
+          <p class="text-sm text-slate-400 mt-2 max-w-md">Ruta VI Juan León Mallorquín Km 45, Bella Vista, Itapúa - Paraguay.</p>
         </div>
         <div>
-          <a 
-            href="https://wa.me/595975679274" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            class="rounded-full px-6 py-3 font-semibold text-white bg-[#1B4332] hover:bg-[#2D6A4F] border border-emerald-700/50 shadow-sm transition-all inline-flex items-center gap-3 text-sm"
-          >
+          <a href="https://wa.me/595975679274" target="_blank" class="rounded-full px-6 py-3 font-semibold text-white bg-[#1B4332] hover:bg-[#2D6A4F] border border-emerald-700/50 inline-flex items-center gap-3 text-sm">
             <span>WhatsApp: +595 975 679274</span>
           </a>
         </div>
@@ -491,4 +710,6 @@ import Layout from '../layouts/Layout.astro';
       </div>
     </div>
   </footer>
-</Layout>
+
+</body>
+</html>
