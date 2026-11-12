@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-<body class="bg-[#F8FAFC] text-slate-800 antialiased min-h-screen flex flex-col selection:bg-[#1B4332] selection:text-white">
+<body class="bg-[#F8FAFC] text-slate-800 antialiased min-h-screen flex flex-col selection:bg-[#0082C8] selection:text-white">
 
   <!-- NAVBAR -->
   <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200">
@@ -24,7 +24,7 @@
       <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold text-slate-700">
         <a href="#quienes-somos" class="hover:text-[#1B4332] transition-colors">Quiénes Somos</a>
         <a href="#sercrop" class="hover:text-[#1B4332] transition-colors">Línea Sercrop</a>
-        <a href="#hardware" class="hover:text-[#1B4332] transition-colors">Hardware & RTK</a>
+        <a href="#hardware" class="hover:text-[#0082C8] transition-colors">Hardware & RTK</a>
         <a href="#inteligencia" class="hover:text-[#1B4332] transition-colors">Telemetría & IA</a>
       </nav>
       <a href="https://wa.me/595975679274" target="_blank" rel="noopener noreferrer" class="rounded-full px-6 py-2.5 font-bold text-sm text-white bg-[#EA580C] hover:bg-[#C2410C] shadow-sm transition-all inline-flex items-center gap-2">
@@ -94,12 +94,9 @@
       </div>
     </section>
 
-    <!-- LÍNEA SERCROP: TEATRO 4K DE ROTACIÓN AUTOMÁTICA (6s) + NAVEGACIÓN LATERAL -->
+    <!-- LÍNEA SERCROP: TEATRO DE ROTACIÓN AUTOMÁTICA -->
     <section id="sercrop" class="py-16 lg:py-20 bg-[#050B07] text-white relative overflow-hidden select-none">
-      
       <div id="sercrop-theater" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-        
-        <!-- Encabezado con selector directo de producto -->
         <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-white/10 pb-6 mb-10">
           <div>
             <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[#EA580C] text-xs font-bold uppercase tracking-widest mb-2">
@@ -110,7 +107,6 @@
             <p class="text-xs text-slate-400 mt-1">Deslice lateralmente o seleccione un producto para pausar la vista</p>
           </div>
 
-          <!-- Selector de Pestañas Rápidas (Desktop / Tablet) -->
           <div class="flex items-center gap-2 overflow-x-auto pb-2 md:pb-0 scrollbar-none">
             <button class="sercrop-tab px-3 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all bg-[#00D2D3]/20 text-[#00D2D3] border border-[#00D2D3]/40" data-target="0">Cobre-Ni</button>
             <button class="sercrop-tab px-3 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all text-slate-400 hover:text-white hover:bg-white/5" data-target="1">Force</button>
@@ -121,12 +117,8 @@
           </div>
         </div>
 
-        <!-- Escenario Principal: Grid 50/50 -->
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center min-h-[520px]">
-          
-          <!-- Columna Izquierda: Ficha Técnica Activa -->
           <div class="lg:col-span-7 relative h-[440px] sm:h-[460px] flex items-center z-20">
-            
             <!-- 1. Cobre-Ni -->
             <div class="sercrop-panel absolute inset-0 flex flex-col justify-center transition-all duration-700 opacity-100 translate-x-0" data-index="0" data-color="#00D2D3">
               <span class="text-xs font-extrabold uppercase tracking-widest text-[#00D2D3] mb-2">Escudo Sistémico Multisitio</span>
@@ -162,7 +154,7 @@
               <span class="text-xs font-extrabold uppercase tracking-widest text-[#18D253] mb-2">Desarrollo Radicular & F.B.N.</span>
               <h3 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white mb-4">CROP FORCE</h3>
               <p class="text-slate-300 text-sm sm:text-base leading-relaxed max-w-xl mb-6">
-                Enraizante con minerales (Co, Mo) y hormonas. Promueve una acción única sobre la fisiología de la planta, aumentando la Fijación Biológica de Nitrógeno.
+                Enraizante con minerales (Co, Mo) y hormonas. Promueve el desarrollo y fisiología vegetal, aumentando la Fijación Biológica de Nitrógeno.
               </p>
               <div class="grid grid-cols-2 gap-4 mb-8 max-w-xl">
                 <div class="bg-white/5 border border-white/10 rounded-xl p-4 backdrop-blur-md">
@@ -192,7 +184,7 @@
               <span class="text-xs font-extrabold uppercase tracking-widest text-[#00A8FF] mb-2">Adyuvante Siliconado Premium</span>
               <h3 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white mb-4">CROP FIX</h3>
               <p class="text-slate-300 text-sm sm:text-base leading-relaxed max-w-xl mb-6">
-                Reductor de alto rendimiento. Estabiliza el pH del agua, evita la formación de espuma y reduce la deriva en aplicaciones exigentes.
+                Reductor de alto rendimiento. Estabiliza el pH del agua, evita la espuma y aporta máxima adherencia foliar para proteger el principio activo.
               </p>
               <div class="grid grid-cols-2 gap-4 mb-8 max-w-xl">
                 <div class="bg-white/5 border border-white/10 rounded-xl p-4 backdrop-blur-md">
@@ -307,15 +299,11 @@
                 </a>
               </div>
             </div>
-
           </div>
 
-          <!-- Columna Derecha: Botella Monumental + Aura + Flechas de Control -->
           <div class="lg:col-span-5 relative h-[420px] sm:h-[500px] flex items-center justify-center">
-            
             <div id="sercrop-aura" class="absolute w-72 sm:w-96 h-72 sm:h-96 rounded-full blur-[140px] opacity-40 transition-all duration-1000 pointer-events-none" style="background-color: #00D2D3;"></div>
 
-            <!-- Botellas -->
             <div class="relative w-full h-full flex items-center justify-center">
               <img id="bottle-0" src="/images/sercrop/crop_cobre_ni_clean.png" alt="Crop Cobre-Ni" class="sercrop-bottle absolute max-h-[380px] sm:max-h-[480px] object-contain transition-all duration-700 opacity-100 scale-100 drop-shadow-2xl">
               <img id="bottle-1" src="/images/sercrop/crop_force_clean.png" alt="Crop Force" class="sercrop-bottle absolute max-h-[380px] sm:max-h-[480px] object-contain transition-all duration-700 opacity-0 scale-75 pointer-events-none drop-shadow-2xl">
@@ -325,11 +313,504 @@
               <img id="bottle-5" src="/images/sercrop/crop_fixer_oil_clean.png" alt="Crop Fixer Oil" class="sercrop-bottle absolute max-h-[380px] sm:max-h-[480px] object-contain transition-all duration-700 opacity-0 scale-75 pointer-events-none drop-shadow-2xl">
             </div>
 
-            <!-- Botones Laterales Flotantes (< y >) -->
             <button id="btn-prev" aria-label="Anterior" class="absolute left-0 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white/10 hover:bg-white/20 text-white backdrop-blur-md flex items-center justify-center transition border border-white/20 z-30">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7"/></svg>
             </button>
             <button id="btn-next" aria-label="Siguiente" class="absolute right-0 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white/10 hover:bg-white/20 text-white backdrop-blur-md flex items-center justify-center transition border border-white/20 z-30">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="mt-8 pt-4 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+          <div class="flex items-center gap-3">
+            <span class="font-mono text-white font-bold" id="counter-display">01 / 06</span>
+            <span class="text-[11px] text-slate-500">Pase el cursor por encima para pausar</span>
+          </div>
+          <div class="flex gap-2 w-full sm:w-auto">
+            <div class="sercrop-progress-track flex-1 sm:w-16 h-1.5 rounded-full bg-white/10 overflow-hidden cursor-pointer" data-target="0"><div class="sercrop-progress-bar h-full w-0 bg-[#00D2D3] transition-all"></div></div>
+            <div class="sercrop-progress-track flex-1 sm:w-16 h-1.5 rounded-full bg-white/10 overflow-hidden cursor-pointer" data-target="1"><div class="sercrop-progress-bar h-full w-0 bg-[#18D253] transition-all"></div></div>
+            <div class="sercrop-progress-track flex-1 sm:w-16 h-1.5 rounded-full bg-white/10 overflow-hidden cursor-pointer" data-target="2"><div class="sercrop-progress-bar h-full w-0 bg-[#00A8FF] transition-all"></div></div>
+            <div class="sercrop-progress-track flex-1 sm:w-16 h-1.5 rounded-full bg-white/10 overflow-hidden cursor-pointer" data-target="3"><div class="sercrop-progress-bar h-full w-0 bg-[#FFA000] transition-all"></div></div>
+            <div class="sercrop-progress-track flex-1 sm:w-16 h-1.5 rounded-full bg-white/10 overflow-hidden cursor-pointer" data-target="4"><div class="sercrop-progress-bar h-full w-0 bg-[#FF9100] transition-all"></div></div>
+            <div class="sercrop-progress-track flex-1 sm:w-16 h-1.5 rounded-full bg-white/10 overflow-hidden cursor-pointer" data-target="5"><div class="sercrop-progress-bar h-full w-0 bg-[#10AC84] transition-all"></div></div>
+          </div>
+        </div>
+      </div>
+          <script is:inline>
+        (() => {
+          const panels = document.querySelectorAll('.sercrop-panel');
+          const bottles = document.querySelectorAll('.sercrop-bottle');
+          const tabs = document.querySelectorAll('.sercrop-tab');
+          const tracks = document.querySelectorAll('.sercrop-progress-track');
+          const bars = document.querySelectorAll('.sercrop-progress-bar');
+          const aura = document.getElementById('sercrop-aura');
+          const counter = document.getElementById('counter-display');
+          const theater = document.getElementById('sercrop-theater');
+          const prevBtn = document.getElementById('btn-prev');
+          const nextBtn = document.getElementById('btn-next');
+
+          let current = 0;
+          const TOTAL = panels.length;
+          const INTERVAL_TIME = 6000;
+          let progress = 0;
+          let timer = null;
+          let isPaused = false;
+
+          if (!TOTAL) return;
+
+          function updateSlide(index) {
+            current = (index + TOTAL) % TOTAL;
+            progress = 0;
+
+            panels.forEach((p, idx) => {
+              if (idx === current) {
+                p.classList.remove('opacity-0', 'translate-x-8', 'pointer-events-none');
+                p.classList.add('opacity-100', 'translate-x-0');
+                const color = p.getAttribute('data-color');
+                if (aura && color) aura.style.backgroundColor = color;
+              } else {
+                p.classList.add('opacity-0', 'translate-x-8', 'pointer-events-none');
+                p.classList.remove('opacity-100', 'translate-x-0');
+              }
+            });
+
+            bottles.forEach((b, idx) => {
+              if (idx === current) {
+                b.classList.remove('opacity-0', 'scale-75', 'pointer-events-none');
+                b.classList.add('opacity-100', 'scale-100');
+              } else {
+                b.classList.add('opacity-0', 'scale-75', 'pointer-events-none');
+                b.classList.remove('opacity-100', 'scale-100');
+              }
+            });
+
+            tabs.forEach((tab, idx) => {
+              const color = panels[current].getAttribute('data-color') || '#00D2D3';
+              if (idx === current) {
+                tab.className = 'sercrop-tab px-3 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all border';
+                tab.style.backgroundColor = `${color}25`;
+                tab.style.color = color;
+                tab.style.borderColor = `${color}60`;
+              } else {
+                tab.className = 'sercrop-tab px-3 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all text-slate-400 hover:text-white hover:bg-white/5';
+                tab.style.backgroundColor = '';
+                tab.style.color = '';
+                tab.style.borderColor = '';
+              }
+            });
+
+            bars.forEach((bar, idx) => {
+              if (idx < current) bar.style.width = '100%';
+              else bar.style.width = '0%';
+            });
+
+            if (counter) counter.textContent = `0${current + 1} / 0${TOTAL}`;
+          }
+
+          function startLoop() {
+            clearInterval(timer);
+            timer = setInterval(() => {
+              if (!isPaused) {
+                progress += 50;
+                const pct = Math.min((progress / INTERVAL_TIME) * 100, 100);
+                if (bars[current]) bars[current].style.width = `${pct}%`;
+                if (progress >= INTERVAL_TIME) updateSlide(current + 1);
+              }
+            }, 50);
+          }
+
+          tabs.forEach(t => t.addEventListener('click', () => updateSlide(parseInt(t.getAttribute('data-target')))));
+          tracks.forEach(tr => tr.addEventListener('click', () => updateSlide(parseInt(tr.getAttribute('data-target')))));
+          if (prevBtn) prevBtn.addEventListener('click', () => updateSlide(current - 1));
+          if (nextBtn) nextBtn.addEventListener('click', () => updateSlide(current + 1));
+
+          if (theater) {
+            theater.addEventListener('mouseenter', () => { isPaused = true; });
+            theater.addEventListener('mouseleave', () => { isPaused = false; });
+
+            let touchStartX = 0;
+            let touchEndX = 0;
+            theater.addEventListener('touchstart', (e) => { touchStartX = e.changedTouches[0].screenX; }, { passive: true });
+            theater.addEventListener('touchend', (e) => {
+              touchEndX = e.changedTouches[0].screenX;
+              if (touchStartX - touchEndX > 50) updateSlide(current + 1);
+              else if (touchEndX - touchStartX > 50) updateSlide(current - 1);
+            }, { passive: true });
+          }
+
+          updateSlide(0);
+          startLoop();
+        })();
+      </script>
+</section>
+
+    <!-- HARDWARE, SEÑAL & TELEMETRÍA: TEATRO FARMNAVIGATOR OFICIAL -->
+    <section id="hardware" class="py-16 lg:py-24 bg-[#030A16] text-white border-t border-b border-[#0082C8]/30 relative overflow-hidden select-none">
+      
+      <!-- Fondo técnico de precisión satelital Farmnavigator -->
+      <div class="absolute inset-0 bg-[radial-gradient(#0082C8_1px,transparent_1px)] [background-size:28px_28px] opacity-15 pointer-events-none"></div>
+      <div class="absolute -top-40 -right-40 w-[500px] h-[500px] rounded-full bg-[#0082C8]/10 blur-[140px] pointer-events-none"></div>
+
+      <div id="farmnavigator-theater" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <!-- Encabezado con Logo Farmnavigator en un costado (tamaño mediano y aura verde original) -->
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 border-b border-[#0082C8]/25 pb-6 mb-6">
+          <div>
+            <div class="inline-flex items-center gap-3 px-3.5 py-1.5 rounded-full bg-[#0082C8]/15 border border-[#0082C8]/40 text-[#38BDF8] text-xs font-bold uppercase tracking-widest mb-3">
+              <span class="w-2 h-2 rounded-full bg-[#00A3FF] animate-ping"></span>
+              <span>Representantes Oficiales · Paraguay</span>
+            </div>
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight">
+              Tecnología Farmnavigator & RTK
+            </h2>
+            <p class="text-xs sm:text-sm text-slate-400 mt-1.5">
+              Consolas ISOBUS, posicionamiento centimétrico RTK, dirección automática y telemática en la nube
+            </p>
+          </div>
+
+          <!-- LOGO FARMNAVIGATOR EN UN COSTADO: Tamaño mediano, color verde original y brillo de aura -->
+          <div class="relative inline-flex items-center justify-center self-start md:self-center px-5 py-3 rounded-2xl bg-[#061224]/80 border border-emerald-500/20 shrink-0">
+            <div class="absolute inset-1 bg-[#009A44]/25 blur-xl rounded-full animate-pulse pointer-events-none"></div>
+            <img 
+              src="/images/hardware/logo_farmnavigator_brand_by_avmap.png" 
+              onerror="this.onerror=null; this.src='/images/logo_farmnavigator_brand_by_avmap.png';"
+              alt="Farmnavigator - A Brand by AvMap" 
+              class="relative z-10 w-48 sm:w-56 md:w-64 h-auto object-contain farm-brand-aura"
+            />
+          </div>
+        </div>
+
+        <!-- Barra de Pestañas de Productos -->
+        <div class="flex items-center gap-2 overflow-x-auto pb-4 mb-8 scrollbar-none">
+          <button class="farm-tab px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider transition-all bg-[#0082C8]/25 text-[#38BDF8] border border-[#0082C8]/50 whitespace-nowrap" data-target="0">01 · G12 Full</button>
+          <button class="farm-tab px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider transition-all text-slate-400 hover:text-white hover:bg-white/5 whitespace-nowrap" data-target="1">02 · RTK X</button>
+          <button class="farm-tab px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider transition-all text-slate-400 hover:text-white hover:bg-white/5 whitespace-nowrap" data-target="2">03 · ISOBoost</button>
+          <button class="farm-tab px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider transition-all text-slate-400 hover:text-white hover:bg-white/5 whitespace-nowrap" data-target="3">04 · Pilota</button>
+          <button class="farm-tab px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider transition-all text-slate-400 hover:text-white hover:bg-white/5 whitespace-nowrap" data-target="4">05 · Tracker Agri</button>
+        </div>
+
+        <!-- Escenario 50/50: Especificaciones Técnicas a la izquierda, Render del Equipo a la derecha -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+          
+          <!-- Columna Izquierda: Fichas Técnicas Consistentes (6 Specs) -->
+          <div class="lg:col-span-7 relative z-20">
+            
+            <!-- SLIDE 01 · G12 PANORAMA FULL -->
+            <div class="farm-panel relative flex flex-col justify-center transition-all duration-700 opacity-100 translate-x-0" data-index="0" data-color="#0082C8">
+              <div class="flex flex-wrap items-center gap-2.5 mb-2">
+                <span class="text-xs font-extrabold uppercase tracking-widest text-[#38BDF8]">01 · Consola multifunción · Guía y ISOBUS</span>
+                <span class="px-2 py-0.5 rounded bg-[#0082C8]/20 border border-[#0082C8]/40 text-[10px] font-mono font-bold text-[#7DD3FC]">CÓD: P3MU10FWAM</span>
+              </div>
+              <h3 class="text-3xl sm:text-5xl font-black tracking-tight text-white mb-2">G12 PANORAMA FULL</h3>
+              <p class="text-lg sm:text-xl font-bold text-[#38BDF8] mb-3">Dos pantallas en una</p>
+              <p class="text-slate-300 text-sm leading-relaxed max-w-2xl mb-5">
+                Guía paralela, control de secciones, dirección automática, terminal ISOBUS y Task Controller en una sola consola panorámica de 12". Licencias de por vida incluidas.
+              </p>
+              
+              <!-- 6 Specs -->
+              <div class="grid grid-cols-2 sm:grid-cols-3 gap-2.5 mb-4 max-w-2xl">
+                <div class="bg-[#071326]/90 border border-[#0082C8]/25 rounded-xl p-3">
+                  <span class="block text-[#38BDF8] text-[10px] font-bold uppercase tracking-wider">PANTALLA</span>
+                  <span class="text-xs font-semibold text-white">12.3" bonded · 1920×720</span>
+                </div>
+                <div class="bg-[#071326]/90 border border-[#0082C8]/25 rounded-xl p-3">
+                  <span class="block text-[#38BDF8] text-[10px] font-bold uppercase tracking-wider">BRILLO</span>
+                  <span class="text-xs font-semibold text-white">1000 nits</span>
+                </div>
+                <div class="bg-[#071326]/90 border border-[#0082C8]/25 rounded-xl p-3">
+                  <span class="block text-[#38BDF8] text-[10px] font-bold uppercase tracking-wider">TÁCTIL</span>
+                  <span class="text-xs font-semibold text-white">Capacitivo multitouch</span>
+                </div>
+                <div class="bg-[#071326]/90 border border-[#0082C8]/25 rounded-xl p-3">
+                  <span class="block text-[#38BDF8] text-[10px] font-bold uppercase tracking-wider">BUSES</span>
+                  <span class="text-xs font-semibold text-white">2× CAN · 2× video · 3× serial</span>
+                </div>
+                <div class="bg-[#071326]/90 border border-[#0082C8]/25 rounded-xl p-3">
+                  <span class="block text-[#38BDF8] text-[10px] font-bold uppercase tracking-wider">PROTECCIÓN</span>
+                  <span class="text-xs font-semibold text-white">IPX6 · apta sin cabina</span>
+                </div>
+                <div class="bg-[#071326]/90 border border-[#0082C8]/25 rounded-xl p-3">
+                  <span class="block text-[#38BDF8] text-[10px] font-bold uppercase tracking-wider">ALIMENTACIÓN</span>
+                  <span class="text-xs font-semibold text-white">10–35 Vdc</span>
+                </div>
+              </div>
+
+              <!-- Licencias & Etiquetas -->
+              <div class="bg-[#0082C8]/10 border border-[#0082C8]/30 rounded-xl px-3.5 py-2 mb-3 max-w-2xl">
+                <span class="text-[11px] font-bold text-[#7DD3FC]">Licencias incluidas (de por vida): </span>
+                <span class="text-[11px] text-white font-medium">Navegación · Virtual Terminal · Task Controller</span>
+              </div>
+              <div class="flex flex-wrap gap-1.5 mb-6 max-w-2xl">
+                <span class="px-2.5 py-1 rounded-full bg-white/5 border border-white/10 text-[11px] text-slate-300">Guía paralela</span>
+                <span class="px-2.5 py-1 rounded-full bg-white/5 border border-white/10 text-[11px] text-slate-300">Control de secciones</span>
+                <span class="px-2.5 py-1 rounded-full bg-white/5 border border-white/10 text-[11px] text-slate-300">Dirección automática</span>
+                <span class="px-2.5 py-1 rounded-full bg-white/5 border border-white/10 text-[11px] text-slate-300">Asistencia remota</span>
+                <span class="px-2.5 py-1 rounded-full bg-white/5 border border-white/10 text-[11px] text-slate-300">Nube MyFarmnavigator</span>
+              </div>
+
+              <div>
+                <a href="https://wa.me/595975679274?text=Hola%2C%20quiero%20cotizar%20la%20G12%20Panorama%20Full%20(P3MU10FWAM)." target="_blank" class="btn-farm-glow">
+                  <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.867-2.03-.967-.272-.099-.47-.148-.669.15-.198.297-.768.966-.941 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
+                  <span>Cotizar G12 Panorama Full</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- SLIDE 02 · ALL IN ONE RTK X -->
+            <div class="farm-panel absolute inset-0 flex flex-col justify-center transition-all duration-700 opacity-0 translate-x-8 pointer-events-none" data-index="1" data-color="#00F0FF">
+              <div class="flex flex-wrap items-center gap-2.5 mb-2">
+                <span class="text-xs font-extrabold uppercase tracking-widest text-[#00F0FF]">02 · Antena inteligente · Posicionamiento RTK</span>
+                <span class="px-2 py-0.5 rounded bg-cyan-500/20 border border-cyan-400/40 text-[10px] font-mono font-bold text-cyan-200">CÓD: UXAGRK1GAM</span>
+              </div>
+              <h3 class="text-3xl sm:text-5xl font-black tracking-tight text-white mb-2">ALL IN ONE RTK X</h3>
+              <p class="text-lg sm:text-xl font-bold text-[#00F0FF] mb-3">Multifrecuencia. Precisión de ±2 cm.</p>
+              <p class="text-slate-300 text-sm leading-relaxed max-w-2xl mb-5">
+                Antena, receptor multifrecuencia, módem 4G y telemática en un solo equipo. Es la evolución 2026 del All in One RTK, con receptor GNSS multifrecuencia para una señal más sólida y precisa.
+              </p>
+
+              <!-- 6 Specs -->
+              <div class="grid grid-cols-2 sm:grid-cols-3 gap-2.5 mb-4 max-w-2xl">
+                <div class="bg-[#071326]/90 border border-cyan-400/25 rounded-xl p-3">
+                  <span class="block text-[#00F0FF] text-[10px] font-bold uppercase tracking-wider">PRECISIÓN</span>
+                  <span class="text-xs font-semibold text-white">RTK ±2 cm</span>
+                </div>
+                <div class="bg-[#071326]/90 border border-cyan-400/25 rounded-xl p-3">
+                  <span class="block text-[#00F0FF] text-[10px] font-bold uppercase tracking-wider">GNSS</span>
+                  <span class="text-xs font-semibold text-white">Multifrecuencia · GPS + GLONASS + Galileo + BeiDou + SBAS</span>
+                </div>
+                <div class="bg-[#071326]/90 border border-cyan-400/25 rounded-xl p-3">
+                  <span class="block text-[#00F0FF] text-[10px] font-bold uppercase tracking-wider">TASA</span>
+                  <span class="text-xs font-semibold text-white">Hasta 10 Hz</span>
+                </div>
+                <div class="bg-[#071326]/90 border border-cyan-400/25 rounded-xl p-3">
+                  <span class="block text-[#00F0FF] text-[10px] font-bold uppercase tracking-wider">CONECTIVIDAD</span>
+                  <span class="text-xs font-semibold text-white">4G + SIM incluida + cliente NTRIP</span>
+                </div>
+                <div class="bg-[#071326]/90 border border-cyan-400/25 rounded-xl p-3">
+                  <span class="block text-[#00F0FF] text-[10px] font-bold uppercase tracking-wider">INERCIAL</span>
+                  <span class="text-xs font-semibold text-white">Acelerómetro + giróscopo · compensación terreno</span>
+                </div>
+                <div class="bg-[#071326]/90 border border-cyan-400/25 rounded-xl p-3">
+                  <span class="block text-[#00F0FF] text-[10px] font-bold uppercase tracking-wider">PROTECCIÓN</span>
+                  <span class="text-xs font-semibold text-white">IP67 · −20 / +60 °C</span>
+                </div>
+              </div>
+
+              <!-- Detalle & Etiquetas -->
+              <p class="text-xs text-cyan-200/90 mb-3 max-w-2xl">
+                Compatible con cualquier terminal agrícola por serial NMEA0183. Magnético o atornillado.
+              </p>
+              <div class="flex flex-wrap gap-1.5 mb-6 max-w-2xl">
+                <span class="px-2.5 py-1 rounded-full bg-white/5 border border-white/10 text-[11px] text-slate-300">Dirección automática</span>
+                <span class="px-2.5 py-1 rounded-full bg-white/5 border border-white/10 text-[11px] text-slate-300">Siembra</span>
+                <span class="px-2.5 py-1 rounded-full bg-white/5 border border-white/10 text-[11px] text-slate-300">Labranza</span>
+                <span class="px-2.5 py-1 rounded-full bg-white/5 border border-white/10 text-[11px] text-slate-300">Strip-till</span>
+                <span class="px-2.5 py-1 rounded-full bg-white/5 border border-white/10 text-[11px] text-slate-300">Plantación</span>
+              </div>
+
+              <div>
+                <a href="https://wa.me/595975679274?text=Hola%2C%20quiero%20cotizar%20la%20antena%20All%20in%20One%20RTK%20X%20(UXAGRK1GAM)." target="_blank" class="btn-farm-glow">
+                  <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.867-2.03-.967-.272-.099-.47-.148-.669.15-.198.297-.768.966-.941 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
+                  <span>Cotizar All in One RTK X</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- SLIDE 03 · ISOBOOST DEPTH CONTROL -->
+            <div class="farm-panel absolute inset-0 flex flex-col justify-center transition-all duration-700 opacity-0 translate-x-8 pointer-events-none" data-index="2" data-color="#38BDF8">
+              <div class="flex flex-wrap items-center gap-2.5 mb-2">
+                <span class="text-xs font-extrabold uppercase tracking-widest text-[#38BDF8]">03 · Unidad de control ISOBUS · Subsoladores</span>
+                <span class="px-2.5 py-0.5 rounded-full bg-[#0082C8] text-[10px] font-extrabold uppercase tracking-wider text-white shadow-sm">NUEVO 2026</span>
+              </div>
+              <h3 class="text-3xl sm:text-5xl font-black tracking-tight text-white mb-2">ISOBOOST DEPTH CONTROL</h3>
+              <p class="text-lg sm:text-xl font-bold text-[#38BDF8] mb-3">Tu subsolador, ahora ISOBUS</p>
+              <p class="text-slate-300 text-sm leading-relaxed max-w-2xl mb-5">
+                Profundidad exacta en cada pasada. ISOBoost convierte tu subsolador en un implemento ISOBUS con control automático de profundidad, compatible con cualquier tractor y monitor ISOBUS.
+              </p>
+
+              <!-- 6 Specs -->
+              <div class="grid grid-cols-2 sm:grid-cols-3 gap-2.5 mb-4 max-w-2xl">
+                <div class="bg-[#071326]/90 border border-[#38BDF8]/25 rounded-xl p-3">
+                  <span class="block text-[#38BDF8] text-[10px] font-bold uppercase tracking-wider">FUNCIÓN</span>
+                  <span class="text-xs font-semibold text-white">Profundidad manual o automática</span>
+                </div>
+                <div class="bg-[#071326]/90 border border-[#38BDF8]/25 rounded-xl p-3">
+                  <span class="block text-[#38BDF8] text-[10px] font-bold uppercase tracking-wider">SENSORES</span>
+                  <span class="text-xs font-semibold text-white">2× 4-20 mA · 1× 0-10 V · 2× digitales</span>
+                </div>
+                <div class="bg-[#071326]/90 border border-[#38BDF8]/25 rounded-xl p-3">
+                  <span class="block text-[#38BDF8] text-[10px] font-bold uppercase tracking-wider">VÁLVULAS</span>
+                  <span class="text-xs font-semibold text-white">Solenoides proporcionales u on/off</span>
+                </div>
+                <div class="bg-[#071326]/90 border border-[#38BDF8]/25 rounded-xl p-3">
+                  <span class="block text-[#38BDF8] text-[10px] font-bold uppercase tracking-wider">BUSES</span>
+                  <span class="text-xs font-semibold text-white">2× CAN · 1× RS232</span>
+                </div>
+                <div class="bg-[#071326]/90 border border-[#38BDF8]/25 rounded-xl p-3">
+                  <span class="block text-[#38BDF8] text-[10px] font-bold uppercase tracking-wider">CONECTIVIDAD</span>
+                  <span class="text-xs font-semibold text-white">4G + Bluetooth + OTA</span>
+                </div>
+                <div class="bg-[#071326]/90 border border-[#38BDF8]/25 rounded-xl p-3">
+                  <span class="block text-[#38BDF8] text-[10px] font-bold uppercase tracking-wider">PROTECCIÓN</span>
+                  <span class="text-xs font-semibold text-white">IP67 · 9–30 V</span>
+                </div>
+              </div>
+
+              <!-- Detalle & Etiquetas -->
+              <p class="text-xs text-slate-200 mb-1 max-w-2xl">
+                Posición del implemento, horas y hectáreas trabajadas en tiempo real en la nube.
+              </p>
+              <p class="text-[11px] text-slate-400 italic mb-3 max-w-2xl">
+                También para rastras de discos, arados y preparadores.
+              </p>
+              <div class="flex flex-wrap gap-1.5 mb-6 max-w-2xl">
+                <span class="px-2.5 py-1 rounded-full bg-white/5 border border-white/10 text-[11px] text-slate-300">Profundidad uniforme</span>
+                <span class="px-2.5 py-1 rounded-full bg-white/5 border border-white/10 text-[11px] text-slate-300">Descompactación pareja</span>
+                <span class="px-2.5 py-1 rounded-full bg-white/5 border border-white/10 text-[11px] text-slate-300">Menos consumo de combustible</span>
+                <span class="px-2.5 py-1 rounded-full bg-white/5 border border-white/10 text-[11px] text-slate-300">Mapas de prescripción ISOXML</span>
+              </div>
+
+              <div>
+                <a href="https://wa.me/595975679274?text=Hola%2C%20quiero%20cotizar%20el%20ISOBoost%20Depth%20Control%20para%20mi%20subsolador." target="_blank" class="btn-farm-glow">
+                  <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.867-2.03-.967-.272-.099-.47-.148-.669.15-.198.297-.768.966-.941 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
+                  <span>Cotizar ISOBoost Depth Control</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- SLIDE 04 · PILOTA · DIRECCIÓN AUTOMÁTICA + RETROFIT -->
+            <div class="farm-panel absolute inset-0 flex flex-col justify-center transition-all duration-700 opacity-0 translate-x-8 pointer-events-none" data-index="3" data-color="#0EA5E9">
+              <div class="flex flex-wrap items-center gap-2.5 mb-2">
+                <span class="text-xs font-extrabold uppercase tracking-widest text-[#38BDF8]">04 · Mecatrónica · Dirección automática</span>
+                <span class="px-2 py-0.5 rounded bg-sky-500/20 border border-sky-400/40 text-[10px] font-mono font-bold text-sky-200">CÓD: K10ASP00AM</span>
+              </div>
+              <h3 class="text-3xl sm:text-5xl font-black tracking-tight text-white mb-2">PILOTA · DIRECCIÓN AUTOMÁTICA</h3>
+              <p class="text-lg sm:text-xl font-bold text-[#38BDF8] mb-3">Traemos e instalamos. Tu tractor maneja solo.</p>
+              <p class="text-slate-300 text-sm leading-relaxed max-w-2xl mb-5">
+                Sistema de dirección automática italiano, compacto y liviano. Lo importamos, lo instalamos en tu tractor y lo dejamos calibrado, sin necesidad de cambiar de máquina.
+              </p>
+
+              <!-- 6 Specs -->
+              <div class="grid grid-cols-2 sm:grid-cols-3 gap-2.5 mb-4 max-w-2xl">
+                <div class="bg-[#071326]/90 border border-sky-400/25 rounded-xl p-3">
+                  <span class="block text-[#38BDF8] text-[10px] font-bold uppercase tracking-wider">MOTOR</span>
+                  <span class="text-xs font-semibold text-white">2.7 kg · Ø 15.7 cm × 8 cm</span>
+                </div>
+                <div class="bg-[#071326]/90 border border-sky-400/25 rounded-xl p-3">
+                  <span class="block text-[#38BDF8] text-[10px] font-bold uppercase tracking-wider">TORQUE</span>
+                  <span class="text-xs font-semibold text-white">3.8 Nm nominal · 5.5 Nm pico</span>
+                </div>
+                <div class="bg-[#071326]/90 border border-sky-400/25 rounded-xl p-3">
+                  <span class="block text-[#38BDF8] text-[10px] font-bold uppercase tracking-wider">VELOCIDAD TRABAJO</span>
+                  <span class="text-xs font-semibold text-white">0.5 – 30 km/h</span>
+                </div>
+                <div class="bg-[#071326]/90 border border-sky-400/25 rounded-xl p-3">
+                  <span class="block text-[#38BDF8] text-[10px] font-bold uppercase tracking-wider">PRECISIÓN</span>
+                  <span class="text-xs font-semibold text-white">±2 cm con All in One RTK</span>
+                </div>
+                <div class="bg-[#071326]/90 border border-sky-400/25 rounded-xl p-3">
+                  <span class="block text-[#38BDF8] text-[10px] font-bold uppercase tracking-wider">GUÍA</span>
+                  <span class="text-xs font-semibold text-white">Líneas rectas, curvas o libres</span>
+                </div>
+                <div class="bg-[#071326]/90 border border-sky-400/25 rounded-xl p-3">
+                  <span class="block text-[#38BDF8] text-[10px] font-bold uppercase tracking-wider">COMPATIBILIDAD</span>
+                  <span class="text-xs font-semibold text-white">John Deere, Case IH, New Holland, Fendt, Massey, Kubota y más</span>
+                </div>
+              </div>
+
+              <!-- Etiquetas -->
+              <div class="flex flex-wrap gap-1.5 mb-6 max-w-2xl">
+                <span class="px-2.5 py-1 rounded-full bg-white/5 border border-white/10 text-[11px] text-slate-300">Calibración guiada</span>
+                <span class="px-2.5 py-1 rounded-full bg-white/5 border border-white/10 text-[11px] text-slate-300">Convive con ISOBUS</span>
+                <span class="px-2.5 py-1 rounded-full bg-white/5 border border-white/10 text-[11px] text-slate-300">Compensación de terreno</span>
+              </div>
+
+              <div>
+                <a href="https://wa.me/595975679274?text=Hola%2C%20quiero%20cotizar%20Pilota%20con%20instalaci%C3%B3n%20para%20mi%20tractor%20(marca%20y%20modelo%3A%20___)." target="_blank" class="btn-farm-glow">
+                  <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.867-2.03-.967-.272-.099-.47-.148-.669.15-.198.297-.768.966-.941 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
+                  <span>Cotizar Pilota con Instalación</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- SLIDE 05 · TRACKER AGRI + MYFARMNAVIGATOR -->
+            <div class="farm-panel absolute inset-0 flex flex-col justify-center transition-all duration-700 opacity-0 translate-x-8 pointer-events-none" data-index="4" data-color="#0284C7">
+              <div class="flex flex-wrap items-center gap-2.5 mb-2">
+                <span class="text-xs font-extrabold uppercase tracking-widest text-[#38BDF8]">05 · Telemática · Nube</span>
+                <span class="px-2.5 py-0.5 rounded-full bg-sky-600 text-[10px] font-extrabold uppercase tracking-wider text-white shadow-sm">NUEVO 2025</span>
+              </div>
+              <h3 class="text-3xl sm:text-5xl font-black tracking-tight text-white mb-2">TRACKER AGRI + MYFARMNAVIGATOR</h3>
+              <p class="text-lg sm:text-xl font-bold text-[#38BDF8] mb-3">Tu flota, conectada</p>
+              <p class="text-slate-300 text-sm leading-relaxed max-w-2xl mb-5">
+                Una caja telemática de 78 g que registra posición, viajes, inclinación y datos del motor por CAN, y los envía en tiempo real a la nube. Incluye 1 año de servicio.
+              </p>
+
+              <!-- 6 Specs -->
+              <div class="grid grid-cols-2 sm:grid-cols-3 gap-2.5 mb-3 max-w-2xl">
+                <div class="bg-[#071326]/90 border border-[#0082C8]/25 rounded-xl p-3">
+                  <span class="block text-[#38BDF8] text-[10px] font-bold uppercase tracking-wider">SENSORES</span>
+                  <span class="text-xs font-semibold text-white">GPS + acelerómetro + giróscopo</span>
+                </div>
+                <div class="bg-[#071326]/90 border border-[#0082C8]/25 rounded-xl p-3">
+                  <span class="block text-[#38BDF8] text-[10px] font-bold uppercase tracking-wider">MOTOR (CAN J1939)</span>
+                  <span class="text-xs font-semibold text-white">Consumo · RPM · temp · combustible*</span>
+                </div>
+                <div class="bg-[#071326]/90 border border-[#0082C8]/25 rounded-xl p-3">
+                  <span class="block text-[#38BDF8] text-[10px] font-bold uppercase tracking-wider">SEGURIDAD</span>
+                  <span class="text-xs font-semibold text-white">Alarma de vuelco</span>
+                </div>
+                <div class="bg-[#071326]/90 border border-[#0082C8]/25 rounded-xl p-3">
+                  <span class="block text-[#38BDF8] text-[10px] font-bold uppercase tracking-wider">CONECTIVIDAD</span>
+                  <span class="text-xs font-semibold text-white">4G + SIM incluida</span>
+                </div>
+                <div class="bg-[#071326]/90 border border-[#0082C8]/25 rounded-xl p-3">
+                  <span class="block text-[#38BDF8] text-[10px] font-bold uppercase tracking-wider">NUBE</span>
+                  <span class="text-xs font-semibold text-white">1 año incluido · renovable 1, 3 o 5 años</span>
+                </div>
+                <div class="bg-[#071326]/90 border border-[#0082C8]/25 rounded-xl p-3">
+                  <span class="block text-[#38BDF8] text-[10px] font-bold uppercase tracking-wider">PROTECCIÓN</span>
+                  <span class="text-xs font-semibold text-white">IP56 · −20 / +65 °C</span>
+                </div>
+              </div>
+
+              <!-- Nota al pie + Qué ves en MyFarmnavigator -->
+              <p class="text-[10px] text-slate-400 mb-2 max-w-2xl">*Según datos disponibles en el CAN del vehículo.</p>
+              <div class="bg-[#0082C8]/10 border border-[#0082C8]/30 rounded-xl px-3.5 py-2 mb-6 max-w-2xl">
+                <span class="text-[11px] font-bold text-[#7DD3FC]">Qué ves en MyFarmnavigator: </span>
+                <span class="text-[11px] text-white font-medium">Ubicación en vivo · Historial de viajes · Telemetría por colores en mapa · Base de vehículos · Rendimiento</span>
+              </div>
+
+              <div>
+                <a href="https://wa.me/595975679274?text=Hola%2C%20quiero%20cotizar%20Tracker%20Agri%20para%20mi%20flota%20(cantidad%20de%20veh%C3%ADculos%3A%20___)." target="_blank" class="btn-farm-glow">
+                  <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.867-2.03-.967-.272-.099-.47-.148-.669.15-.198.297-.768.966-.941 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
+                  <span>Cotizar Tracker Agri</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Columna Derecha: Render Monumental Limpio con Resplandor -->
+          <div class="lg:col-span-5 relative h-[380px] sm:h-[460px] flex items-center justify-center">
+            
+            <!-- Resplandor Ambiental Reactivo -->
+            <div id="farm-aura" class="absolute w-72 sm:w-96 h-72 sm:h-96 rounded-full blur-[130px] opacity-40 transition-all duration-1000 pointer-events-none" style="background-color: #0082C8;"></div>
+
+            <!-- Hardware Renders Superpuestos -->
+            <div class="relative w-full h-full flex items-center justify-center z-10">
+              <img id="farm-img-0" src="/images/hardware/g12_full_navi.webp" onerror="this.onerror=null; this.src='/images/hardware/G12_FULL_navi.png';" alt="G12 Panorama Full" class="farm-hardware absolute max-h-[340px] sm:max-h-[430px] object-contain transition-all duration-700 opacity-100 scale-100 drop-shadow-[0_20px_35px_rgba(0,0,0,0.85)]">
+              <img id="farm-img-1" src="/images/hardware/allinone_rtk_new2024.webp" onerror="this.onerror=null; this.src='/images/hardware/Allinone_rtk_new2024.png';" alt="All in One RTK X" class="farm-hardware absolute max-h-[340px] sm:max-h-[430px] object-contain transition-all duration-700 opacity-0 scale-75 pointer-events-none drop-shadow-[0_20px_35px_rgba(0,0,0,0.85)]">
+              <img id="farm-img-2" src="/images/hardware/isoboost.webp" onerror="this.onerror=null; this.src='/images/hardware/isoBoost.png';" alt="ISOBoost Depth Control" class="farm-hardware absolute max-h-[340px] sm:max-h-[430px] object-contain transition-all duration-700 opacity-0 scale-75 pointer-events-none drop-shadow-[0_20px_35px_rgba(0,0,0,0.85)]">
+              <img id="farm-img-3" src="/images/hardware/farmnavigator_advancedpack.webp" onerror="this.onerror=null; this.src='/images/hardware/Farmnavigator_advancedpack.png';" alt="Pilota Dirección Automática" class="farm-hardware absolute max-h-[340px] sm:max-h-[430px] object-contain transition-all duration-700 opacity-0 scale-75 pointer-events-none drop-shadow-[0_20px_35px_rgba(0,0,0,0.85)]">
+              <img id="farm-img-4" src="/images/hardware/farmnavigator_tracker_agri.webp" onerror="this.onerror=null; this.src='/images/hardware/FARMNAVIGATOR_TRACKER_AGRI.png';" alt="Tracker Agri MyFarmnavigator" class="farm-hardware absolute max-h-[340px] sm:max-h-[430px] object-contain transition-all duration-700 opacity-0 scale-75 pointer-events-none drop-shadow-[0_20px_35px_rgba(0,0,0,0.85)]">
+            </div>
+
+            <!-- Botones Laterales Flotantes (< y >) -->
+            <button id="farm-prev" aria-label="Anterior" class="absolute left-0 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-[#071326]/80 hover:bg-[#0082C8] text-white backdrop-blur-md flex items-center justify-center transition border border-[#0082C8]/40 z-30 shadow-lg">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7"/></svg>
+            </button>
+            <button id="farm-next" aria-label="Siguiente" class="absolute right-0 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-[#071326]/80 hover:bg-[#0082C8] text-white backdrop-blur-md flex items-center justify-center transition border border-[#0082C8]/40 z-30 shadow-lg">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg>
             </button>
 
@@ -337,37 +818,65 @@
 
         </div>
 
-        <!-- Barra Inferior: 6 Barras de Progreso Dinámicas -->
+        <!-- Barra Inferior: Progreso Dinámico de 5 Módulos -->
         <div class="mt-8 pt-4 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
           <div class="flex items-center gap-3">
-            <span class="font-mono text-white font-bold" id="counter-display">01 / 06</span>
-            <span class="text-[11px] text-slate-500">Pase el cursor por encima para pausar</span>
+            <span class="font-mono text-white font-bold" id="farm-counter">01 / 05</span>
+            <span class="text-[11px] text-slate-500">Pase el cursor para pausar la rotación</span>
+          </div>
+          <div class="flex gap-2 w-full sm:w-auto">
+            <div class="farm-track flex-1 sm:w-20 h-1.5 rounded-full bg-white/10 overflow-hidden cursor-pointer" data-target="0"><div class="farm-bar h-full w-0 bg-[#0082C8] transition-all"></div></div>
+            <div class="farm-track flex-1 sm:w-20 h-1.5 rounded-full bg-white/10 overflow-hidden cursor-pointer" data-target="1"><div class="farm-bar h-full w-0 bg-[#00F0FF] transition-all"></div></div>
+            <div class="farm-track flex-1 sm:w-20 h-1.5 rounded-full bg-white/10 overflow-hidden cursor-pointer" data-target="2"><div class="farm-bar h-full w-0 bg-[#38BDF8] transition-all"></div></div>
+            <div class="farm-track flex-1 sm:w-20 h-1.5 rounded-full bg-white/10 overflow-hidden cursor-pointer" data-target="3"><div class="farm-bar h-full w-0 bg-[#0EA5E9] transition-all"></div></div>
+            <div class="farm-track flex-1 sm:w-20 h-1.5 rounded-full bg-white/10 overflow-hidden cursor-pointer" data-target="4"><div class="farm-bar h-full w-0 bg-[#0284C7] transition-all"></div></div>
+          </div>
+        </div>
+
+        <!-- FRANJA FIJA · COMPATIBILIDAD ISOBUS TOTAL (Expandible al pasar el mouse o tocar) -->
+        <div id="isobus-banner" class="mt-10 rounded-2xl bg-gradient-to-r from-[#071830] via-[#0A2242] to-[#071830] border border-[#0082C8]/50 p-5 sm:px-7 sm:py-5 shadow-[0_10px_30px_rgba(0,130,200,0.18)] transition-all duration-300 group cursor-pointer">
+          <div class="flex flex-col md:flex-row md:items-center justify-between gap-3">
+            <div class="flex items-start sm:items-center gap-3">
+              <span class="px-2.5 py-1 rounded-md bg-[#0082C8] text-white text-[10px] font-black uppercase tracking-wider shrink-0 mt-0.5 sm:mt-0">
+                ISOBUS TOTAL
+              </span>
+              <p class="text-xs sm:text-sm font-semibold text-white">
+                Compatible con cualquier implemento ISOBUS, de cualquier marca. Cable retrofit para tractores sin puerto ISOBUS.
+              </p>
+            </div>
+            <div class="flex items-center gap-2.5 shrink-0">
+              <span class="px-2.5 py-1 rounded-full bg-emerald-500/15 border border-emerald-400/40 text-emerald-300 text-[11px] font-bold">
+                Prueba gratis VT / TC
+              </span>
+              <span class="text-[11px] font-bold text-[#38BDF8] group-hover:text-white transition flex items-center gap-1">
+                <span>Detalles</span>
+                <svg class="w-4 h-4 transform transition-transform duration-300 group-hover:rotate-180" id="isobus-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+              </span>
+            </div>
           </div>
 
-          <div class="flex gap-2 w-full sm:w-auto">
-            <div class="sercrop-progress-track flex-1 sm:w-16 h-1.5 rounded-full bg-white/10 overflow-hidden cursor-pointer" data-target="0">
-              <div class="sercrop-progress-bar h-full w-0 bg-[#00D2D3] transition-all"></div>
-            </div>
-            <div class="sercrop-progress-track flex-1 sm:w-16 h-1.5 rounded-full bg-white/10 overflow-hidden cursor-pointer" data-target="1">
-              <div class="sercrop-progress-bar h-full w-0 bg-[#18D253] transition-all"></div>
-            </div>
-            <div class="sercrop-progress-track flex-1 sm:w-16 h-1.5 rounded-full bg-white/10 overflow-hidden cursor-pointer" data-target="2">
-              <div class="sercrop-progress-bar h-full w-0 bg-[#00A8FF] transition-all"></div>
-            </div>
-            <div class="sercrop-progress-track flex-1 sm:w-16 h-1.5 rounded-full bg-white/10 overflow-hidden cursor-pointer" data-target="3">
-              <div class="sercrop-progress-bar h-full w-0 bg-[#FFA000] transition-all"></div>
-            </div>
-            <div class="sercrop-progress-track flex-1 sm:w-16 h-1.5 rounded-full bg-white/10 overflow-hidden cursor-pointer" data-target="4">
-              <div class="sercrop-progress-bar h-full w-0 bg-[#FF9100] transition-all"></div>
-            </div>
-            <div class="sercrop-progress-track flex-1 sm:w-16 h-1.5 rounded-full bg-white/10 overflow-hidden cursor-pointer" data-target="5">
-              <div class="sercrop-progress-bar h-full w-0 bg-[#10AC84] transition-all"></div>
-            </div>
+          <!-- Contenido Expandido al pasar el mouse (o hacer clic en móvil) -->
+          <div id="isobus-details" class="max-h-0 overflow-hidden opacity-0 group-hover:max-h-64 group-hover:opacity-100 group-hover:mt-4 group-hover:pt-4 border-t border-[#0082C8]/25 transition-all duration-500 ease-out">
+            <ul class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs text-slate-300 leading-relaxed">
+              <li class="bg-black/25 rounded-xl p-3.5 border border-white/5">
+                <strong class="text-[#38BDF8] block mb-1">Certificación AEF Universal</strong>
+                Funciona con cualquier tractor e implemento ISOBUS, sin importar la marca (Farmnavigator es miembro AEF).
+              </li>
+              <li class="bg-black/25 rounded-xl p-3.5 border border-white/5">
+                <strong class="text-[#38BDF8] block mb-1">Cable Retrofit ISO11783-2</strong>
+                ¿Tu tractor no trae ISOBUS? El cable retrofit ISO11783-2 lo habilita. Lo traemos e instalamos nosotros.
+              </li>
+              <li class="bg-black/25 rounded-xl p-3.5 border border-white/5">
+                <strong class="text-[#38BDF8] block mb-1">Licencias con Prueba Gratuita</strong>
+                Licencias que se prueban antes de comprar: Virtual Terminal, Task Controller (control de secciones, importación de trabajos ISOXML, mapas de aplicación) y joystick auxiliar.
+              </li>
+            </ul>
           </div>
         </div>
 
       </div>
 
+      <!-- Estilos específicos Farmnavigator & Aura Verde del Logo -->
       <style is:global>
         .btn-whatsapp-glow {
           position: relative;
@@ -390,239 +899,237 @@
           transform: translateY(-2px) scale(1.03);
           box-shadow: 0 0 40px rgba(234, 88, 12, 0.9), 0 6px 20px rgba(0, 0, 0, 0.4);
         }
-        .btn-whatsapp-glow::after {
+        .btn-whatsapp-glow::after,
+        .btn-farm-glow::after {
           content: '';
           position: absolute;
           top: 0;
           left: -100%;
           width: 60%;
           height: 100%;
-          background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+          background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.45), transparent);
           transform: skewX(-20deg);
-          animation: btn-shine 2.5s infinite;
+          animation: btn-shine 2.6s infinite;
         }
+
+        .btn-farm-glow {
+          position: relative;
+          overflow: hidden;
+          display: inline-flex;
+          align-items: center;
+          gap: 0.75rem;
+          border-radius: 9999px;
+          padding: 0.875rem 2rem;
+          font-weight: 800;
+          font-size: 0.8rem;
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+          color: white;
+          background: linear-gradient(135deg, #0082C8 0%, #00A3FF 50%, #0066A1 100%);
+          box-shadow: 0 0 25px rgba(0, 130, 200, 0.65), 0 4px 14px rgba(0, 0, 0, 0.4);
+          transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .btn-farm-glow:hover {
+          transform: translateY(-2px) scale(1.03);
+          box-shadow: 0 0 40px rgba(0, 163, 255, 0.95), 0 6px 22px rgba(0, 0, 0, 0.5);
+        }
+
         @keyframes btn-shine {
           0% { left: -100%; }
           35% { left: 200%; }
           100% { left: 200%; }
         }
+
+        /* Aura Verde Oficial para el Logo Farmnavigator */
+        @keyframes farm-green-aura {
+          0%, 100% {
+            filter: drop-shadow(0 0 8px rgba(0, 168, 89, 0.6)) drop-shadow(0 0 20px rgba(16, 185, 129, 0.35));
+            transform: scale(1);
+          }
+          50% {
+            filter: drop-shadow(0 0 15px rgba(0, 210, 110, 0.95)) drop-shadow(0 0 32px rgba(16, 185, 129, 0.6));
+            transform: scale(1.02);
+          }
+        }
+        .farm-brand-aura {
+          animation: farm-green-aura 3.5s ease-in-out infinite;
+        }
       </style>
 
+      <!-- Script de Rotación Autónoma para Hardware Farmnavigator -->
       <script is:inline>
-        const panels = document.querySelectorAll('.sercrop-panel');
-        const bottles = document.querySelectorAll('.sercrop-bottle');
-        const tabs = document.querySelectorAll('.sercrop-tab');
-        const tracks = document.querySelectorAll('.sercrop-progress-track');
-        const bars = document.querySelectorAll('.sercrop-progress-bar');
-        const aura = document.getElementById('sercrop-aura');
-        const counter = document.getElementById('counter-display');
-        const theater = document.getElementById('sercrop-theater');
-        const prevBtn = document.getElementById('btn-prev');
-        const nextBtn = document.getElementById('btn-next');
+        const farmPanels = document.querySelectorAll('.farm-panel');
+        const farmHardwares = document.querySelectorAll('.farm-hardware');
+        const farmTabs = document.querySelectorAll('.farm-tab');
+        const farmTracks = document.querySelectorAll('.farm-track');
+        const farmBars = document.querySelectorAll('.farm-bar');
+        const farmAura = document.getElementById('farm-aura');
+        const farmCounter = document.getElementById('farm-counter');
+        const farmTheater = document.getElementById('farmnavigator-theater');
+        const farmPrev = document.getElementById('farm-prev');
+        const farmNext = document.getElementById('farm-next');
+        const isobusBanner = document.getElementById('isobus-banner');
+        const isobusDetails = document.getElementById('isobus-details');
+        const isobusChevron = document.getElementById('isobus-chevron');
 
-        let current = 0;
-        const TOTAL = 6;
-        const INTERVAL_TIME = 6000;
-        let progress = 0;
-        let timer = null;
-        let isPaused = false;
+        let farmCurrent = 0;
+        const FARM_TOTAL = 5;
+        const FARM_INTERVAL = 6000;
+        let farmProgress = 0;
+        let farmTimer = null;
+        let farmIsPaused = false;
 
-        function updateSlide(index) {
-          current = (index + TOTAL) % TOTAL;
-          progress = 0;
+        function updateFarmSlide(index) {
+          farmCurrent = (index + FARM_TOTAL) % FARM_TOTAL;
+          farmProgress = 0;
 
-          // 1. Paneles de texto
-          panels.forEach((p, idx) => {
-            if (idx === current) {
-              p.classList.remove('opacity-0', 'translate-x-8', 'pointer-events-none');
-              p.classList.add('opacity-100', 'translate-x-0');
+          farmPanels.forEach((p, idx) => {
+            if (idx === farmCurrent) {
+              p.classList.remove('opacity-0', 'translate-x-8', 'pointer-events-none', 'absolute', 'inset-0');
+              p.classList.add('opacity-100', 'translate-x-0', 'relative');
               const color = p.getAttribute('data-color');
-              if (aura && color) aura.style.backgroundColor = color;
+              if (farmAura && color) farmAura.style.backgroundColor = color;
             } else {
-              p.classList.add('opacity-0', 'translate-x-8', 'pointer-events-none');
-              p.classList.remove('opacity-100', 'translate-x-0');
+              p.classList.add('opacity-0', 'translate-x-8', 'pointer-events-none', 'absolute', 'inset-0');
+              p.classList.remove('opacity-100', 'translate-x-0', 'relative');
             }
           });
 
-          // 2. Botellas
-          bottles.forEach((b, idx) => {
-            if (idx === current) {
-              b.classList.remove('opacity-0', 'scale-75', 'pointer-events-none');
-              b.classList.add('opacity-100', 'scale-100');
+          farmHardwares.forEach((h, idx) => {
+            if (idx === farmCurrent) {
+              h.classList.remove('opacity-0', 'scale-75', 'pointer-events-none');
+              h.classList.add('opacity-100', 'scale-100');
             } else {
-              b.classList.add('opacity-0', 'scale-75', 'pointer-events-none');
-              b.classList.remove('opacity-100', 'scale-100');
+              h.classList.add('opacity-0', 'scale-75', 'pointer-events-none');
+              h.classList.remove('opacity-100', 'scale-100');
             }
           });
 
-          // 3. Pestañas
-          tabs.forEach((tab, idx) => {
-            const color = panels[current].getAttribute('data-color') || '#00D2D3';
-            if (idx === current) {
-              tab.className = `sercrop-tab px-3 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all border`;
+          farmTabs.forEach((tab, idx) => {
+            const color = farmPanels[farmCurrent].getAttribute('data-color') || '#0082C8';
+            if (idx === farmCurrent) {
+              tab.className = 'farm-tab px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider transition-all border whitespace-nowrap';
               tab.style.backgroundColor = `${color}25`;
-              tab.style.color = color;
-              tab.style.borderColor = `${color}60`;
+              tab.style.color = '#7DD3FC';
+              tab.style.borderColor = `${color}80`;
             } else {
-              tab.className = 'sercrop-tab px-3 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all text-slate-400 hover:text-white hover:bg-white/5';
+              tab.className = 'farm-tab px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider transition-all text-slate-400 hover:text-white hover:bg-white/5 whitespace-nowrap';
               tab.style.backgroundColor = '';
               tab.style.color = '';
               tab.style.borderColor = '';
             }
           });
 
-          // 4. Barras de progreso
-          bars.forEach((bar, idx) => {
-            if (idx < current) {
-              bar.style.width = '100%';
-            } else if (idx === current) {
-              bar.style.width = '0%';
-            } else {
-              bar.style.width = '0%';
-            }
+          farmBars.forEach((bar, idx) => {
+            if (idx < farmCurrent) bar.style.width = '100%';
+            else bar.style.width = '0%';
           });
 
-          // 5. Contador
-          if (counter) {
-            counter.textContent = `0${current + 1} / 0${TOTAL}`;
+          if (farmCounter) {
+            farmCounter.textContent = `0${farmCurrent + 1} / 0${FARM_TOTAL}`;
           }
         }
 
-        // Bucle de animación suave (cada 50ms)
-        function startLoop() {
-          clearInterval(timer);
-          timer = setInterval(() => {
-            if (!isPaused) {
-              progress += 50;
-              const pct = Math.min((progress / INTERVAL_TIME) * 100, 100);
-              if (bars[current]) bars[current].style.width = `${pct}%`;
-
-              if (progress >= INTERVAL_TIME) {
-                updateSlide(current + 1);
-              }
+        function startFarmLoop() {
+          clearInterval(farmTimer);
+          farmTimer = setInterval(() => {
+            if (!farmIsPaused) {
+              farmProgress += 50;
+              const pct = Math.min((farmProgress / FARM_INTERVAL) * 100, 100);
+              if (farmBars[farmCurrent]) farmBars[farmCurrent].style.width = `${pct}%`;
+              if (farmProgress >= FARM_INTERVAL) updateFarmSlide(farmCurrent + 1);
             }
           }, 50);
         }
 
-        // Controles de Pestañas y Barras
-        tabs.forEach(t => {
-          t.addEventListener('click', () => {
-            const target = parseInt(t.getAttribute('data-target'));
-            updateSlide(target);
-          });
-        });
+        farmTabs.forEach(t => t.addEventListener('click', () => updateFarmSlide(parseInt(t.getAttribute('data-target')))));
+        farmTracks.forEach(tr => tr.addEventListener('click', () => updateFarmSlide(parseInt(tr.getAttribute('data-target')))));
+        if (farmPrev) farmPrev.addEventListener('click', () => updateFarmSlide(farmCurrent - 1));
+        if (farmNext) farmNext.addEventListener('click', () => updateFarmSlide(farmCurrent + 1));
 
-        tracks.forEach(tr => {
-          tr.addEventListener('click', () => {
-            const target = parseInt(tr.getAttribute('data-target'));
-            updateSlide(target);
-          });
-        });
-
-        // Flechas Prev / Next
-        if (prevBtn) prevBtn.addEventListener('click', () => updateSlide(current - 1));
-        if (nextBtn) nextBtn.addEventListener('click', () => updateSlide(current + 1));
-
-        // Pausa al pasar el mouse por encima
-        if (theater) {
-          theater.addEventListener('mouseenter', () => { isPaused = true; });
-          theater.addEventListener('mouseleave', () => { isPaused = false; });
-        }
-
-        // Soporte Swipe Táctil (Móvil / Tablet)
-        let touchStartX = 0;
-        let touchEndX = 0;
-
-        if (theater) {
-          theater.addEventListener('touchstart', (e) => {
-            touchStartX = e.changedTouches[0].screenX;
-          }, { passive: true });
-
-          theater.addEventListener('touchend', (e) => {
-            touchEndX = e.changedTouches[0].screenX;
-            if (touchStartX - touchEndX > 50) {
-              // Swipe izquierda -> siguiente
-              updateSlide(current + 1);
-            } else if (touchEndX - touchStartX > 50) {
-              // Swipe derecha -> anterior
-              updateSlide(current - 1);
+        if (isobusBanner && isobusDetails) {
+          isobusBanner.addEventListener('click', () => {
+            const isOpen = isobusDetails.classList.contains('max-h-96');
+            if (isOpen) {
+              isobusDetails.classList.remove('max-h-96', 'opacity-100', 'mt-4', 'pt-4');
+              if (isobusChevron) isobusChevron.classList.remove('rotate-180');
+            } else {
+              isobusDetails.classList.add('max-h-96', 'opacity-100', 'mt-4', 'pt-4');
+              if (isobusChevron) isobusChevron.classList.add('rotate-180');
             }
+          });
+        }
+
+        if (farmTheater) {
+          farmTheater.addEventListener('mouseenter', () => { farmIsPaused = true; });
+          farmTheater.addEventListener('mouseleave', () => { farmIsPaused = false; });
+          
+          let touchStartX = 0;
+          let touchEndX = 0;
+          farmTheater.addEventListener('touchstart', (e) => { touchStartX = e.changedTouches[0].screenX; }, { passive: true });
+          farmTheater.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            if (touchStartX - touchEndX > 50) updateFarmSlide(farmCurrent + 1);
+            else if (touchEndX - touchStartX > 50) updateFarmSlide(farmCurrent - 1);
           }, { passive: true });
         }
 
-        // Inicializar
-        updateSlide(0);
-        startLoop();
+        updateFarmSlide(0);
+        startFarmLoop();
       </script>
     </section>
 
-    <!-- HARDWARE -->
-    <section id="hardware" class="py-20 bg-[#F8FAFC] border-b border-slate-200">
+    <!-- INTEGRACIÓN AÉREA & DRONES AGRÍCOLAS -->
+    <section class="py-16 bg-[#060D1A] text-white border-b border-slate-800">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center max-w-4xl mx-auto mb-14">
-          <span class="text-[#EA580C] font-bold text-xs uppercase tracking-widest">Proveedores y Soporte Técnico Oficial</span>
-          <h2 class="text-3xl sm:text-4xl font-extrabold text-[#1E293B] mt-2 mb-3">Soluciones ISOBUS y Equipamiento RTK en Paraguay</h2>
-          <div class="w-16 h-1 bg-[#1B4332] mx-auto rounded-full mb-6"></div>
-          <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
-            En Cultivar S.A. somos su nexo directo con la tecnología de <strong>Farmnavigator</strong> y <strong>RTKPro</strong>. Proveemos, instalamos y damos soporte local a terminales ISOBUS universales y antenas RTK de precisión centimétrica que se adaptan al tractor y los implementos que usted ya tiene.
-          </p>
-        </div>
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div class="bg-white rounded-2xl border border-slate-200 shadow-sm border-t-4 border-[#1B4332]">
-            <div class="h-52 bg-slate-50 flex items-center justify-center p-4"><img src="/images/FARMNAVIGATOR_G12PANORAMA_orizzontale_verticale.png" class="max-h-full max-w-full" alt="Consola G12 Farmnavigator Cultivar"></div>
-            <div class="p-5">
-              <span class="text-xs font-bold text-blue-800 bg-blue-50 px-2 rounded-full mb-2 inline-block">Distribución Farmnavigator</span>
-              <h3 class="text-lg font-bold text-[#1E293B] mb-2">Consola G12 Panorama</h3>
-              <p class="text-slate-600 text-xs">Terminal Virtual ISOBUS (VT) universal de 12". Control de dosis y guiado en pantalla de alto brillo. Instalación garantizada.</p>
+        <div class="bg-gradient-to-r from-slate-900/90 via-[#0A1628] to-slate-900 border border-white/10 rounded-3xl p-8 lg:p-12 relative overflow-hidden">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            
+            <div class="lg:col-span-7">
+              <span class="text-[#0082C8] font-extrabold text-xs uppercase tracking-widest block mb-2">Remote Sensing & Pulverización ULV</span>
+              <h3 class="text-2xl sm:text-3xl font-extrabold text-white mb-4">
+                Drones DJI Agras & Mavic 3M: Diagnóstico y Acción
+              </h3>
+              <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                Integramos vuelos multiespectrales para mapeo de índices NDVI/NDRE con drones DJI Agras para pulverización localizada de alta precisión. La información de estrés del lote se exporta directamente a la consola ISOBUS para generar prescripciones de dosis variable.
+              </p>
+              <a href="https://wa.me/595975679274?text=Hola,%20solicito%20asesoramiento%20en%20Drones%20DJI%20Agricolas" target="_blank" class="btn-whatsapp-glow">
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.867-2.03-.967-.272-.099-.47-.148-.669.15-.198.297-.768.966-.941 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
+                <span>Cotizar Drones DJI</span>
+              </a>
             </div>
-            <div class="p-5 pt-0"><a href="https://wa.me/595975679274?text=Cotizar%20Consola%20Farmnavigator" target="_blank" class="w-full rounded-full py-2 px-4 font-bold text-xs text-white bg-[#EA580C] text-center inline-block">Cotizar su Equipo</a></div>
-          </div>
-          <div class="bg-white rounded-2xl border border-slate-200 shadow-sm border-t-4 border-[#1B4332]">
-            <div class="h-52 bg-slate-50 flex items-center justify-center p-4"><img src="/images/isobus_farmnavigator.jpg" class="max-h-full max-w-full" alt="Control ISOBUS Cultivar"></div>
-            <div class="p-5">
-              <span class="text-xs font-bold text-purple-800 bg-purple-50 px-2 rounded-full mb-2 inline-block">Actualización de Maquinaria</span>
-              <h3 class="text-lg font-bold text-[#1E293B] mb-2">Módulos ISOBUS (Retrofit)</h3>
-              <p class="text-slate-600 text-xs">Modernizamos su pulverizadora o sembradora actual. Corte por secciones automático (TC-SC) y ahorro inmediato en insumos.</p>
+
+            <div class="lg:col-span-5 flex items-center justify-center gap-6">
+              <div class="relative w-40 sm:w-48 h-40 sm:h-48 flex items-center justify-center p-3 rounded-2xl bg-white/5 border border-white/10">
+                <img src="/images/hardware/dji-m3m-web-7-tr.webp" alt="DJI Mavic 3M Multispectral" class="max-h-full max-w-full object-contain">
+                <span class="absolute bottom-2 text-[10px] uppercase font-bold text-slate-400">DJI Mavic 3M</span>
+              </div>
+              <div class="relative w-40 sm:w-48 h-40 sm:h-48 flex items-center justify-center p-3 rounded-2xl bg-white/5 border border-white/10">
+                <img src="/images/hardware/dji-t100.webp" alt="DJI Agras Series" class="max-h-full max-w-full object-contain">
+                <span class="absolute bottom-2 text-[10px] uppercase font-bold text-slate-400">DJI Agras Series</span>
+              </div>
             </div>
-            <div class="p-5 pt-0"><a href="https://wa.me/595975679274?text=Consulta%20sobre%20modulos%20ISOBUS" target="_blank" class="w-full rounded-full py-2 px-4 font-bold text-xs text-white bg-[#EA580C] text-center inline-block">Consultar Instalación</a></div>
-          </div>
-          <div class="bg-white rounded-2xl border border-slate-200 shadow-sm border-t-4 border-[#1B4332]">
-            <div class="h-52 bg-slate-50 flex items-center justify-center p-4"><img src="/images/Allinone4GRTK.png" class="max-h-full max-w-full" alt="Antena All in One RTK Cultivar"></div>
-            <div class="p-5">
-              <span class="text-xs font-bold text-teal-800 bg-teal-50 px-2 rounded-full mb-2 inline-block">Antena Inteligente</span>
-              <h3 class="text-lg font-bold text-[#1E293B] mb-2">Receptor All-in-One RTK</h3>
-              <p class="text-slate-600 text-xs">GNSS multifrecuencia (AvMap) con módem 4G integrado y compensación de terreno. Conecte y logre ±2 cm de precisión al instante.</p>
-            </div>
-            <div class="p-5 pt-0"><a href="https://wa.me/595975679274?text=Cotizar%20Antena%20RTK" target="_blank" class="w-full rounded-full py-2 px-4 font-bold text-xs text-white bg-[#EA580C] text-center inline-block">Cotizar Antena 4G</a></div>
-          </div>
-          <div class="bg-white rounded-2xl border border-slate-200 shadow-sm border-t-4 border-[#1B4332]">
-            <div class="h-52 bg-slate-50 flex items-center justify-center p-4"><img src="/images/pluged-rthpro.jpeg" class="max-h-full max-w-full" alt="Modulo RTK Pro Cultivar"></div>
-            <div class="p-5">
-              <span class="text-xs font-bold text-emerald-800 bg-emerald-50 px-2 rounded-full mb-2 inline-block">Servicio Activo Cultivar</span>
-              <h3 class="text-lg font-bold text-[#1E293B] mb-2">Módulos & Señal RTKPro</h3>
-              <p class="text-slate-600 text-xs">Adiós a las bases físicas. Habilitamos su piloto (John Deere, Trimble, etc.) a nuestra red de corrección NTRIP por suscripción.</p>
-            </div>
-            <div class="p-5 pt-0"><a href="https://wa.me/595975679274?text=Consulta%20suscripcion%20senal%20RTKPro" target="_blank" class="w-full rounded-full py-2 px-4 font-bold text-xs text-white bg-[#EA580C] text-center inline-block">Ver Planes NTRIP</a></div>
+
           </div>
         </div>
       </div>
     </section>
 
-    <!-- INTELIGENCIA & TELEMETRÍA -->
+    <!-- BANNER TRACTOR EN CAMPO & SINCRONIZACIÓN CLOUD -->
     <section id="inteligencia" class="py-20 bg-white border-b border-slate-200">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-3xl mx-auto mb-14">
-          <span class="text-[#EA580C] font-bold text-xs uppercase tracking-widest">Digitalización Completa del Lote</span>
-          <h2 class="text-3xl sm:text-4xl font-extrabold text-[#1E293B] mt-2 mb-3">Analítica Avanzada y Telemetría Integrada</h2>
-          <div class="w-16 h-1 bg-[#1B4332] mx-auto rounded-full"></div>
+          <span class="text-[#0082C8] font-bold text-xs uppercase tracking-widest">Ecosistema Cerrado (Closed-Loop)</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-[#1E293B] mt-2 mb-3">Conectividad Total en el Lote</h2>
+          <div class="w-16 h-1 bg-[#0082C8] mx-auto rounded-full"></div>
         </div>
 
-        <div class="rounded-3xl overflow-hidden shadow-2xl border border-slate-200 mb-14 relative group">
+        <div class="rounded-3xl overflow-hidden shadow-2xl border border-slate-200 relative group">
           <img src="/images/imagen-tractor-siembra.jpeg" alt="Siembra conectada" class="w-full h-80 sm:h-96 lg:h-[500px] object-cover">
           <div class="absolute bottom-0 left-0 w-full h-1/2 pointer-events-none opacity-80" style="transform: perspective(600px) rotateX(60deg); transform-origin: bottom;">
             <div class="absolute inset-0 flex justify-center">
-              <div class="w-48 h-[200%] border-l-4 border-r-4 border-emerald-400 shadow-[0_0_20px_rgba(52,211,153,0.8)] opacity-70"></div>
-              <div class="absolute inset-0 bg-[linear-gradient(transparent_48%,rgba(52,211,153,0.3)_50%,transparent_52%)] [background-size:100%_40px] animate-pulse"></div>
+              <div class="w-48 h-[200%] border-l-4 border-r-4 border-cyan-400 shadow-[0_0_20px_rgba(6,182,212,0.8)] opacity-70"></div>
+              <div class="absolute inset-0 bg-[linear-gradient(transparent_48%,rgba(6,182,212,0.3)_50%,transparent_52%)] [background-size:100%_40px] animate-pulse"></div>
             </div>
           </div>
           <div class="absolute top-10 right-10 flex-col items-center pointer-events-none drop-shadow-xl hidden sm:flex">
@@ -631,60 +1138,20 @@
             </svg>
             <div class="flex gap-3">
               <div class="w-1 h-32 bg-gradient-to-t from-transparent via-cyan-400 to-white animate-pulse"></div>
-              <div class="w-1 h-24 bg-gradient-to-t from-transparent via-emerald-400 to-white animate-pulse delay-75 mt-8"></div>
+              <div class="w-1 h-24 bg-gradient-to-t from-transparent via-[#0082C8] to-white animate-pulse delay-75 mt-8"></div>
               <div class="w-1 h-40 bg-gradient-to-t from-transparent via-cyan-400 to-white animate-pulse delay-150"></div>
             </div>
           </div>
-          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-6 sm:p-10">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent flex flex-col justify-end p-6 sm:p-10">
             <div class="max-w-2xl text-white">
-              <span class="px-3 py-1 rounded-full bg-[#EA580C] text-xs font-bold uppercase tracking-wider mb-2 inline-block">El Ecosistema Cultivar S.A. en Acción</span>
-              <h3 class="text-2xl sm:text-3xl font-extrabold mb-2">Conectividad directa entre cabina, implemento y nube</h3>
+              <span class="px-3 py-1 rounded-full bg-[#0082C8] text-xs font-bold uppercase tracking-wider mb-2 inline-block">Sincronización en Vivo</span>
+              <h3 class="text-2xl sm:text-3xl font-extrabold mb-2">De la Cabina del Tractor a su Oficina</h3>
               <p class="text-sm sm:text-base text-slate-200 font-normal">
-                Sincronización remota de labores de siembra guiadas por nuestras antenas RTK, con telemetría operativa que se transmite en vivo desde la consola Farmnavigator directo a su panel en la nube.
+                Sincronización remota de labores de siembra y pulverización guiadas por antenas RTK, con telemetría operativa que se transmite en vivo desde la consola Farmnavigator directo al portal MyFarmnavigator Cloud.
               </p>
             </div>
           </div>
         </div>
-
-        <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          <div class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all overflow-hidden flex flex-col justify-between border-t-4 border-[#1B4332]">
-            <div>
-              <div class="h-60 bg-slate-50 overflow-hidden border-b border-slate-100">
-                <img src="/images/hero-campo.jpeg" alt="Diagnóstico Agronómico" class="w-full h-full object-cover">
-              </div>
-              <div class="p-7">
-                <span class="inline-block text-xs font-bold px-2.5 py-1 bg-purple-50 text-purple-800 rounded-full mb-3">Diagnóstico y Prescripción</span>
-                <h3 class="text-2xl font-bold text-[#1E293B] mb-3">Remote Sensing y Vuelos Multiespectrales</h3>
-                <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                  El hardware es solo el principio. Nuestro servicio técnico complementa su equipamiento con cruce de datos satelitales (Remote Sensing) y vuelos de drones multiespectrales locales. Generamos los mapas NDVI de estrés hídrico para que su consola ISOBUS sepa exactamente dónde aplicar cada dosis.
-                </p>
-              </div>
-            </div>
-            <div class="p-7 pt-0">
-              <a href="https://wa.me/595975679274?text=Info%20Diagnostico%20Satelital%20y%20Drones" target="_blank" class="w-full rounded-full py-3 px-6 font-bold text-white bg-[#EA580C] hover:bg-[#C2410C] text-center inline-block">Consultar Mapas de Prescripción</a>
-            </div>
-          </div>
-
-          <div class="bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition-all overflow-hidden flex flex-col justify-between border-t-4 border-[#1B4332]">
-            <div>
-              <div class="h-60 bg-slate-50 flex items-center justify-center p-8 border-b border-slate-100">
-                <img src="/images/logo_myfarmnavigator_cloud.png" alt="MyFarmnavigator Cloud Cultivar S.A." class="max-h-24 w-auto object-contain">
-              </div>
-              <div class="p-7">
-                <span class="inline-block text-xs font-bold px-2.5 py-1 bg-sky-50 text-sky-800 rounded-full mb-3">Portal del Productor (FMIS)</span>
-                <h3 class="text-2xl font-bold text-[#1E293B] mb-2">MyFarmnavigator Cloud & Telemetría CANBus</h3>
-                <p class="text-xs font-semibold text-[#1B4332] mb-3 uppercase tracking-wider">Tome el control remoto de su flota</p>
-                <p class="text-slate-600 text-sm leading-relaxed mb-4">
-                  El software central (FMIS) donde convergen todos los datos de sus consolas. Supervise en tiempo real el consumo de gasoil (L/ha) desde su celular. Envíe líneas A-B y prescripciones directo al tractor de forma inalámbrica (Zero-Touch), eliminando pendrives y errores del operador.
-                </p>
-              </div>
-            </div>
-            <div class="p-7 pt-0">
-              <a href="https://wa.me/595975679274?text=Deseo%20conocer%20la%20plataforma%20MyFarmnavigator" target="_blank" class="w-full rounded-full py-3 px-6 font-bold text-white bg-[#EA580C] hover:bg-[#C2410C] text-center inline-block">Implementar Plataforma Cloud</a>
-            </div>
-          </div>
-        </div>
-
       </div>
     </section>
 
@@ -699,14 +1166,14 @@
           <p class="text-sm text-slate-400 mt-2 max-w-md">Ruta VI Juan León Mallorquín Km 45, Bella Vista, Itapúa - Paraguay.</p>
         </div>
         <div>
-          <a href="https://wa.me/595975679274" target="_blank" class="rounded-full px-6 py-3 font-semibold text-white bg-[#1B4332] hover:bg-[#2D6A4F] border border-emerald-700/50 inline-flex items-center gap-3 text-sm">
+          <a href="https://wa.me/595975679274" target="_blank" class="rounded-full px-6 py-3 font-semibold text-white bg-[#0082C8] hover:bg-[#006BA8] border border-cyan-500/50 inline-flex items-center gap-3 text-sm transition">
             <span>WhatsApp: +595 975 679274</span>
           </a>
         </div>
       </div>
       <div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
         <p>2026 Cultivar S.A. Todos los derechos reservados.</p>
-        <p class="italic text-emerald-400 font-medium">Tu campo, nuestro compromiso.</p>
+        <p class="italic text-cyan-400 font-medium">Tecnología de precisión para el agro paraguayo.</p>
       </div>
     </div>
   </footer>
