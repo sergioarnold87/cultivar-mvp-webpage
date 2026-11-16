@@ -1,5 +1,5 @@
 ---
-// Cultivar S.A. - Landing Page Oficial
+// Cultivar S.A. - Landing Page Oficial (Clean Tech B2B)
 ---
 <!DOCTYPE html>
 <html lang="es" class="scroll-smooth">
@@ -7,114 +7,220 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <title>Cultivar S.A. | Tecnología Agronómica · Bella Vista, Itapúa</title>
-  <meta name="description" content="Maximizamos el rendimiento por hectárea a través de nutrición vegetal avanzada, hardware de guiado satelital y diagnóstico con drones e IA.">
+  <title>Cultivar S.A. | Sistemas Ciberfísicos & Tecnología Agronómica · Itapúa</title>
+  <meta name="description" content="Ingeniería ciberfísica aplicada al agro: nutrición fisiológica Sercrop, hardware ISOBUS Farmnavigator, señal RTKPro ±2 cm y telemetría en Itapúa.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-<body class="bg-[#F8FAFC] text-slate-800 antialiased min-h-screen flex flex-col selection:bg-[#0082C8] selection:text-white">
+<body class="bg-[#070D0B] text-white antialiased min-h-screen flex flex-col selection:bg-[#18D253] selection:text-[#041108]">
 
-  <!-- NAVBAR -->
-  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200">
+  <!-- NAVBAR CLEAN TECH -->
+  <header class="sticky top-0 z-50 bg-[#070D0B]/90 backdrop-blur-md border-b border-white/10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
-      <a href="/" class="flex items-center gap-3">
-        <img src="/images/cultivar-logo.jpeg" alt="Cultivar S.A." class="h-12 w-auto object-contain">
+      <a href="#inicio" class="relative inline-flex items-center justify-center py-1.5 px-3 transition-transform hover:scale-105">
+        <span class="absolute -inset-1 rounded-full pointer-events-none animate-pulse" style="background: radial-gradient(ellipse at center, rgba(24,210,83,0.26) 0%, rgba(163,230,53,0.10) 50%, transparent 75%);"></span>
+        <img src="/images/cultivar-logo.png" alt="Cultivar S.A." class="relative z-10 h-12 w-auto object-contain sercrop-neon-aura">
       </a>
-      <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold text-slate-700">
-        <a href="#quienes-somos" class="hover:text-[#1B4332] transition-colors">Quiénes Somos</a>
-        <a href="#sercrop" class="hover:text-[#1B4332] transition-colors">Línea Sercrop</a>
-        <a href="#hardware" class="hover:text-[#0082C8] transition-colors">Hardware & RTK</a>
-        <a href="#inteligencia" class="hover:text-[#1B4332] transition-colors">Telemetría & IA</a>
+      <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold text-slate-300">
+        <a href="#quienes-somos" class="hover:text-[#18D253] transition-colors">Sistemas Ciberfísicos</a>
+        <a href="#sercrop" class="hover:text-[#18D253] transition-colors">Línea Sercrop</a>
+        <a href="#hardware" class="hover:text-[#00F0FF] transition-colors">Hardware & RTK</a>
+        <a href="#inteligencia" class="hover:text-[#00F0FF] transition-colors">Telemetría & IA</a>
       </nav>
-      <a href="https://wa.me/595975679274" target="_blank" rel="noopener noreferrer" class="rounded-full px-6 py-2.5 font-bold text-sm text-white bg-[#EA580C] hover:bg-[#C2410C] shadow-sm transition-all inline-flex items-center gap-2">
-        <span>Contactar Asesor</span>
+      <a href="https://wa.me/595975679274?text=Hola%20Cultivar%2C%20quisiera%20contactar%20con%20un%20asesor%20t%C3%A9cnico." target="_blank" rel="noopener noreferrer" class="rounded-full px-5 py-2 font-bold text-xs uppercase tracking-wider text-slate-200 border border-white/20 hover:border-[#18D253] hover:text-white transition-all inline-flex items-center gap-2">
+        <span class="w-2 h-2 rounded-full bg-[#18D253]"></span>
+        <span>Contacto Directo</span>
       </a>
     </div>
   </header>
 
   <main class="flex-grow">
-    
-    <!-- QUIÉNES SOMOS -->
-    <section id="quienes-somos" class="py-16 sm:py-20 bg-[#F8FAFC] border-b border-slate-200 relative overflow-hidden bg-[radial-gradient(#cbd5e1_1px,transparent_1px)] [background-size:24px_24px]">
-      <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-full max-w-4xl h-80 bg-[#1B4332]/5 blur-3xl rounded-full pointer-events-none"></div>
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div class="max-w-4xl mx-auto bg-white/90 backdrop-blur-md rounded-3xl p-8 sm:p-12 border border-slate-200 shadow-sm mb-12 relative text-center">
-          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#1B4332]/10 border border-[#1B4332]/20 text-[#1B4332] text-xs font-bold uppercase tracking-wider mb-4">
-            <span class="w-2 h-2 rounded-full bg-[#EA580C]"></span>
-            INTEGRACIÓN AGRONÓMICA & AGRICULTURA DE PRECISIÓN
-          </div>
-          <h2 class="text-3xl sm:text-4xl font-extrabold text-[#1E293B] tracking-tight mb-3">Aliados estratégicos en cada etapa de su ciclo productivo</h2>
-          <div class="w-16 h-1 bg-[#1B4332] mx-auto rounded-full mb-6"></div>
-          <p class="text-base sm:text-lg text-slate-700 leading-relaxed font-normal max-w-3xl mx-auto mb-8">
-            En <strong>Cultivar S.A.</strong> transformamos los desafíos del lote en resultados medibles y sostenibles. Integramos fisiología vegetal de alta gama, automatización de maquinaria ISOBUS y conectividad satelital, respaldados por servicio técnico permanente en Itapúa.
-          </p>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-6 border-t border-slate-100 text-left">
-            <div class="flex items-center gap-3 p-2">
-              <div class="w-10 h-10 rounded-xl bg-emerald-50 text-[#1B4332] flex items-center justify-center font-bold text-lg">🌾</div>
-              <div><h4 class="text-xs font-bold text-[#1E293B] uppercase">Nutrición Sercrop</h4><p class="text-[11px] text-slate-500">Manejo fisiológico avanzado</p></div>
-            </div>
-            <div class="flex items-center gap-3 p-2">
-              <div class="w-10 h-10 rounded-xl bg-blue-50 text-blue-700 flex items-center justify-center font-bold text-lg">🛰️</div>
-              <div><h4 class="text-xs font-bold text-[#1E293B] uppercase">Farmnavigator & RTK</h4><p class="text-[11px] text-slate-500">Distribuidores y Soporte Oficial</p></div>
-            </div>
-            <div class="flex items-center gap-3 p-2">
-              <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-700 flex items-center justify-center font-bold text-lg">📊</div>
-              <div><h4 class="text-xs font-bold text-[#1E293B] uppercase">Telemetría IoT</h4><p class="text-[11px] text-slate-500">Datos y monitoreo Cloud</p></div>
-            </div>
-          </div>
-        </div>
 
-        <div class="grid md:grid-cols-3 gap-6 mb-12">
-          <div class="bg-white/90 backdrop-blur-sm rounded-2xl p-8 border border-slate-200 shadow-sm border-t-4 border-[#1B4332]">
-            <div class="flex justify-between items-start mb-5">
-              <div class="w-12 h-12 rounded-xl bg-emerald-50 text-[#1B4332] flex items-center justify-center font-bold text-2xl shadow-inner">🌱</div>
-              <span class="text-xs font-mono font-bold text-slate-400">01</span>
-            </div>
-            <h3 class="text-xl font-bold text-[#1E293B] mb-2">Innovación</h3>
-            <p class="text-sm text-slate-600 leading-relaxed">Prácticas y formulaciones para responder a las exigencias agronómicas del clima regional.</p>
-          </div>
-          <div class="bg-white/90 backdrop-blur-sm rounded-2xl p-8 border border-slate-200 shadow-sm border-t-4 border-[#1B4332]">
-            <div class="flex justify-between items-start mb-5">
-              <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-700 flex items-center justify-center font-bold text-2xl shadow-inner">🚜</div>
-              <span class="text-xs font-mono font-bold text-slate-400">02</span>
-            </div>
-            <h3 class="text-xl font-bold text-[#1E293B] mb-2">Tecnología</h3>
-            <p class="text-sm text-slate-600 leading-relaxed">Incorporamos herramientas digitales y hardware RTK que maximizan el rendimiento operativo de su maquinaria.</p>
-          </div>
-          <div class="bg-white/90 backdrop-blur-sm rounded-2xl p-8 border border-slate-200 shadow-sm border-t-4 border-[#1B4332]">
-            <div class="flex justify-between items-start mb-5">
-              <div class="w-12 h-12 rounded-xl bg-amber-50 text-amber-800 flex items-center justify-center font-bold text-2xl shadow-inner">🌍</div>
-              <span class="text-xs font-mono font-bold text-slate-400">03</span>
-            </div>
-            <h3 class="text-xl font-bold text-[#1E293B] mb-2">Sustentabilidad</h3>
-            <p class="text-sm text-slate-600 leading-relaxed">Cuidado del suelo y eficiencia en insumos para que la productividad actual perdure en las próximas campañas.</p>
-          </div>
+    <!-- 01 · HERO STAGE LIMPIO (CLEAN TECH B2B) -->
+    <section id="inicio" class="relative min-h-[85vh] flex items-center bg-[#070D0B] border-b border-white/10 overflow-hidden">
+      
+      <!-- Fondo Visual Ciberfísico Oscurecido -->
+      <div class="absolute inset-0 z-0">
+        <img 
+          src="/images/imagen-tractor-siembra.jpeg" 
+          alt="Agricultura de precisión y telemetría en campo" 
+          class="w-full h-full object-cover object-center opacity-50"
+        />
+        <!-- Máscara direccional para lectura nítida al 50% izquierdo y escena despejada a la derecha -->
+        <div class="absolute inset-0 bg-gradient-to-r from-[#070D0B] via-[#070D0B]/85 to-[#070D0B]/20"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-[#070D0B] via-transparent to-[#070D0B]/50"></div>
+      </div>
+
+      <!-- Contenedor Principal (Alineado a la izquierda, 50% de pantalla) -->
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10 w-full">
+        <div class="max-w-2xl text-left">
+          <h1 class="text-4xl sm:text-5xl lg:text-[3.5rem] font-black text-white tracking-tight leading-[1.08] mb-6">
+            Ingeniería de precisión para el <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#18D253] to-[#00F0FF]">control total</span> de cada hectárea.
+          </h1>
+
+          <h2 class="text-base sm:text-lg text-slate-300 font-normal leading-relaxed mb-8 max-w-xl">
+            Integramos biotecnología foliar <strong class="text-white font-semibold">Sercrop</strong>, automatización ISOBUS <strong class="text-white font-semibold">Farmnavigator</strong> y señal satelital <strong class="text-white font-semibold">RTKPro (±2 cm)</strong> con soporte técnico permanente en campo.
+          </h2>
+
+          <a href="#quienes-somos" class="text-xs font-bold uppercase tracking-widest text-slate-300 hover:text-[#18D253] transition inline-flex items-center gap-2.5 py-2">
+            <span>Explorar Ecosistema</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- LÍNEA SERCROP: TEATRO DE ROTACIÓN AUTOMÁTICA -->
-    <section id="sercrop" class="py-16 lg:py-20 bg-[#050B07] text-white relative overflow-hidden select-none">
-      <div id="sercrop-theater" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-white/10 pb-6 mb-10">
-          <div>
-            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-[#EA580C] text-xs font-bold uppercase tracking-widest mb-2">
-              <span class="w-2 h-2 rounded-full bg-[#EA580C] animate-pulse"></span>
-              Rotación Automática · 6 Segundos
+    <!-- 02 · QUIÉNES SOMOS (LA DIVISIÓN LÓGICA · BENTO BOX 4 PILARES) -->
+    <section id="quienes-somos" class="py-20 lg:py-28 bg-[#0B1210] border-b border-white/10 relative overflow-hidden">
+      <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[300px] bg-gradient-to-r from-[#18D253]/10 via-[#00F0FF]/10 to-transparent blur-[120px] pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <!-- Encabezado Introductorio Centrado -->
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-xs font-extrabold uppercase tracking-widest text-[#00F0FF] block mb-3">
+            Arquitectura Integral de Producción
+          </span>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight mb-5">
+            Sistemas Ciberfísicos: Innovación y control agronómico
+          </h2>
+          <div class="w-20 h-1 bg-gradient-to-r from-[#18D253] to-[#00F0FF] mx-auto rounded-full mb-6"></div>
+          <p class="text-slate-300 text-base sm:text-lg leading-relaxed">
+            En <strong>Cultivar</strong> conectamos la biología del cultivo con la automatización mecatrónica y los datos en la nube. Integramos cuatro pilares tecnológicos bajo un mismo respaldo técnico local en Itapúa para transformar cada variable del lote en rentabilidad medible.
+          </p>
+        </div>
+
+        <!-- Bento Grid de 4 Pilares con Iconografía Vectorial SVG -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <!-- Pilar 1: Nutrición (Sercrop) -->
+          <div class="group rounded-3xl bg-[#101916] border border-white/10 p-7 flex flex-col justify-between transition-all duration-300 hover:-translate-y-1.5 hover:border-[#18D253]/70 hover:shadow-[0_10px_35px_rgba(24,210,83,0.14)]">
+            <div>
+              <div class="flex items-center justify-between mb-6">
+                <div class="w-12 h-12 rounded-2xl bg-[#18D253]/10 border border-[#18D253]/30 text-[#18D253] flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m-3-3h6"/>
+                  </svg>
+                </div>
+                <span class="font-mono text-xs font-bold text-slate-500 group-hover:text-[#18D253] transition-colors">01 · BIO</span>
+              </div>
+              <span class="text-[11px] font-bold uppercase tracking-wider text-[#18D253] block mb-1">Sercrop Fisiología</span>
+              <h3 class="text-xl font-extrabold text-white mb-3">Nutrición de Alta Respuesta</h3>
+              <p class="text-sm text-slate-400 leading-relaxed">
+                Bioestimulantes hormonales, protectores multisitio y coadyuvantes ULV formulados para blindar el potencial genético ante estrés hídrico o térmico.
+              </p>
             </div>
-            <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Línea Sercrop Fisiología</h2>
-            <p class="text-xs text-slate-400 mt-1">Deslice lateralmente o seleccione un producto para pausar la vista</p>
+            <div class="mt-6 pt-4 border-t border-white/5 flex items-center justify-between text-xs font-semibold text-slate-400 group-hover:text-white">
+              <span>Manejo Fisiológico</span>
+              <a href="#sercrop" class="text-[#18D253] hover:underline">Ver línea →</a>
+            </div>
           </div>
 
-          <div class="flex items-center gap-2 overflow-x-auto pb-2 md:pb-0 scrollbar-none">
-            <button class="sercrop-tab px-3 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all bg-[#00D2D3]/20 text-[#00D2D3] border border-[#00D2D3]/40" data-target="0">Cobre-Ni</button>
-            <button class="sercrop-tab px-3 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all text-slate-400 hover:text-white hover:bg-white/5" data-target="1">Force</button>
-            <button class="sercrop-tab px-3 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all text-slate-400 hover:text-white hover:bg-white/5" data-target="2">Fix</button>
-            <button class="sercrop-tab px-3 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all text-slate-400 hover:text-white hover:bg-white/5" data-target="3">Citrus</button>
-            <button class="sercrop-tab px-3 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all text-slate-400 hover:text-white hover:bg-white/5" data-target="4">Aero-Tech</button>
-            <button class="sercrop-tab px-3 py-1.5 rounded-lg text-xs font-bold uppercase tracking-wider transition-all text-slate-400 hover:text-white hover:bg-white/5" data-target="5">Fixer Oil</button>
+          <!-- Pilar 2: Antenas All-in-One & Monitor G12 -->
+          <div class="group rounded-3xl bg-[#101916] border border-white/10 p-7 flex flex-col justify-between transition-all duration-300 hover:-translate-y-1.5 hover:border-[#00A3FF]/70 hover:shadow-[0_10px_35px_rgba(0,163,255,0.14)]">
+            <div>
+              <div class="flex items-center justify-between mb-6">
+                <div class="w-12 h-12 rounded-2xl bg-[#00A3FF]/10 border border-[#00A3FF]/30 text-[#00A3FF] flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                    <rect x="2" y="5" width="20" height="12" rx="2.5"/>
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8 21h8m-4-4v4M6 11h4m4 0h4"/>
+                  </svg>
+                </div>
+                <span class="font-mono text-xs font-bold text-slate-500 group-hover:text-[#00A3FF] transition-colors">02 · HARDWARE</span>
+              </div>
+              <span class="text-[11px] font-bold uppercase tracking-wider text-[#00A3FF] block mb-1">Farmnavigator AvMap</span>
+              <h3 class="text-xl font-extrabold text-white mb-3">Antenas All-in-One y Monitor G12</h3>
+              <p class="text-sm text-slate-400 leading-relaxed">
+                Antenas inteligentes que integran receptor multifrecuencia, módem 4G y compensación inercial IMU sin cajas externas, junto al monitor panorámico <strong class="text-slate-200">G12</strong> ("dos pantallas en una", 1000 nits, IPX6 y miembro AEF compatible con cualquier marca).
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-white/5 flex items-center justify-between text-xs font-semibold text-slate-400 group-hover:text-white">
+              <span>Multimarca · Sin Cajas Extra</span>
+              <a href="#hardware" class="text-[#00A3FF] hover:underline">Ver equipos →</a>
+            </div>
           </div>
+
+          <!-- Pilar 3: Señal RTKPro vía Starlink -->
+          <div class="group rounded-3xl bg-[#101916] border border-white/10 p-7 flex flex-col justify-between transition-all duration-300 hover:-translate-y-1.5 hover:border-[#00F0FF]/70 hover:shadow-[0_10px_35px_rgba(0,240,255,0.14)]">
+            <div>
+              <div class="flex items-center justify-between mb-6">
+                <div class="w-12 h-12 rounded-2xl bg-[#00F0FF]/10 border border-[#00F0FF]/30 text-[#00F0FF] flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                  </svg>
+                </div>
+                <span class="font-mono text-xs font-bold text-slate-500 group-hover:text-[#00F0FF] transition-colors">03 · SEÑAL RTK</span>
+              </div>
+              <span class="text-[11px] font-bold uppercase tracking-wider text-[#00F0FF] block mb-1">Red RTKPro NTRIP</span>
+              <h3 class="text-xl font-extrabold text-white mb-3">Precisión Real ±2 cm vía Starlink</h3>
+              <p class="text-sm text-slate-400 leading-relaxed">
+                Corrección centimétrica en tiempo real conectada por <strong class="text-slate-200">internet satelital Starlink</strong> o red celular multired. Garantiza repetibilidad exacta surco sobre surco en zonas sin cobertura móvil, eliminando la inversión y mantenimiento de antenas base fijas en el campo.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-white/5 flex items-center justify-between text-xs font-semibold text-slate-400 group-hover:text-white">
+              <span>Cobertura Total · Sin Base Fija</span>
+              <a href="#hardware" class="text-[#00F0FF] hover:underline">Ver señal →</a>
+            </div>
+          </div>
+
+          <!-- Pilar 4: Drones, IoT, Penetrómetros, Telemática y Cloud -->
+          <div class="group rounded-3xl bg-[#101916] border border-white/10 p-7 flex flex-col justify-between transition-all duration-300 hover:-translate-y-1.5 hover:border-emerald-400/70 hover:shadow-[0_10px_35px_rgba(16,185,129,0.14)]">
+            <div>
+              <div class="flex items-center justify-between mb-6">
+                <div class="w-12 h-12 rounded-2xl bg-emerald-400/10 border border-emerald-400/30 text-emerald-400 flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 7h4m10 0h4M5 7l3 4h8l3-4M8 11l-2 6m10-6l2 6M9 15h6"/>
+                  </svg>
+                </div>
+                <span class="font-mono text-xs font-bold text-slate-500 group-hover:text-emerald-400 transition-colors">04 · DATOS & CLOUD</span>
+              </div>
+              <span class="text-[11px] font-bold uppercase tracking-wider text-emerald-400 block mb-1">Drones, IoT & Telemática</span>
+              <h3 class="text-xl font-extrabold text-white mb-3">Sensores, Penetrómetros y Nube</h3>
+              <p class="text-sm text-slate-400 leading-relaxed">
+                Integramos relevamientos con <strong class="text-slate-200">drones</strong>, sensores IoT, <strong class="text-slate-200">penetrómetros</strong> digitales de compactación y telemática CANBus en vivo. Los datos convergen en plataformas cloud como <strong class="text-slate-200">MyFarmnavigator</strong> y <strong class="text-slate-200">DJI SmartFarm</strong> para generar mapas de prescripción y ejecutar decisiones precisas en el lote.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-white/5 flex items-center justify-between text-xs font-semibold text-slate-400 group-hover:text-white">
+              <span>Diagnóstico & Cloud Sync</span>
+              <a href="#inteligencia" class="text-emerald-400 hover:underline">Ver flujo →</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+<!-- LÍNEA SERCROP: TEATRO DE ROTACIÓN AUTOMÁTICA -->
+    <section id="sercrop" class="py-16 lg:py-20 bg-[#050B07] text-white relative overflow-hidden select-none">
+      <div id="sercrop-theater" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <!-- Encabezado con Logo Sercrop Nutrición en un costado y aura verde pulsante -->
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 border-b border-white/10 pb-6 mb-6">
+          <div>
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-white tracking-tight">Línea Sercrop Fisiología</h2>
+          </div>
+
+          <!-- LOGO SERCROP NUTRICIÓN: Transparente, tipografía blanca y aura verde pulsante -->
+          <div class="relative inline-flex items-center justify-center self-start md:self-center px-5 py-3 shrink-0">
+            <div class="absolute -inset-3 rounded-full pointer-events-none animate-pulse" style="background: radial-gradient(ellipse at center, rgba(24,210,83,0.28) 0%, rgba(163,230,53,0.12) 48%, transparent 74%);"></div>
+            <img 
+              src="/images/sercrop/sercrop_logo.png" 
+              alt="Sercrop Nutrición" 
+              class="relative z-10 w-52 sm:w-60 md:w-68 h-auto object-contain sercrop-neon-aura"
+            />
+          </div>
+        </div>
+
+        <!-- Barra de Pestañas de Productos -->
+        <div class="flex items-center gap-2 overflow-x-auto pb-4 mb-8 scrollbar-none">
+          <button class="sercrop-tab px-3.5 py-2 rounded-xl text-xs font-bold uppercase tracking-wider transition-all bg-[#00D2D3]/20 text-[#00D2D3] border border-[#00D2D3]/40 whitespace-nowrap" data-target="0">Cobre-Ni</button>
+          <button class="sercrop-tab px-3.5 py-2 rounded-xl text-xs font-bold uppercase tracking-wider transition-all text-slate-400 hover:text-white hover:bg-white/5 whitespace-nowrap" data-target="1">Force</button>
+          <button class="sercrop-tab px-3.5 py-2 rounded-xl text-xs font-bold uppercase tracking-wider transition-all text-slate-400 hover:text-white hover:bg-white/5 whitespace-nowrap" data-target="2">Fix</button>
+          <button class="sercrop-tab px-3.5 py-2 rounded-xl text-xs font-bold uppercase tracking-wider transition-all text-slate-400 hover:text-white hover:bg-white/5 whitespace-nowrap" data-target="3">Citrus</button>
+          <button class="sercrop-tab px-3.5 py-2 rounded-xl text-xs font-bold uppercase tracking-wider transition-all text-slate-400 hover:text-white hover:bg-white/5 whitespace-nowrap" data-target="4">Aero-Tech</button>
+          <button class="sercrop-tab px-3.5 py-2 rounded-xl text-xs font-bold uppercase tracking-wider transition-all text-slate-400 hover:text-white hover:bg-white/5 whitespace-nowrap" data-target="5">Fixer Oil</button>
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center min-h-[520px]">
@@ -256,9 +362,9 @@
                   </ul>
                 </div>
                 <div class="bg-white/5 border border-white/10 rounded-xl p-4 backdrop-blur-md">
-                  <span class="block text-[#FF9100] text-xs font-bold uppercase mb-1">Equipos Homologados</span>
+                  <span class="block text-[#FF9100] text-xs font-bold uppercase mb-1">Aplicación Ideal</span>
                   <div class="text-base font-black text-white mt-1 leading-tight">
-                    Drones DJI Agras<br><span class="text-xs font-normal text-slate-400">y Aviones Agrícolas</span>
+                    Ideal para drones pulverizador<br><span class="text-xs font-normal text-slate-400">y aviación agrícola (ULV)</span>
                   </div>
                 </div>
               </div>
@@ -325,7 +431,6 @@
         <div class="mt-8 pt-4 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
           <div class="flex items-center gap-3">
             <span class="font-mono text-white font-bold" id="counter-display">01 / 06</span>
-            <span class="text-[11px] text-slate-500">Pase el cursor por encima para pausar</span>
           </div>
           <div class="flex gap-2 w-full sm:w-auto">
             <div class="sercrop-progress-track flex-1 sm:w-16 h-1.5 rounded-full bg-white/10 overflow-hidden cursor-pointer" data-target="0"><div class="sercrop-progress-bar h-full w-0 bg-[#00D2D3] transition-all"></div></div>
@@ -822,7 +927,6 @@
         <div class="mt-8 pt-4 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-400">
           <div class="flex items-center gap-3">
             <span class="font-mono text-white font-bold" id="farm-counter">01 / 05</span>
-            <span class="text-[11px] text-slate-500">Pase el cursor para pausar la rotación</span>
           </div>
           <div class="flex gap-2 w-full sm:w-auto">
             <div class="farm-track flex-1 sm:w-20 h-1.5 rounded-full bg-white/10 overflow-hidden cursor-pointer" data-target="0"><div class="farm-bar h-full w-0 bg-[#0082C8] transition-all"></div></div>
@@ -1079,80 +1183,159 @@
       </script>
     </section>
 
-    <!-- INTEGRACIÓN AÉREA & DRONES AGRÍCOLAS -->
-    <section class="py-16 bg-[#060D1A] text-white border-b border-slate-800">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="bg-gradient-to-r from-slate-900/90 via-[#0A1628] to-slate-900 border border-white/10 rounded-3xl p-8 lg:p-12 relative overflow-hidden">
-          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-            
-            <div class="lg:col-span-7">
-              <span class="text-[#0082C8] font-extrabold text-xs uppercase tracking-widest block mb-2">Remote Sensing & Pulverización ULV</span>
-              <h3 class="text-2xl sm:text-3xl font-extrabold text-white mb-4">
-                Drones DJI Agras & Mavic 3M: Diagnóstico y Acción
-              </h3>
-              <p class="text-slate-300 text-sm leading-relaxed mb-6">
-                Integramos vuelos multiespectrales para mapeo de índices NDVI/NDRE con drones DJI Agras para pulverización localizada de alta precisión. La información de estrés del lote se exporta directamente a la consola ISOBUS para generar prescripciones de dosis variable.
-              </p>
-              <a href="https://wa.me/595975679274?text=Hola,%20solicito%20asesoramiento%20en%20Drones%20DJI%20Agricolas" target="_blank" class="btn-whatsapp-glow">
-                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.867-2.03-.967-.272-.099-.47-.148-.669.15-.198.297-.768.966-.941 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
-                <span>Cotizar Drones DJI</span>
-              </a>
-            </div>
+    <!-- 05 · INTELIGENCIA AGRONÓMICA, AUDITORÍA Y TELEMETRÍA (VIDEO FULL-BLEED) -->
+    <!-- 05 · INTELIGENCIA AGRONÓMICA, AUDITORÍA Y TELEMETRÍA (VIDEO FULL-BLEED) -->
+    <section id="inteligencia" class="relative min-h-[85vh] flex items-center bg-[#060913] text-white border-t border-white/10 overflow-hidden">
+      
+      <!-- Video de Fondo en Bucle (Estilo Cinemagraph) -->
+      <div class="absolute inset-0 z-0">
+        <video 
+          autoplay 
+          loop 
+          muted 
+          playsinline 
+          class="w-full h-full object-cover object-center opacity-60"
+        >
+          <source src="/images/hardware/video_drone_iot.mp4" type="video/mp4" />
+        </video>
+        <!-- Máscara direccional: lectura nítida a la izquierda y video despejado a la derecha -->
+        <div class="absolute inset-0 bg-gradient-to-r from-[#060913] via-[#060913]/88 to-[#060913]/15"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-[#060913] via-transparent to-[#060913]/60"></div>
+      </div>
 
-            <div class="lg:col-span-5 flex items-center justify-center gap-6">
-              <div class="relative w-40 sm:w-48 h-40 sm:h-48 flex items-center justify-center p-3 rounded-2xl bg-white/5 border border-white/10">
-                <img src="/images/hardware/dji-m3m-web-7-tr.webp" alt="DJI Mavic 3M Multispectral" class="max-h-full max-w-full object-contain">
-                <span class="absolute bottom-2 text-[10px] uppercase font-bold text-slate-400">DJI Mavic 3M</span>
-              </div>
-              <div class="relative w-40 sm:w-48 h-40 sm:h-48 flex items-center justify-center p-3 rounded-2xl bg-white/5 border border-white/10">
-                <img src="/images/hardware/dji-t100.webp" alt="DJI Agras Series" class="max-h-full max-w-full object-contain">
-                <span class="absolute bottom-2 text-[10px] uppercase font-bold text-slate-400">DJI Agras Series</span>
-              </div>
-            </div>
-
+      <!-- Contenido Fijo Alineado a la Izquierda -->
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28 relative z-10 w-full">
+        <div class="max-w-2xl text-left">
+          
+          <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-white/5 border border-white/15 backdrop-blur-md text-xs font-bold uppercase tracking-widest text-[#38BDF8] mb-6">
+            <span class="w-2 h-2 rounded-full bg-[#00F0FF] animate-pulse"></span>
+            <span>Inteligencia Agronómica & Auditoría</span>
           </div>
+
+          <h2 class="text-3xl sm:text-5xl lg:text-[3.25rem] font-black text-white tracking-tight leading-[1.08] mb-6">
+            Capturamos datos reales en campo para impulsar tu <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#18D253] to-[#00F0FF]">toma de decisiones.</span>
+          </h2>
+
+          <p class="text-base sm:text-lg text-slate-300 font-normal leading-relaxed mb-8">
+            Integramos la captura de datos mediante <strong class="text-white font-semibold">drones</strong>, <strong class="text-white font-semibold">penetrómetros</strong> digitales, sensores <strong class="text-white font-semibold">IoT</strong>, <strong class="text-white font-semibold">telemetría</strong> en maquinaria y <strong class="text-white font-semibold">auditorías de lotes y labranzas</strong>. Procesamos toda esa información en plataformas cloud para convertir variables complejas en inteligencia agronómica accionable.
+          </p>
+
+          <!-- Pilares del Servicio (Compactos, sin tapar el video) -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-9 max-w-xl">
+            <div class="flex items-center gap-3 bg-[#0A1120]/75 backdrop-blur-md border border-white/10 rounded-xl px-4 py-3">
+              <span class="w-2 h-2 rounded-full bg-[#00F0FF] shrink-0"></span>
+              <span class="text-xs sm:text-sm font-semibold text-slate-200">Relevamiento con Drones e IoT</span>
+            </div>
+            <div class="flex items-center gap-3 bg-[#0A1120]/75 backdrop-blur-md border border-white/10 rounded-xl px-4 py-3">
+              <span class="w-2 h-2 rounded-full bg-[#18D253] shrink-0"></span>
+              <span class="text-xs sm:text-sm font-semibold text-slate-200">Auditoría de Lotes y Labranzas</span>
+            </div>
+            <div class="flex items-center gap-3 bg-[#0A1120]/75 backdrop-blur-md border border-white/10 rounded-xl px-4 py-3">
+              <span class="w-2 h-2 rounded-full bg-[#38BDF8] shrink-0"></span>
+              <span class="text-xs sm:text-sm font-semibold text-slate-200">Penetrómetros & Mapeo de Suelo</span>
+            </div>
+            <div class="flex items-center gap-3 bg-[#0A1120]/75 backdrop-blur-md border border-white/10 rounded-xl px-4 py-3">
+              <span class="w-2 h-2 rounded-full bg-emerald-400 shrink-0"></span>
+              <span class="text-xs sm:text-sm font-semibold text-slate-200">Telemetría & Inteligencia Cloud</span>
+            </div>
+          </div>
+
+          <a 
+            href="https://wa.me/595975679274?text=Hola%20Cultivar%2C%20quisiera%20consultar%20sobre%20auditor%C3%ADa%20de%20lotes%2C%20drones%20y%20telemetr%C3%ADa." 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="btn-farm-glow"
+          >
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.867-2.03-.967-.272-.099-.47-.148-.669.15-.198.297-.768.966-.941 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
+            <span>Solicitar Auditoría y Diagnóstico</span>
+          </a>
+
         </div>
       </div>
     </section>
 
-    <!-- BANNER TRACTOR EN CAMPO & SINCRONIZACIÓN CLOUD -->
-    <section id="inteligencia" class="py-20 bg-white border-b border-slate-200">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center max-w-3xl mx-auto mb-14">
-          <span class="text-[#0082C8] font-bold text-xs uppercase tracking-widest">Ecosistema Cerrado (Closed-Loop)</span>
-          <h2 class="text-3xl sm:text-4xl font-extrabold text-[#1E293B] mt-2 mb-3">Conectividad Total en el Lote</h2>
-          <div class="w-16 h-1 bg-[#0082C8] mx-auto rounded-full"></div>
-        </div>
+  <!-- 06 · INTELIGENCIA AÉREA Y APLICACIÓN (DRONES · VIDEO FULL-BLEED) -->
+    <section id="drones" class="relative min-h-[85vh] flex items-center bg-[#050911] text-white border-t border-white/10 overflow-hidden">
+      
+      <!-- Video de Fondo Oscurecido y en Cámara Lenta -->
+      <div class="absolute inset-0 z-0">
+        <video 
+          id="video-drone-agras"
+          autoplay 
+          loop 
+          muted 
+          playsinline 
+          class="w-full h-full object-cover object-center opacity-50"
+        >
+          <source src="/images/hardware/vide-drone-agras.mp4" type="video/mp4" />
+        </video>
+        <!-- Máscara direccional: contraste alto a la izquierda y visibilidad del dron a la derecha -->
+        <div class="absolute inset-0 bg-gradient-to-r from-[#050911] via-[#050911]/88 to-[#050911]/20"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-[#050911] via-transparent to-[#050911]/60"></div>
+      </div>
 
-        <div class="rounded-3xl overflow-hidden shadow-2xl border border-slate-200 relative group">
-          <img src="/images/imagen-tractor-siembra.jpeg" alt="Siembra conectada" class="w-full h-80 sm:h-96 lg:h-[500px] object-cover">
-          <div class="absolute bottom-0 left-0 w-full h-1/2 pointer-events-none opacity-80" style="transform: perspective(600px) rotateX(60deg); transform-origin: bottom;">
-            <div class="absolute inset-0 flex justify-center">
-              <div class="w-48 h-[200%] border-l-4 border-r-4 border-cyan-400 shadow-[0_0_20px_rgba(6,182,212,0.8)] opacity-70"></div>
-              <div class="absolute inset-0 bg-[linear-gradient(transparent_48%,rgba(6,182,212,0.3)_50%,transparent_52%)] [background-size:100%_40px] animate-pulse"></div>
+      <!-- Contenido Alineado a la Izquierda -->
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28 relative z-10 w-full">
+        <div class="max-w-2xl text-left">
+          
+          <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-[#00F0FF]/10 border border-[#00F0FF]/30 backdrop-blur-md text-xs font-bold uppercase tracking-widest text-[#00F0FF] mb-6">
+            <span class="w-2 h-2 rounded-full bg-[#00F0FF] animate-pulse"></span>
+            <span>Inteligencia Aérea y Aplicación</span>
+          </div>
+
+          <h2 class="text-3xl sm:text-5xl lg:text-[3.25rem] font-black text-white tracking-tight leading-[1.08] mb-6">
+            Dominamos el espacio aéreo de tu campo para ejecutar <span class="text-[#18D253] drop-shadow-[0_0_22px_rgba(24,210,83,0.4)]">aplicaciones quirúrgicas.</span>
+          </h2>
+
+          <p class="text-base sm:text-lg text-slate-300 font-normal leading-relaxed mb-8">
+            Imagine tener el control absoluto de cada metro cuadrado de su lote. Relevamos su cultivo con <strong class="text-white font-semibold">drones multiespectrales y termales</strong> para revelar anomalías invisibles al ojo humano. Procesamos esa información en mapas de <strong class="text-white font-semibold">Spot Spraying</strong> y ejecutamos la aplicación con flotas de drones agrícolas de forma <strong class="text-white font-semibold">100% autónoma</strong>. Pasamos de la aplicación en sábana a la precisión exacta, eliminando por completo la compactación del suelo.
+          </p>
+
+          <!-- Grilla de 4 Píldoras Técnicas -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-9 max-w-xl">
+            <div class="flex items-center gap-3 bg-[#09111E]/80 backdrop-blur-md border border-white/10 rounded-full px-4 py-3">
+              <span class="w-2 h-2 rounded-full bg-[#00F0FF] shrink-0"></span>
+              <span class="text-xs sm:text-sm font-semibold text-slate-200">Escaneo Multiespectral y Termal</span>
+            </div>
+            <div class="flex items-center gap-3 bg-[#09111E]/80 backdrop-blur-md border border-white/10 rounded-full px-4 py-3">
+              <span class="w-2 h-2 rounded-full bg-[#18D253] shrink-0"></span>
+              <span class="text-xs sm:text-sm font-semibold text-slate-200">Mapas de Spot Spraying (Tasa Variable)</span>
+            </div>
+            <div class="flex items-center gap-3 bg-[#09111E]/80 backdrop-blur-md border border-white/10 rounded-full px-4 py-3">
+              <span class="w-2 h-2 rounded-full bg-[#38BDF8] shrink-0"></span>
+              <span class="text-xs sm:text-sm font-semibold text-slate-200">Aplicación Autónoma de Líquidos y Sólidos</span>
+            </div>
+            <div class="flex items-center gap-3 bg-[#09111E]/80 backdrop-blur-md border border-white/10 rounded-full px-4 py-3">
+              <span class="w-2 h-2 rounded-full bg-emerald-400 shrink-0"></span>
+              <span class="text-xs sm:text-sm font-semibold text-slate-200">Cero Compactación y Daño por Pisoteo</span>
             </div>
           </div>
-          <div class="absolute top-10 right-10 flex-col items-center pointer-events-none drop-shadow-xl hidden sm:flex">
-            <svg class="w-16 h-16 text-white drop-shadow-[0_0_15px_rgba(255,255,255,1)] mb-2 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path>
-            </svg>
-            <div class="flex gap-3">
-              <div class="w-1 h-32 bg-gradient-to-t from-transparent via-cyan-400 to-white animate-pulse"></div>
-              <div class="w-1 h-24 bg-gradient-to-t from-transparent via-[#0082C8] to-white animate-pulse delay-75 mt-8"></div>
-              <div class="w-1 h-40 bg-gradient-to-t from-transparent via-cyan-400 to-white animate-pulse delay-150"></div>
-            </div>
-          </div>
-          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent flex flex-col justify-end p-6 sm:p-10">
-            <div class="max-w-2xl text-white">
-              <span class="px-3 py-1 rounded-full bg-[#0082C8] text-xs font-bold uppercase tracking-wider mb-2 inline-block">Sincronización en Vivo</span>
-              <h3 class="text-2xl sm:text-3xl font-extrabold mb-2">De la Cabina del Tractor a su Oficina</h3>
-              <p class="text-sm sm:text-base text-slate-200 font-normal">
-                Sincronización remota de labores de siembra y pulverización guiadas por antenas RTK, con telemetría operativa que se transmite en vivo desde la consola Farmnavigator directo al portal MyFarmnavigator Cloud.
-              </p>
-            </div>
-          </div>
+
+          <a 
+            href="https://wa.me/595975679274?text=Hola%20Cultivar%2C%20quisiera%20solicitar%20un%20relevamiento%20y%20aplicaci%C3%B3n%20con%20drones." 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="btn-farm-glow"
+          >
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.867-2.03-.967-.272-.099-.47-.148-.669.15-.198.297-.768.966-.941 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
+            <span>Solicitar Relevamiento con Drones</span>
+          </a>
+
         </div>
       </div>
+
+      <!-- Ajuste de velocidad del video de fondo (0.75x) -->
+      <script is:inline>
+        (() => {
+          const agrasVid = document.getElementById('video-drone-agras');
+          if (agrasVid) {
+            agrasVid.playbackRate = 0.75;
+            agrasVid.addEventListener('loadedmetadata', () => {
+              agrasVid.playbackRate = 0.75;
+            });
+          }
+        })();
+      </script>
     </section>
 
   </main>

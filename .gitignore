@@ -3,3 +3,8 @@ dist/
 .astro/
 .env
 .DS_Store
+
+# Editor swap & backup files
+*.save
+*.sw*
+*~
