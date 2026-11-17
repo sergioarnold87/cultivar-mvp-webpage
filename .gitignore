@@ -8,3 +8,4 @@ dist/
 *.save
 *.sw*
 *~
+_archive_assets/

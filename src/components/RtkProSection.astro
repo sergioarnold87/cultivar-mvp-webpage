@@ -1,0 +1,303 @@
+---
+/**
+ * Sección Compacta: Suscripción a la Señal RTK PRO (#rtkpro)
+ * Estructura: Hero Dinámico + 3 Pasos + 2 Columnas Directas (Beneficios | Ficha Técnica) + Planes.
+ */
+const WHATSAPP_NUMBER = "595975679274";
+
+const pasos = [
+  {
+    num: "01",
+    titulo: "Instale el módulo.",
+    desc: "Conecte el RTK PRO entre su antena GNSS y su monitor. Kit plug and play con conexiones identificadas."
+  },
+  {
+    num: "02",
+    titulo: "Active su suscripción.",
+    desc: "Recibirá sus credenciales NTRIP (usuario, contraseña y punto de montaje) en su cuenta."
+  },
+  {
+    num: "03",
+    titulo: "Trabaje con corrección RTK.",
+    desc: "Su equipo recibe la señal por internet, ya sea Starlink, Wi-Fi o datos móviles, y usted se dedica a sembrar."
+  }
+];
+
+const beneficios = [
+  {
+    titulo: "Sin inversión en base propia.",
+    desc: "Usted paga una suscripción en lugar de comprar, instalar y mantener una estación."
+  },
+  {
+    titulo: "Una sola señal para toda la flota.",
+    desc: "Conecte varios equipos con el mismo servicio (según el plan)."
+  },
+  {
+    titulo: "Red monitorizada 24/7.",
+    desc: "Nuestro equipo supervisa latencia, disponibilidad y alertas mientras usted trabaja."
+  },
+  {
+    titulo: "Funciona con lo que ya tiene.",
+    desc: "Compatible con Trimble, CNH, Topcon, AGCO, John Deere, Ag Leader, FarmNavigator y AvMap."
+  },
+  {
+    titulo: "Soporte técnico por WhatsApp.",
+    desc: "Ayuda real, en español, para instalar y configurar."
+  },
+  {
+    titulo: "Cancele o cambie de plan cuando lo necesite.",
+    desc: "Flexibilidad operativa para adaptar el servicio al ritmo de su campaña."
+  }
+];
+
+const fichaTecnica = [
+  { label: "Protocolo", valor: "NTRIP / RTCM estándar" },
+  { label: "Conexión", valor: "Internet (4G/5G, Starlink, Wi-Fi rural)" },
+  { label: "Precisión", valor: "Centimétrica, según receptor, instalación, distancia a la base y entorno" },
+  { label: "Compatibilidad", valor: "Principales marcas de monitores, pilotos y antenas" },
+  { label: "Monitoreo", valor: "Red supervisada 24/7" },
+  { label: "Activación", valor: "Credenciales en su cuenta" },
+  { label: "Soporte", valor: "WhatsApp y biblioteca de manuales por equipo" }
+];
+
+const planes = [
+  {
+    nombre: "Campaña",
+    duracion: "3 a 6 meses.",
+    descripcion: "Para quien necesita la señal solo en siembra o cosecha.",
+    destacado: false,
+    badge: null,
+    waMensaje: "Hola Cultivar, quiero consultar disponibilidad y precio del Plan Campaña (3 a 6 meses) de la Señal RTK PRO."
+  },
+  {
+    nombre: "Anual",
+    duracion: "El mejor precio mensual.",
+    descripcion: "Cobertura continua durante todo el ciclo agrícola con tarifa preferencial.",
+    destacado: true,
+    badge: "MÁS ELEGIDO",
+    waMensaje: "Hola Cultivar, quiero consultar disponibilidad y precio del Plan Anual de la Señal RTK PRO."
+  },
+  {
+    nombre: "Flota",
+    duracion: "Varios equipos con un solo contrato.",
+    descripcion: "Gestión unificada para establecimientos con múltiples tractores, sembradoras o pulverizadoras.",
+    destacado: false,
+    badge: null,
+    waMensaje: "Hola Cultivar, quiero consultar condiciones del Plan Flota para conectar varios equipos a la Red RTK PRO."
+  }
+];
+---
+
+<section id="rtkpro" class="bg-[#02060D] text-white border-t border-white/10 relative overflow-hidden">
+  <!-- 1. FRANJA HERO COMPACTA + 3 PASOS INTEGRADOS -->
+  <div id="rtkpro-hero" class="relative border-b border-white/10 overflow-hidden">
+    <div class="absolute inset-0 z-0 overflow-hidden">
+      <img
+        id="rtkpro-hero-bg"
+        src="/images/hardware/rtkpro-campo-hero.webp"
+        alt="Tractor sembrando con recepción satelital Starlink, módulo RTK PRO y líneas de guiado centimétrico"
+        width="1920"
+        height="1080"
+        class="w-full h-full object-cover object-[75%_8%] lg:object-[92%_6%] animate-kenburns will-change-transform"
+        loading="eager"
+      />
+      <div class="absolute inset-0 bg-gradient-to-r from-[#02060D] via-[#02060D]/85 lg:via-[#02060D]/65 to-transparent"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-[#02060D] via-transparent to-transparent"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16 relative z-10">
+      <div class="max-w-2xl">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#00D2D3]/15 border border-[#00D2D3]/40 text-[#00D2D3] text-[11px] font-mono uppercase tracking-wider mb-3 backdrop-blur-md">
+          <span class="w-1.5 h-1.5 rounded-full bg-[#00D2D3] animate-ping"></span>
+          SEÑAL RTK PRO · SUSCRIPCIÓN
+        </div>
+
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-[1.1]">
+          Su señal RTK, sin comprar una base.
+        </h2>
+
+        <p class="mt-2.5 text-base sm:text-lg font-semibold text-[#00D2D3]">
+          Red NTRIP monitorizada las 24 h, compatible con su monitor y su piloto automático.
+        </p>
+
+        <p class="mt-2 text-slate-200 text-sm sm:text-base leading-relaxed">
+          Suscríbase a la Red RTK PRO y reciba correcciones NTRIP en su tractor, sembradora o pulverizadora. Sin obras, sin torres, sin inversión inicial en infraestructura.
+        </p>
+
+        <div class="mt-5 flex flex-wrap gap-3">
+          <a
+            href="#planes-rtkpro"
+            class="inline-flex items-center justify-center px-5 py-2.5 rounded-xl bg-[#EA580C] hover:bg-[#C2410C] text-white font-bold text-sm transition shadow-lg"
+          >
+            Ver planes de suscripción
+          </a>
+          <a
+            href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent("Hola Cultivar, quiero consultar cobertura de la Red RTK PRO en mi zona.")}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center justify-center px-5 py-2.5 rounded-xl bg-[#02060D]/75 hover:bg-white/15 text-white border border-white/25 backdrop-blur-md font-semibold text-sm transition"
+          >
+            Consultar cobertura en mi zona
+          </a>
+        </div>
+      </div>
+
+      <!-- Cómo funciona (3 pasos compactos en tira inferior del Hero) -->
+      <div class="mt-8 pt-6 border-t border-white/15 grid grid-cols-1 md:grid-cols-3 gap-3.5">
+        {pasos.map((paso) => (
+          <div class="rounded-xl bg-[#050C18]/85 border border-white/10 backdrop-blur-md p-4 flex items-start gap-3">
+            <span class="font-mono text-lg font-extrabold text-[#EA580C] leading-none mt-0.5">{paso.num}</span>
+            <div>
+              <h3 class="text-sm font-bold text-white">{paso.titulo}</h3>
+              <p class="mt-1 text-xs text-slate-300 leading-relaxed">{paso.desc}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. DOS COLUMNAS DIRECTAS SIN PESTAÑAS (TODO A LA VISTA) -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 relative z-10">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start mb-12">
+      <!-- Columna Izquierda (6 cols): Beneficios Comerciales -->
+      <div class="lg:col-span-6">
+        <div class="mb-5">
+          <span class="text-[11px] font-mono uppercase tracking-widest text-[#00D2D3]">Ventajas operativas</span>
+          <h3 class="text-xl sm:text-2xl font-bold text-white mt-0.5">Beneficios comerciales</h3>
+        </div>
+
+        <ul class="space-y-4">
+          {beneficios.map((item) => (
+            <li class="flex items-start gap-3.5 pb-3.5 border-b border-white/[0.07] last:border-b-0 last:pb-0">
+              <span class="mt-0.5 w-5 h-5 rounded-md bg-[#00D2D3]/15 border border-[#00D2D3]/35 text-[#00D2D3] text-xs font-bold flex items-center justify-center shrink-0">
+                ✓
+              </span>
+              <div>
+                <h4 class="text-sm font-bold text-white">{item.titulo}</h4>
+                <p class="mt-0.5 text-xs sm:text-sm text-slate-300 leading-relaxed">{item.desc}</p>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <!-- Columna Derecha (6 cols): Ficha Técnica -->
+      <div class="lg:col-span-6">
+        <div class="mb-5 flex items-end justify-between">
+          <div>
+            <span class="text-[11px] font-mono uppercase tracking-widest text-[#00D2D3]">Especificaciones</span>
+            <h3 class="text-xl sm:text-2xl font-bold text-white mt-0.5">Ficha técnica</h3>
+          </div>
+          <span class="text-[11px] font-mono text-emerald-400 flex items-center gap-1.5">
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> RED 24/7
+          </span>
+        </div>
+
+        <dl class="rounded-2xl bg-[#050C18] border border-white/10 px-5 divide-y divide-white/10 text-xs sm:text-sm">
+          {fichaTecnica.map((fila) => (
+            <div class="py-3 grid grid-cols-1 sm:grid-cols-3 gap-1 sm:gap-4">
+              <dt class="font-semibold text-slate-400">{fila.label}</dt>
+              <dd class="sm:col-span-2 text-white font-medium leading-snug">{fila.valor}</dd>
+            </div>
+          ))}
+        </dl>
+      </div>
+    </div>
+
+    <!-- 3. FRANJA PLANES DE SUSCRIPCIÓN COMPACTOS -->
+    <div id="planes-rtkpro" class="scroll-mt-24 pt-8 border-t border-white/10">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-2 mb-5">
+        <div>
+          <span class="text-[11px] font-mono uppercase tracking-widest text-[#EA580C]">Suscripción RTK PRO</span>
+          <h3 class="text-xl sm:text-2xl font-bold text-white">Planes disponibles</h3>
+        </div>
+        <p class="text-xs text-slate-400">
+          Cobertura sujeta a distancia a la base más cercana. Consulte disponibilidad en su zona antes de contratar.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 items-stretch">
+        {planes.map((plan) => (
+          <div
+            class={`rounded-2xl p-5 flex flex-col justify-between relative ${
+              plan.destacado
+                ? "bg-[#091526] border-2 border-[#EA580C] shadow-[0_12px_30px_rgba(234,88,12,0.18)]"
+                : "bg-[#050C18] border border-white/10"
+            }`}
+          >
+            {plan.badge && (
+              <span class="absolute -top-2.5 right-4 px-2.5 py-0.5 rounded-full bg-[#EA580C] text-white text-[10px] font-extrabold tracking-wider uppercase">
+                {plan.badge}
+              </span>
+            )}
+
+            <div>
+              <div class="flex items-baseline justify-between gap-2">
+                <h4 class="text-lg font-extrabold text-white">{plan.nombre}</h4>
+                <span class={`text-xs font-bold ${plan.destacado ? "text-[#FB923C]" : "text-[#00D2D3]"}`}>
+                  {plan.duracion}
+                </span>
+              </div>
+              <p class="mt-2 text-xs text-slate-300 leading-relaxed">
+                {plan.descripcion}
+              </p>
+            </div>
+
+            <div class="mt-4 pt-3 border-t border-white/10">
+              <a
+                href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(plan.waMensaje)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                class={`w-full inline-flex items-center justify-center px-4 py-2 rounded-lg font-bold text-xs transition ${
+                  plan.destacado
+                    ? "bg-[#EA580C] hover:bg-[#C2410C] text-white"
+                    : "bg-white/10 hover:bg-white/20 text-white"
+                }`}
+              >
+                Consultar Plan {plan.nombre}
+              </a>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  @keyframes kenburnsSlow {
+    0% { transform: scale(1) translate3d(0, 0, 0); }
+    50% { transform: scale(1.04) translate3d(-0.6%, 0.5%, 0); }
+    100% { transform: scale(1) translate3d(0, 0, 0); }
+  }
+
+  .animate-kenburns {
+    transform-origin: 85% 10%;
+    animation: kenburnsSlow 22s ease-in-out infinite;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .animate-kenburns {
+      animation: none !important;
+    }
+  }
+</style>
+
+<script>
+  const heroSection = document.getElementById('rtkpro-hero');
+  const heroBg = document.getElementById('rtkpro-hero-bg');
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if (heroSection && heroBg && !prefersReduced && window.matchMedia('(pointer: fine)').matches) {
+    heroSection.addEventListener('mousemove', (e) => {
+      const rect = heroSection.getBoundingClientRect();
+      const x = ((e.clientX - rect.left) / rect.width - 0.5) * -10;
+      const y = ((e.clientY - rect.top) / rect.height - 0.5) * -6;
+      heroBg.style.transform = `scale(1.04) translate3d(${x}px, ${y}px, 0)`;
+    });
+    heroSection.addEventListener('mouseleave', () => {
+      heroBg.style.transform = '';
+    });
+  }
+</script>

@@ -1,4 +1,5 @@
 ---
+import RtkProSection from '../components/RtkProSection.astro';
 // Cultivar S.A. - Landing Page Oficial (Clean Tech B2B)
 ---
 <!DOCTYPE html>
@@ -26,6 +27,7 @@
         <a href="#quienes-somos" class="hover:text-[#18D253] transition-colors">Sistemas Ciberfísicos</a>
         <a href="#sercrop" class="hover:text-[#18D253] transition-colors">Línea Sercrop</a>
         <a href="#hardware" class="hover:text-[#00F0FF] transition-colors">Hardware & RTK</a>
+        <a href="#rtkpro" class="hover:text-[#00F0FF] transition-colors">Señal RTK PRO</a>
         <a href="#inteligencia" class="hover:text-[#00F0FF] transition-colors">Telemetría & IA</a>
       </nav>
       <a href="https://wa.me/595975679274?text=Hola%20Cultivar%2C%20quisiera%20contactar%20con%20un%20asesor%20t%C3%A9cnico." target="_blank" rel="noopener noreferrer" class="rounded-full px-5 py-2 font-bold text-xs uppercase tracking-wider text-slate-200 border border-white/20 hover:border-[#18D253] hover:text-white transition-all inline-flex items-center gap-2">
@@ -43,7 +45,7 @@
       <!-- Fondo Visual Ciberfísico Oscurecido -->
       <div class="absolute inset-0 z-0">
         <img 
-          src="/images/imagen-tractor-siembra.jpeg" 
+          src="/images/imagen-tractor-siembra.webp" 
           alt="Agricultura de precisión y telemetría en campo" 
           class="w-full h-full object-cover object-center opacity-50"
         />
@@ -206,7 +208,7 @@
           <div class="relative inline-flex items-center justify-center self-start md:self-center px-5 py-3 shrink-0">
             <div class="absolute -inset-3 rounded-full pointer-events-none animate-pulse" style="background: radial-gradient(ellipse at center, rgba(24,210,83,0.28) 0%, rgba(163,230,53,0.12) 48%, transparent 74%);"></div>
             <img 
-              src="/images/sercrop/sercrop_logo.png" 
+              src="/images/sercrop/sercrop_logo.webp" 
               alt="Sercrop Nutrición" 
               class="relative z-10 w-52 sm:w-60 md:w-68 h-auto object-contain sercrop-neon-aura"
             />
@@ -411,12 +413,12 @@
             <div id="sercrop-aura" class="absolute w-72 sm:w-96 h-72 sm:h-96 rounded-full blur-[140px] opacity-40 transition-all duration-1000 pointer-events-none" style="background-color: #00D2D3;"></div>
 
             <div class="relative w-full h-full flex items-center justify-center">
-              <img id="bottle-0" src="/images/sercrop/crop_cobre_ni_clean.png" alt="Crop Cobre-Ni" class="sercrop-bottle absolute max-h-[380px] sm:max-h-[480px] object-contain transition-all duration-700 opacity-100 scale-100 drop-shadow-2xl">
-              <img id="bottle-1" src="/images/sercrop/crop_force_clean.png" alt="Crop Force" class="sercrop-bottle absolute max-h-[380px] sm:max-h-[480px] object-contain transition-all duration-700 opacity-0 scale-75 pointer-events-none drop-shadow-2xl">
-              <img id="bottle-2" src="/images/sercrop/crop_fix_oficial.png" alt="Crop Fix" class="sercrop-bottle absolute max-h-[380px] sm:max-h-[480px] object-contain transition-all duration-700 opacity-0 scale-75 pointer-events-none drop-shadow-2xl">
-              <img id="bottle-3" src="/images/sercrop/crop_citrus_oficial.png" alt="Crop Citrus" class="sercrop-bottle absolute max-h-[380px] sm:max-h-[480px] object-contain transition-all duration-700 opacity-0 scale-75 pointer-events-none drop-shadow-2xl">
+              <img id="bottle-0" src="/images/sercrop/crop_cobre_ni_clean.webp" alt="Crop Cobre-Ni" class="sercrop-bottle absolute max-h-[380px] sm:max-h-[480px] object-contain transition-all duration-700 opacity-100 scale-100 drop-shadow-2xl">
+              <img id="bottle-1" src="/images/sercrop/crop_force_clean.webp" alt="Crop Force" class="sercrop-bottle absolute max-h-[380px] sm:max-h-[480px] object-contain transition-all duration-700 opacity-0 scale-75 pointer-events-none drop-shadow-2xl">
+              <img id="bottle-2" src="/images/sercrop/crop_fix_oficial.webp" alt="Crop Fix" class="sercrop-bottle absolute max-h-[380px] sm:max-h-[480px] object-contain transition-all duration-700 opacity-0 scale-75 pointer-events-none drop-shadow-2xl">
+              <img id="bottle-3" src="/images/sercrop/crop_citrus_oficial.webp" alt="Crop Citrus" class="sercrop-bottle absolute max-h-[380px] sm:max-h-[480px] object-contain transition-all duration-700 opacity-0 scale-75 pointer-events-none drop-shadow-2xl">
               <img id="bottle-4" src="/images/sercrop/aero_tech_drone.webp" alt="Aero Tech" class="sercrop-bottle absolute max-h-[380px] sm:max-h-[480px] object-contain transition-all duration-700 opacity-0 scale-75 pointer-events-none drop-shadow-2xl">
-              <img id="bottle-5" src="/images/sercrop/crop_fixer_oil_clean.png" alt="Crop Fixer Oil" class="sercrop-bottle absolute max-h-[380px] sm:max-h-[480px] object-contain transition-all duration-700 opacity-0 scale-75 pointer-events-none drop-shadow-2xl">
+              <img id="bottle-5" src="/images/sercrop/crop_fixer_oil_clean.webp" alt="Crop Fixer Oil" class="sercrop-bottle absolute max-h-[380px] sm:max-h-[480px] object-contain transition-all duration-700 opacity-0 scale-75 pointer-events-none drop-shadow-2xl">
             </div>
 
             <button id="btn-prev" aria-label="Anterior" class="absolute left-0 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white/10 hover:bg-white/20 text-white backdrop-blur-md flex items-center justify-center transition border border-white/20 z-30">
@@ -461,6 +463,7 @@
           let progress = 0;
           let timer = null;
           let isPaused = false;
+          let isInView = true;
 
           if (!TOTAL) return;
 
@@ -516,7 +519,7 @@
           function startLoop() {
             clearInterval(timer);
             timer = setInterval(() => {
-              if (!isPaused) {
+              if (!isPaused && isInView) {
                 progress += 50;
                 const pct = Math.min((progress / INTERVAL_TIME) * 100, 100);
                 if (bars[current]) bars[current].style.width = `${pct}%`;
@@ -544,6 +547,11 @@
             }, { passive: true });
           }
 
+          if (theater && "IntersectionObserver" in window) {
+            new IntersectionObserver((entries) => {
+              isInView = entries[0].isIntersecting;
+            }, { threshold: 0.05 }).observe(theater);
+          }
           updateSlide(0);
           startLoop();
         })();
@@ -578,8 +586,7 @@
           <div class="relative inline-flex items-center justify-center self-start md:self-center px-5 py-3 rounded-2xl bg-[#061224]/80 border border-emerald-500/20 shrink-0">
             <div class="absolute inset-1 bg-[#009A44]/25 blur-xl rounded-full animate-pulse pointer-events-none"></div>
             <img 
-              src="/images/hardware/logo_farmnavigator_brand_by_avmap.png" 
-              onerror="this.onerror=null; this.src='/images/logo_farmnavigator_brand_by_avmap.png';"
+              src="/images/hardware/logo_farmnavigator_brand_by_avmap.png"
               alt="Farmnavigator - A Brand by AvMap" 
               class="relative z-10 w-48 sm:w-56 md:w-64 h-auto object-contain farm-brand-aura"
             />
@@ -599,7 +606,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
           
           <!-- Columna Izquierda: Fichas Técnicas Consistentes (6 Specs) -->
-          <div class="lg:col-span-7 relative z-20">
+          <div id="farm-panels-container" class="lg:col-span-7 relative min-h-[500px] flex items-center z-20">
             
             <!-- SLIDE 01 · G12 PANORAMA FULL -->
             <div class="farm-panel relative flex flex-col justify-center transition-all duration-700 opacity-100 translate-x-0" data-index="0" data-color="#0082C8">
@@ -904,11 +911,11 @@
 
             <!-- Hardware Renders Superpuestos -->
             <div class="relative w-full h-full flex items-center justify-center z-10">
-              <img id="farm-img-0" src="/images/hardware/g12_full_navi.webp" onerror="this.onerror=null; this.src='/images/hardware/G12_FULL_navi.png';" alt="G12 Panorama Full" class="farm-hardware absolute max-h-[340px] sm:max-h-[430px] object-contain transition-all duration-700 opacity-100 scale-100 drop-shadow-[0_20px_35px_rgba(0,0,0,0.85)]">
-              <img id="farm-img-1" src="/images/hardware/allinone_rtk_new2024.webp" onerror="this.onerror=null; this.src='/images/hardware/Allinone_rtk_new2024.png';" alt="All in One RTK X" class="farm-hardware absolute max-h-[340px] sm:max-h-[430px] object-contain transition-all duration-700 opacity-0 scale-75 pointer-events-none drop-shadow-[0_20px_35px_rgba(0,0,0,0.85)]">
-              <img id="farm-img-2" src="/images/hardware/isoboost.webp" onerror="this.onerror=null; this.src='/images/hardware/isoBoost.png';" alt="ISOBoost Depth Control" class="farm-hardware absolute max-h-[340px] sm:max-h-[430px] object-contain transition-all duration-700 opacity-0 scale-75 pointer-events-none drop-shadow-[0_20px_35px_rgba(0,0,0,0.85)]">
-              <img id="farm-img-3" src="/images/hardware/farmnavigator_advancedpack.webp" onerror="this.onerror=null; this.src='/images/hardware/Farmnavigator_advancedpack.png';" alt="Pilota Dirección Automática" class="farm-hardware absolute max-h-[340px] sm:max-h-[430px] object-contain transition-all duration-700 opacity-0 scale-75 pointer-events-none drop-shadow-[0_20px_35px_rgba(0,0,0,0.85)]">
-              <img id="farm-img-4" src="/images/hardware/farmnavigator_tracker_agri.webp" onerror="this.onerror=null; this.src='/images/hardware/FARMNAVIGATOR_TRACKER_AGRI.png';" alt="Tracker Agri MyFarmnavigator" class="farm-hardware absolute max-h-[340px] sm:max-h-[430px] object-contain transition-all duration-700 opacity-0 scale-75 pointer-events-none drop-shadow-[0_20px_35px_rgba(0,0,0,0.85)]">
+              <img id="farm-img-0" src="/images/hardware/g12_full_navi.webp" alt="G12 Panorama Full" class="farm-hardware absolute max-h-[340px] sm:max-h-[430px] object-contain transition-all duration-700 opacity-100 scale-100 drop-shadow-[0_20px_35px_rgba(0,0,0,0.85)]">
+              <img id="farm-img-1" src="/images/hardware/allinone_rtk_new2024.webp" alt="All in One RTK X" class="farm-hardware absolute max-h-[340px] sm:max-h-[430px] object-contain transition-all duration-700 opacity-0 scale-75 pointer-events-none drop-shadow-[0_20px_35px_rgba(0,0,0,0.85)]">
+              <img id="farm-img-2" src="/images/hardware/isoboost.webp" alt="ISOBoost Depth Control" class="farm-hardware absolute max-h-[340px] sm:max-h-[430px] object-contain transition-all duration-700 opacity-0 scale-75 pointer-events-none drop-shadow-[0_20px_35px_rgba(0,0,0,0.85)]">
+              <img id="farm-img-3" src="/images/hardware/farmnavigator_advancedpack.webp" alt="Pilota Dirección Automática" class="farm-hardware absolute max-h-[340px] sm:max-h-[430px] object-contain transition-all duration-700 opacity-0 scale-75 pointer-events-none drop-shadow-[0_20px_35px_rgba(0,0,0,0.85)]">
+              <img id="farm-img-4" src="/images/hardware/farmnavigator_tracker_agri.webp" alt="Tracker Agri MyFarmnavigator" class="farm-hardware absolute max-h-[340px] sm:max-h-[430px] object-contain transition-all duration-700 opacity-0 scale-75 pointer-events-none drop-shadow-[0_20px_35px_rgba(0,0,0,0.85)]">
             </div>
 
             <!-- Botones Laterales Flotantes (< y >) -->
@@ -1082,6 +1089,7 @@
         let farmProgress = 0;
         let farmTimer = null;
         let farmIsPaused = false;
+        let farmInView = true;
 
         function updateFarmSlide(index) {
           farmCurrent = (index + FARM_TOTAL) % FARM_TOTAL;
@@ -1137,7 +1145,7 @@
         function startFarmLoop() {
           clearInterval(farmTimer);
           farmTimer = setInterval(() => {
-            if (!farmIsPaused) {
+            if (!farmIsPaused && farmInView) {
               farmProgress += 50;
               const pct = Math.min((farmProgress / FARM_INTERVAL) * 100, 100);
               if (farmBars[farmCurrent]) farmBars[farmCurrent].style.width = `${pct}%`;
@@ -1178,6 +1186,28 @@
           }, { passive: true });
         }
 
+        const farmContainer = document.getElementById("farm-panels-container");
+        function lockFarmHeight() {
+          if (!farmContainer || !farmPanels.length) return;
+          let maxH = 0;
+          farmPanels.forEach((p) => {
+            const wasAbs = p.classList.contains("absolute");
+            const prevVis = p.style.visibility;
+            p.style.visibility = "hidden";
+            if (wasAbs) { p.classList.remove("absolute", "inset-0"); p.classList.add("relative"); }
+            maxH = Math.max(maxH, p.offsetHeight);
+            if (wasAbs) { p.classList.add("absolute", "inset-0"); p.classList.remove("relative"); }
+            p.style.visibility = prevVis;
+          });
+          if (maxH > 0) farmContainer.style.minHeight = maxH + "px";
+        }
+        lockFarmHeight();
+        window.addEventListener("resize", lockFarmHeight, { passive: true });
+        if (farmTheater && "IntersectionObserver" in window) {
+          new IntersectionObserver((entries) => {
+            farmInView = entries[0].isIntersecting;
+          }, { threshold: 0.05 }).observe(farmTheater);
+        }
         updateFarmSlide(0);
         startFarmLoop();
       </script>
@@ -1185,6 +1215,8 @@
 
     <!-- 05 · INTELIGENCIA AGRONÓMICA, AUDITORÍA Y TELEMETRÍA (VIDEO FULL-BLEED) -->
     <!-- 05 · INTELIGENCIA AGRONÓMICA, AUDITORÍA Y TELEMETRÍA (VIDEO FULL-BLEED) -->
+    <RtkProSection />
+
     <section id="inteligencia" class="relative min-h-[85vh] flex items-center bg-[#060913] text-white border-t border-white/10 overflow-hidden">
       
       <!-- Video de Fondo en Bucle (Estilo Cinemagraph) -->
@@ -1196,7 +1228,7 @@
           playsinline 
           class="w-full h-full object-cover object-center opacity-60"
         >
-          <source src="/images/hardware/video_drone_iot.mp4" type="video/mp4" />
+          <source src="/images/hardware/video_drone_iot-opt.mp4" type="video/mp4" />
         </video>
         <!-- Máscara direccional: lectura nítida a la izquierda y video despejado a la derecha -->
         <div class="absolute inset-0 bg-gradient-to-r from-[#060913] via-[#060913]/88 to-[#060913]/15"></div>
@@ -1267,7 +1299,7 @@
           playsinline 
           class="w-full h-full object-cover object-center opacity-50"
         >
-          <source src="/images/hardware/vide-drone-agras.mp4" type="video/mp4" />
+          <source src="/images/hardware/vide-drone-agras-opt.mp4" type="video/mp4" />
         </video>
         <!-- Máscara direccional: contraste alto a la izquierda y visibilidad del dron a la derecha -->
         <div class="absolute inset-0 bg-gradient-to-r from-[#050911] via-[#050911]/88 to-[#050911]/20"></div>
